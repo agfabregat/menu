@@ -8,8 +8,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="qvl.css" />
-    
+<!--<link rel="stylesheet" type="text/css" href="qvl.css" /> -->
+<style>
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 32px;
+}
+
+#navcontainer li {
+ margin: 0 0 0px 0; 
+text-align: center;
+}
+
+#navcontainer a
+{
+display: block;
+padding: 2px 2px 2px 24px;
+border: 1px solid #333;
+width: 90%;
+background: #596a72; /* Old browsers */
+background: -moz-linear-gradient(top,  #596a72 40%, #cedce7 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,#596a72), color-stop(99%,#cedce7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #596a72 40%,#cedce7 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #596a72 40%,#cedce7 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #596a72 40%,#cedce7 99%); /* IE10+ */
+background: linear-gradient(to bottom,  #596a72 40%,#cedce7 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596a72', endColorstr='#cedce7',GradientType=0 ); /* IE6-9 */
+
+}
+
+#navcontainer a:link, #navlist a:visited
+{
+color: #EEE;
+text-decoration: none;
+}
+
+#navcontainer a:hover
+{
+border: 1px solid #333;
+background-color: #F93;
+background-image: url(images/l1_over.gif);
+color: #333;
+}
+
+#navcontainer {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
 </head>
 <body>
 <div id="navcontainer">
