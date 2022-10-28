@@ -35,7 +35,7 @@ for (let i of jsondata)
 { 
 	var t = i.title;
 	var h = i.href;
-	sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>)`;
+	sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>`);
 	//sb.append(`<div><span>${i.title}</span><span>${i.href}</span></div>`);
 }
 let content = document.getElementById("content");
