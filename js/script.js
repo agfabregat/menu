@@ -16,18 +16,36 @@ let jsondata =[
 }, 
 {"title":"Google",
   "href":"https://google.com"
-}
-
-  
+}  
 ];
 
+function StringBuilder(value) {
+    this.strings = new Array();
+    this.append(value);
+}
 
+StringBuilder.prototype.append = function (value) {
+    if (value) {
+        this.strings.push(value);
+    }
+}
+
+StringBuilder.prototype.clear = function () {
+    this.strings.length = 0;
+}
+
+StringBuilder.prototype.toString = function () {
+    return this.strings.join("");
+}
+
+var sb = new StringBuilder();
 for (let i of jsondata) 
 { 
-	let item = "<div><span>i.title</span><span>i.href</span></div>";
+	sb.append("<div><span>i.title</span><span>i.href</span></div>");
 }
 let content = document.getElementById("content");
-content.appendChild.innerHTML(item); 
+content.appendChild.innerHTML(sb.toString()); 
+sb.clear();
 }
 
   
