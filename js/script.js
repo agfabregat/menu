@@ -5,18 +5,10 @@ window.addEventListener('load',() => {
 
 let jsondata =[
 
-{"title":"Lucianne",
-  "href":"https://lucianne.com"
-}, 
-{"title":"Drudge",
-  "href":"https://drudgereport.com"
-}, 
-{"title":"Treehouse",
-  "href":"https://conservativetreehouse.com"
-}, 
-{"title":"Google",
-  "href":"https://google.com"
-}  
+{"title":"Lucianne", "href":"https://lucianne.com"}, 
+{"title":"Drudge", "href":"https://drudgereport.com"}, 
+{"title":"Treehouse", "href":"https://conservativetreehouse.com"}, 
+{"title":"Google", "href":"https://google.com"}  
 ];
 
 function StringBuilder(value) {
@@ -43,7 +35,8 @@ for (let i of jsondata)
 { 
 	var t = i.title;
 	var h = i.href;
-	sb.append(`<div><span>${i.title}</span><span>${i.href}</span></div>`);
+	sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>)`;
+	//sb.append(`<div><span>${i.title}</span><span>${i.href}</span></div>`);
 }
 let content = document.getElementById("content");
 content.innerHTML=sb.toString(); 
