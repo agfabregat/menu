@@ -44,7 +44,7 @@ for (let i of jsondata)
 	sb.append("<div><span>i.title</span><span>i.href</span></div>");
 }
 let content = document.getElementById("content");
-content.appendChild.innerHTML(sb.toString()); 
+content.appendChild(sb.toString()); 
 sb.clear();
 
 
