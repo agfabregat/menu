@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<title>QVL Radio/TV</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">      
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="content">
+
+</div>
+<script>
+window.addEventListener('load',() => {
+  //alert("Hello World.This page is loaded!")
+  
+var jsondata =[
+
+{"title":"Lucianne",
+  "href":"https://lucianne.com"
+}, 
+{"title":"Drudge",
+  "href":"https://drudgereport.com"
+}, 
+{"title":"Treehouse",
+  "href":"https://conservativetreehouse.com"
+}, 
+{"title":"Google",
+  "href":"https://google.com"
+}
+
+  
+];
+var content = document.getElementById("content");
+var list = document.createElement("ul");
+for (let i of jsondata) 
+{ 
+var item = document.createElement("li"); 
+list.appendChild(item.title); 
+}
+content.appendChild(list);
+  
+});
+
+</script>
+
+</body>
+</html>
