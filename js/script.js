@@ -41,7 +41,9 @@ StringBuilder.prototype.toString = function () {
 var sb = new StringBuilder();
 for (let i of jsondata) 
 { 
-	sb.append("<div><span>${i[title])</span><span>${i[href])</span></div>");
+	var t = i.title;
+	var h = i.href;
+	sb.append(`<div><span>${i[title]}</span><span>${i[href]}</span></div>`);
 }
 let content = document.getElementById("content");
 content.innerHTML=sb.toString(); 
