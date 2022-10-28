@@ -46,7 +46,7 @@ for (let i of jsondata)
 let content = document.getElementById("content");
 content.appendChild.innerHTML(sb.toString()); 
 sb.clear();
-}
+
 
   
 });
