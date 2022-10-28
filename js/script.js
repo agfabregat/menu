@@ -1,15 +1,9 @@
 
+
 window.addEventListener('load',() => {
   //alert("Hello World.This page is loaded!")
   
 
-let jsondata =[
-
-{"title":"Lucianne", "href":"https://lucianne.com"}, 
-{"title":"Drudge", "href":"https://drudgereport.com"}, 
-{"title":"Treehouse", "href":"https://conservativetreehouse.com"}, 
-{"title":"Google", "href":"https://google.com"}  
-];
 
 function StringBuilder(value) {
     this.strings = new Array();
