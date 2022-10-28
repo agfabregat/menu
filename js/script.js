@@ -3,7 +3,7 @@ window.addEventListener('load',() => {
   //alert("Hello World.This page is loaded!")
   
 
-var jsondata =[
+let jsondata =[
 
 {"title":"Lucianne",
   "href":"https://lucianne.com"
@@ -20,13 +20,15 @@ var jsondata =[
 
   
 ];
-var content = document.getElementById("content");
-var list = document.createElement("ul");
+
+
 for (let i of jsondata) 
 { 
-var item = document.createElement("li"); 
-list.appendChild(item.title); 
+	let item = "<div><span>i.title</span><span>i.href</span></div>";
 }
-content.appendChild.inner(list);
+let content = document.getElementById("content");
+content.appendChild.innerHTML(item); 
+}
+
   
 });
