@@ -49,6 +49,7 @@ function getJson(url){
     .then(result => result.json())
     .then((output) => {
         console.log('Output: ', output);
+		return output;
         
 	}).catch(err => console.error(err));
 }
