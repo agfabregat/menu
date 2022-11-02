@@ -58,7 +58,7 @@ function getJson(url){
 
 function updateScreen(jsonData){
 	let sb = new StringBuilder();
-	let jsonObj = jsonData; //JSON.parse(jsonData);
+	let jsonObj = JSON.parse(jsonData);
 	for (let i of jsonObj) 
 	{ 
 		let t = i.title;
