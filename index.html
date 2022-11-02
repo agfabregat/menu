@@ -10,8 +10,43 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div><a target="_blank" href="radioTv.html">radioTv</a></</div>
-<div><a target="_blank" href="UruguayTv.html">UruguayTv</a></</div>
-<div><a target="_blank" href="news.html">news</a></</div>
+
+<div><span onclick="myFunction('/js/uruguayLinks.js')">UruguayTv</span></</div>
+
+
+<script>
+function myFuncton(url){
+let jsondata = getJason(url);
+updateScreen(jsonData);
+}
+</script>
+
+<script>
+function getJson(url){
+	fetch(`'${url}'`)
+    .then(result => result.json())
+    .then((output) => {
+        console.log('Output: ', output);
+        
+	}).catch(err => console.error(err));
+}
+</script>
+
+<script>
+
+function updateScreen(jsonData){
+	var sb = new StringBuilder();
+	for (let i of jsondata) 
+	{ 
+		var t = i.title;
+		var h = i.href;
+		sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>`);
+		//sb.append(`<div><span>${i.title}</span><span>${i.href}</span></div>`);
+	}
+	let content = document.getElementById("content");
+	content.innerHTML=sb.toString(); 
+	sb.clear();
+}
+</script>
 </body>
 </html>
