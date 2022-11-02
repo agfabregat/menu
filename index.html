@@ -46,10 +46,9 @@ updateScreen(jsonData);
 <script>
 function getJson(url){
 	fetch(url)
-    .then(result => result.json())
+    .then(result => return result.json())
     .then((output) => {
         console.log('Output: ', output);
-		return output;
         
 	}).catch(err => console.error(err));
 }
@@ -59,7 +58,7 @@ function getJson(url){
 
 function updateScreen(jsonData){
 	let sb = new StringBuilder();
-	let jsonObj = JSON.parse(jsonData);
+	let jsonObj = jsonData; //JSON.parse(jsonData);
 	for (let i of jsonObj) 
 	{ 
 		let t = i.title;
