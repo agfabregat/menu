@@ -57,11 +57,12 @@ function getJson(url){
 <script>
 
 function updateScreen(jsonData){
-	var sb = new StringBuilder();
-	for (let i of jsonData) 
+	let sb = new StringBuilder();
+	let jsonObj = JSON.parse(jsonData);
+	for (let i of jsonObj) 
 	{ 
-		var t = i.title;
-		var h = i.href;
+		let t = i.title;
+		let h = i.href;
 		sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>`);
 		//sb.append(`<div><span>${i.title}</span><span>${i.href}</span></div>`);
 	}
