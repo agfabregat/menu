@@ -1,5 +1,5 @@
 
-let jsonData = [
+[
 {"href":"http://www.mediaresearch.org/","title":"MRC CyberAlert"},
 {"href":"http://www.lucianne.com/","title":"Lucianne"},
 {"href":"https://agfservicecorsproxy20220326232156.azurewebsites.net/htmlget.html?url=https://drudgereport.com","title":"Drudge Report"},
