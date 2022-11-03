@@ -46,7 +46,9 @@ updateScreen(jsonData);
 <script>
 function getJson(url){
 	fetch(url)
-    .then(result => {return result.json()})
+    .then(result => {
+		return result.json()
+	})
     .then((output) => {
         console.log('Output: ', output);
         
