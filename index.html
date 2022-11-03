@@ -38,8 +38,12 @@ function StringBuilder(value) {
 
 
 <script>
-async function myFunction(url){
-let jsonData = await getJson(url);
+function myFunction(url){
+const jsonData = await fetch(url, {
+  headers: {
+    'Accept': 'application/json'
+  }
+});
 updateScreen(jsonData);
 }
 </script>
