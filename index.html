@@ -44,8 +44,8 @@ updateScreen(jsonData);
 }
 </script>
 <script>
-function getJson(url){
-	fetch(url)
+async function getJson(url){
+	await fetch(url)
     .then(data => {
      return data.json();
    })
