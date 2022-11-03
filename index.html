@@ -10,17 +10,27 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 	*{font-family: Verdana, Arial, Tahoma, Serif;}
+	.foo {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 </style>
 </head>
 <body>
 
-<div>
-<span onclick="myFunction('js/uruguayLinks.js')">UruguayTv</span>
-<span onclick="myFunction('js/news.js')">NewsTv</span>
-<span onclick="myFunction('js/blogs.js')">Blogs</span>
-<span onclick="myFunction('js/prototypes.js')">Prototypes</span>
-<span onclick="myFunction('js/Papers.js')">Papers</span>
-<span onclick="myFunction('js/PCMags.js')">PCMags</span>
+<div class="foo">
+<div onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
+<div onclick="myFunction('js/news.js')">NewsTv</div>
+<div onclick="myFunction('js/blogs.js')">Blogs</div>
+<div onclick="myFunction('js/prototypes.js')">Prototypes</div>
+<div onclick="myFunction('js/Papers.js')">Papers</div>
+<div onclick="myFunction('js/PCMags.js')">PCMags</div>
 </div>
 <div id="content"></div>
 <script>
@@ -79,7 +89,7 @@ async function updateScreen(jsonData){
 		let t = i.title;
 		let h = i.href;
 		sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>`);
-		//sb.append(`<div><span>${i.title}</span><span>${i.href}</span></div>`);
+		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
 	}
 	let content = document.getElementById("content");
 	content.innerHTML=sb.toString(); 
