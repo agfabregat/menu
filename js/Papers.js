@@ -1,0 +1,60 @@
+[
+{"href":"http://www.thelocalpapers.com/by_country.html
+","title":"Diarios del mundo"},
+{"href":"http://www.clarin.com/","title":"Clarin BsAs"},
+{"href":"http://www.larazon.com.ar/","title":"LaRazon BsAs"},
+{"href":"http://www.lanacion.com.ar/","title":"LaNacion BsAs"},
+
+{"href":"http://www.diarioelpais.com/?","title":"ElPais Uy"},
+{"href":"http://www.observa.com.uy/","title":"ElObservador Uy"},
+{"href":"http://www.brecha.com.uy/","title":"Brecha Uy"},
+{"href":"http://www.editorandpublisher.com/","title":"Editor&Pub"},
+
+{"href":"http://www.europapress.es/","title":"Europa Press"},
+{"href":"http://www.washingtonpost.com/wp-dyn/opinion/","title":"WashPost"},
+{"href":"http://www.washtimes.com/op-ed/","title":"WashTimes"},
+{"href":"http://www.nypost.com","title":"NYPost"},
+{"href":"http://www.wsj.com","title":"Wall Street Journal"},
+{"href":"http://www.nytimes.com/","title":"NYTimes"},
+{"href":"http://www.ardemgaz.com/today/edi/","title":"ArkDemGaz"},
+{"href":"http://www.nydailynews.com/today/News_and_Views/Opinion/default.asp","title":"NYDailyNews"},
+{"href":"http://nysun.com/","title":"NYSun"},
+
+{"href":"http://www.boston.com/","title":"BostonGlobe"},
+{"href":"http://www.bostonherald.com/","title":"BostonHerald"},
+{"href":"http://www.latimes.com/HOME/NEWS/COMMENT/","title":"LATimes"},
+{"href":"http://www.suntimes.com/index/commentary.html","title":"ChiSunTimes"},
+{"href":"http://www.usatoday.com/news/comment/debate.htm","title":"USAToday"},
+{"href":"http://www.theunionleader.com/","title":"ManchUnionLead"},
+{"href":"http://www.dallasnews.com/editorial/","title":"DallMornNews"},
+{"href":"http://www.chicago.tribune.com/news/opinion/","title":"ChiTribune"},
+{"href":"http://www.chron.com/content/news/editorial/index.html","title":"HouChronicle"},
+{"href":"http://www.seattletimes.com/news/editorial","title":"SeaTimes"},
+{"href":"http://www.sfgate.com/cgi-bin/examiner/list-articles.cgi?section=EDITORIAL&amp;year=&amp;month=&amp;day=')" >SFExaminer"},
+{"href":"http://www.herald.com/opinion/","title":"MiaHerald"},
+{"href":"http://www.sunspot.net/opinion/","title":"BaltoSun"},
+{"href":"http://www.sjmercury.com/opinion/","title":"SJMercuryNews"},
+{"href":"http://www.opinionjournal.com/","title":"WSJournal"},
+{"href":"http://www.thetimes.co.uk/newspaper/","title":"UK Times"},
+{"href":"http://www.portal.telegraph.co.uk/opinion/main.jhtml?view=HOME","title":"UK Telegraph(Pro)"},
+{"href":"http://www.mirror.co.uk/","title":"DailyMirror(con)"},
+{"href":"http://www.independent.co.uk/","title":"Independ.(con)"},
+
+{"href":"http://www.guardian.co.uk/columnists/","title":"UK Guardian(Con)"},
+{"href":"http://www.iht.com/","title":"Int.Herald Trib."},
+
+{"href":"http://www.parissoir.com/","title":"Paris Soir"},
+{"href":"http://www.lemonde.fr/","title":"Le Monde"},
+{"href":"http://www.lefigaro.fr/","title":"Le Figaro"},
+{"href":"http://www.lexpress.fr/info/","title":"L'Express"},
+{"href":"http://www.liberation.fr/","title":"Liberation"},
+{"href":"http://www.corriere.it/","title":"CorriereDellaSera"},
+{"href":"http://www.unita.it/","title":"L'Unita"},
+{"href":"http://www.elpais.es/","title":"El Pais"},
+{"href":"http://www.elmundo.es/","title":"El Mundo"},
+{"href":"http://www.abc.es/","title":"ABC"},
+{"href":"http://www.elperiodico.com/","title":"El Periodico"},
+{"href":"http://www.csmonitor.com/commentary/index.html","title":"ChristianScienceMon"}
+
+
+]
