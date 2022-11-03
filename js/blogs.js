@@ -83,5 +83,5 @@
 {"href":"http://no-pasaran.blogspot.com/","title":"No pasaran"},
 
 {"href":"http://barcepundit-english.blogspot.com/","title":"Barce pundit"},
-{"href":"http://unatemporadaenelinfierno.net/","title":"Temporada En El Infierno"},
+{"href":"http://unatemporadaenelinfierno.net/","title":"Temporada En El Infierno"}
 ]
