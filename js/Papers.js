@@ -29,7 +29,7 @@
 {"href":"http://www.chicago.tribune.com/news/opinion/","title":"ChiTribune"},
 {"href":"http://www.chron.com/content/news/editorial/index.html","title":"HouChronicle"},
 {"href":"http://www.seattletimes.com/news/editorial","title":"SeaTimes"},
-{"href":"http://www.sfgate.com/cgi-bin/examiner/list-articles.cgi?section=EDITORIAL&amp;year=&amp;month=&amp;day=')" >SFExaminer"},
+{"href":"http://www.sfgate.com/cgi-bin/examiner/list-articles.cgi?section=EDITORIAL&amp;year=&amp;month=&amp;day=')","title":"SFExaminer"},
 {"href":"http://www.herald.com/opinion/","title":"MiaHerald"},
 {"href":"http://www.sunspot.net/opinion/","title":"BaltoSun"},
 {"href":"http://www.sjmercury.com/opinion/","title":"SJMercuryNews"},
