@@ -1,6 +1,5 @@
 [
-{"href":"http://www.thelocalpapers.com/by_country.html
-","title":"Diarios del mundo"},
+{"href":"http://www.thelocalpapers.com/by_country.html","title":"Diarios del mundo"},
 {"href":"http://www.clarin.com/","title":"Clarin BsAs"},
 {"href":"http://www.larazon.com.ar/","title":"LaRazon BsAs"},
 {"href":"http://www.lanacion.com.ar/","title":"LaNacion BsAs"},
