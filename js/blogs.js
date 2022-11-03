@@ -1,42 +1,41 @@
-<li><a href='http://www.firmaspress.com/'>Carlos Montaner</a></li>
-
-<li><a href='http://www.nationaljournal.com/'>  NatJournal/Hotline</a></li>
-<li><a href='https://patriotpost.us/opinion'>Patriot Post</a></li>
-<li><a href='http://powerlineblog.com/'>Powerlineblog</a></li>
-<li><a href='http://libaterian.blogspot.com/'>Libaterian</a></li>
-<li><a href='http://www.steynonline.com/'>Steyn online</a></li>
-<li><a href='http://theconservativetreehouse.com/'>Conservative TreeHouse</a></li>
-<li><a href='https://truepundit.com/'>TruePundit</a></li>
-<li><a href='https://thedesk.matthewkeys.net/'>TheDesk Matthew Keys</a></li>
-
-<li><a href='https://www.scottadamssays.com/'>Scott Adams</a></li>
-<li><a href='http://ace.mu.nu/'>Ace Of Spades</a></li>
-<li><a href='http://www.theamericanconservative.com/'>Am Conservative</a></li>
-<li><a href='https://amgreatness.com/'>Am Greatness</a></li>
-<li><a href='http://americanlookout.com/'>Am Lookout</a></li>
-<li><a href='https://bigleaguepolitics.com/'>Big League Politics</a></li>
-<li><a href='https://www.dailywire.com/'>Daily Wire</a></li>
-
-
-<li><a href='https://twitter.com/jamiedupree?lang=en'>Jamie Dupree Twitter</a></li>
-<li><a href='http://donsurber.blogspot.com/'>Don Surber</a></li>
-<li><a href='https://danieljmitchell.wordpress.com/'>Daniel Mitchell Int. Liberty</a></li>
-<li><a href='https://meaninginhistory.blogspot.com/'>Meaning of History</a></li>
-<li><a href='https://themarketswork.com/'>The MarketsWork</a></li>
-
-
-<li><a href='http://www.dailycaller.com/'>Daily Caller</a></li>
-<li><a href='https://twitter.com/donsurber'>Twitter Don Surber</a></li>
-<li><a href='https://twitter.com/johnwhuber?lang=en'>Twitter Undercover Huber</a></li>
-<li><a href='https://twitter.com/aaronjmate'>Twitter Aaron Mate</a></li>
-<li><a href='https://twitter.com/jsolomonReports'>Twitter John Solomon</a></li>
-
-<li><a href='https://news.idealmedia.com/'>Ideal Media</a></li>
-<li><a href='https://www.buzzfeed.com/news'>BuzzFeed</a></li>
-
-
-
 [
+{"href":"http://www.firmaspress.com/","title":"Carlos Montaner"},
+
+{"href":"http://www.nationaljournal.com/","title":"  NatJournal/Hotline"},
+{"href":"https://patriotpost.us/opinion","title":"Patriot Post"},
+{"href":"http://powerlineblog.com/","title":"Powerlineblog"},
+{"href":"http://libaterian.blogspot.com/","title":"Libaterian"},
+{"href":"http://www.steynonline.com/","title":"Steyn online"},
+{"href":"http://theconservativetreehouse.com/","title":"Conservative TreeHouse"},
+{"href":"https://truepundit.com/","title":"TruePundit"},
+{"href":"https://thedesk.matthewkeys.net/","title":"TheDesk Matthew Keys"},
+
+{"href":"https://www.scottadamssays.com/","title":"Scott Adams"},
+{"href":"http://ace.mu.nu/","title":"Ace Of Spades"},
+{"href":"http://www.theamericanconservative.com/","title":"Am Conservative"},
+{"href":"https://amgreatness.com/","title":"Am Greatness"},
+{"href":"http://americanlookout.com/","title":"Am Lookout"},
+{"href":"https://bigleaguepolitics.com/","title":"Big League Politics"},
+{"href":"https://www.dailywire.com/","title":"Daily Wire"},
+
+
+{"href":"https://twitter.com/jamiedupree?lang=en","title":"Jamie Dupree Twitter"},
+{"href":"http://donsurber.blogspot.com/","title":"Don Surber"},
+{"href":"https://danieljmitchell.wordpress.com/","title":"Daniel Mitchell Int. Liberty"},
+{"href":"https://meaninginhistory.blogspot.com/","title":"Meaning of History"},
+{"href":"https://themarketswork.com/","title":"The MarketsWork"},
+
+
+{"href":"http://www.dailycaller.com/","title":"Daily Caller"},
+{"href":"https://twitter.com/donsurber","title":"Twitter Don Surber"},
+{"href":"https://twitter.com/johnwhuber?lang=en","title":"Twitter Undercover Huber"},
+{"href":"https://twitter.com/aaronjmate","title":"Twitter Aaron Mate"},
+{"href":"https://twitter.com/jsolomonReports","title":"Twitter John Solomon"},
+
+{"href":"https://news.idealmedia.com/","title":"Ideal Media"},
+{"href":"https://www.buzzfeed.com/news","title":"BuzzFeed"},
+
+
 {"href":"https://www.conservativereview.com/","title":"Conservative Review"},
 {"href":"https://gatesofvienna.net/","title":"Gates of Vienna"},
 {"href":"https://theintercept.com/","title":"The Intercept"},
