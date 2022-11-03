@@ -62,10 +62,10 @@ async function getJson(url){
 
 <script>
 
-function updateScreen(jsonData){
+async function updateScreen(jsonData){
 	let sb = new StringBuilder();
 	
-	for (let i of jsonData.json()) 
+	for (let i of await jsonData.json()) 
 	{ 
 		let t = i.title;
 		let h = i.href;
