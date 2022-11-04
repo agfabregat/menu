@@ -10,19 +10,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 	*{font-family: Verdana, Arial, Tahoma, Serif;}
-	.headContainer {
-            display: flex;
-            flex-direction: row;
-            background-color: #2C3E50;
-         }
-         .headContainer > div {
-            background-color: #F7F9F9;
-            text-align: center;
-            line-height: 40px;
-            font-size: 25px;
-            width: 100px;
-            margin: 5px;
-         }
+
 }
 </style>
 </head>
@@ -35,6 +23,7 @@
 <div onclick="myFunction('js/prototypes.js')">Prototypes</div>
 <div onclick="myFunction('js/Papers.js')">Papers</div>
 <div onclick="myFunction('js/PCMags.js')">PCMags</div>
+<div onclick="myFunction('js/radioTv.js')">RadioTv</div>
 </div>
 <div id="content"></div>
 <script>
@@ -61,10 +50,12 @@ function StringBuilder(value) {
 
 
 <script>
+
 async function myFunction(url){
 const jsonData = await fetch(url, {
   headers: {
-    'Accept': 'application/json'
+    'Accept': 'application/json',
+	'User-Agent'   : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246'
   }
 });
 updateScreen(jsonData);
