@@ -10,7 +10,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 	*{font-family: Verdana, Arial, Tahoma, Serif;}
-.row {
+.column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@
   height: 100%;
 }
 
-.cell{
+.row{
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -30,20 +30,21 @@
 </style>
 </head>
 <body>
+<div class="wrapper">
+<div class="column">
+<div class="row" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
+<div class="row" onclick="myFunction('js/news.js')">NewsTv</div>
+<div class="row" onclick="myFunction('js/blogs.js')">Blogs</div>
+<div class="row" onclick="myFunction('js/prototypes.js')">Prototypes</div>
+<div class="row" onclick="myFunction('js/Papers.js')">Papers</div>
+<div class="row" onclick="myFunction('js/PCMags.js')">PCMags</div>
+<div class="row" onclick="myFunction('js/radioTv.js')">RadioTv</div>
+<div class="row" onclick="myFunction('js/tools.js')">Tools</div>
+<div class="row" onclick="myFunction('js/static.js')">Static</div>
 
-<div class="row">
-<div class="cell" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
-<div class="cell" onclick="myFunction('js/news.js')">NewsTv</div>
-<div class="cell" onclick="myFunction('js/blogs.js')">Blogs</div>
-<div class="cell" onclick="myFunction('js/prototypes.js')">Prototypes</div>
-<div class="cell" onclick="myFunction('js/Papers.js')">Papers</div>
-<div class="cell" onclick="myFunction('js/PCMags.js')">PCMags</div>
-<div class="cell" onclick="myFunction('js/radioTv.js')">RadioTv</div>
-<div class="cell" onclick="myFunction('js/tools.js')">Tools</div>
-<div class="cell" onclick="myFunction('js/static.js')">Static</div>
+<div class="column" id="content"></div>
 
-<div class="row" id="content"></div>
-
+</div>
 </div>
 <script>
 function StringBuilder(value) {
@@ -102,7 +103,7 @@ async function updateScreen(jsonData){
 	{ 
 		let t = i.title;
 		let h = i.href;
-		sb.append(`<div class="cell"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
+		sb.append(`<div class="row"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
 		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
 	}
 	let content = document.getElementById("content");
