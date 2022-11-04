@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Screen Widths</title>
+    <style type="text/css">
+        html, body {
+            width: 100%;
+        }
+
+        span {
+            display: inline-block;
+            margin-bottom: 1px;
+            background: lightcoral;
+        } 
+        div{
+            clear: both;
+        }
+
+        #left {
+            float: left;
+            width: 50%;
+            
+        }
+
+        #right {
+            float: right;
+            width: 50%;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:320px;">
+        <span  id="left">320px</span>
+        <span  id="right">320px</span>
+    </div>
+    <div  style="width:360px;">
+        <span id="left">360px</span>
+        <span id="right">360px</span>
+    </div>
+    <div style="width:480px;">
+        <span id="left">480px</span>
+        <span id="right">480px</span>
+    </div>
+    <div style="width:533px; ">
+        <span id="left">533px</span>
+        <span id="right">533px</span>
+    </div>
+    <div style="width:540px; ">
+        <span id="left">540px</span>
+        <span id="right">540px</span>
+    </div>
+    <div style="width:600px;">
+        <span id="left">600px</span>
+        <span id="right">600px</span>
+    </div>
+    <div style="width:640px;">
+        <span id="left">640px</span>
+        <span id="right">640px</span>
+    </div>
+    <div style="width:720px;">
+        <span id="left">720px</span>
+        <span id="right">720px</span>
+    </div>
+    <div style="width:768px;">
+        <span id="left">768px</span>
+        <span id="right">768px</span>
+    </div>
+    <div style="width:800px;">
+        <span id="left">800px</span>
+        <span id="right">800px</span>
+    </div>
+    <div style="width:960px;">
+        <span id="left">960px</span>
+        <span id="right">960px</span>
+    </div>
+    <div style="width:1024px;">
+        <span id="left">1024px</span>
+        <span id="right">1024px</span>
+    </div>
+    <div style="width:1280px;">
+        <span id="left">1280px</span>
+        <span id="right">1280px</span>
+    </div>
+    <div style="width:1366px;">
+        <span id="left">1366px</span>
+        <span id="right">1366px</span>
+    </div>
+    <div style="width:1400px;">
+        <span id="left">1400px</span>
+        <span id="right">1400px</span>
+    </div>
+    <div style="width:1600px;">
+        <span id="left">1600px</span>
+        <span id="right">1600px</span>
+    </div>
+    <div style="width:1920px;">
+        <span id="left">1920px</span>
+        <span id="right">1920px</span>
+    </div>
+</body>
+</html>
