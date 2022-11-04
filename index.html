@@ -17,13 +17,14 @@
 <body>
 
 <div class="headContainer">
-<div onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
-<div onclick="myFunction('js/news.js')">NewsTv</div>
-<div onclick="myFunction('js/blogs.js')">Blogs</div>
-<div onclick="myFunction('js/prototypes.js')">Prototypes</div>
-<div onclick="myFunction('js/Papers.js')">Papers</div>
-<div onclick="myFunction('js/PCMags.js')">PCMags</div>
-<div onclick="myFunction('js/radioTv.js')">RadioTv</div>
+<span class="mitem" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</span>
+<span class="mitem" onclick="myFunction('js/news.js')">NewsTv</span>
+<span class="mitem" onclick="myFunction('js/blogs.js')">Blogs</span>
+<span class="mitem" onclick="myFunction('js/prototypes.js')">Prototypes</span>
+<span class="mitem" onclick="myFunction('js/Papers.js')">Papers</span>
+<span class="mitem" onclick="myFunction('js/PCMags.js')">PCMags</span>
+<span class="mitem" onclick="myFunction('js/radioTv.js')">RadioTv</span>
+<span class="mitem" onclick="myFunction('js/tools.js')">Tools</span>
 </div>
 <div id="content"></div>
 <script>
@@ -83,8 +84,8 @@ async function updateScreen(jsonData){
 	{ 
 		let t = i.title;
 		let h = i.href;
-		sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>`);
-		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
+		sb.append(`<span class="item"><a target="_blank" href="${i.href}">${i.title}</a></span>`);
+		//sb.append(`<span><span>${i.title}</span><span>${i.href}</span></span>`);
 	}
 	let content = document.getElementById("content");
 	content.innerHTML=sb.toString(); 
