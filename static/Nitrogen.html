@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NITRO</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Custom Config">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        body {
+            max-width: 640px;
+            min-width: 320px;
+            margin: 0 auto;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .league {
+            width: 33%;
+            height: 2em;
+            text-align: right;
+            display: inline-block;
+        }
+
+
+
+        input, button {
+            float: left;
+            font-size: 1em;
+            padding: 3px 6px;
+            margin: 0;
+            border: 1px solid #333;
+            outline: 0;
+            box-shadow: none;
+        }
+
+        ::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+
+        input {
+            width: 5em;
+            background-color: #fff;
+            border-right: 0 none;
+            border-radius: 3px 0 0 3px;
+        }
+
+        button {
+            position: relative;
+            background-color: #40e0d0;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        .copied::after {
+            position: absolute;
+            top: 12%;
+            right: 110%;
+            display: block;
+            content: "copied";
+            font-size: 0.75em;
+            padding: 2px 3px;
+            color: #fff;
+            background-color: #22a;
+            border-radius: 3px;
+            opacity: 0;
+            will-change: opacity, transform;
+            animation: showcopied 1.5s ease;
+        }
+
+        @keyframes showcopied {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            70% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+        
+    </style>
+</head>
+
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <a target="nitro" href="https://nitrogensports.eu/u/b9b6d639b746eff8816b895f86d13bf78d9165d06dd23b862e3b9c653b2c2ef5">Nitrogen Login</a>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td >
+                <a target="tipster" href="http://tipsterarea.com/matches/">Tipsters</a>
+            </td>
+        </tr>
+        <tr>
+            <td><input style="margin-top: 20px;" type="text" id="pwd" value="Negortin#5"/></td>
+            
+            <td><button style="margin-top: 20px;" data-copytarget="#pwd">copy</button></td>
+
+        </tr>
+        <tr>
+            <td><input style= "margin-top: 20px;font-size: 24px;" type="number" id="myNumber" value=""></td>
+            
+            <td><button style="margin-top: 20px;" onclick="CalcBTC()">Calc Perc</button></td>
+            <td><span style="margin-top: 20px; margin-left: 15px;" id="btc">&nbsp;AAAAAA</span></td>
+        </tr>
+    </table>
+
+
+    <div>
+        <span style="margin-top: 35px;" class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/russia-premier-league">Russia</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/poland-ekstraklasa">Poland</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/israel-premier-league">Israel</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/hungary-nb-1">Hungary</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/greece-super-league">Greece</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/austria-bundesliga">Austria</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/netherlands-eredivisie">Netherlands</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/brazil-serie-a">Brazil</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/usa-major-league-soccer">USA</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/argentina-primera-division">Argentina</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/mexico-primera-division">Mexico</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/portugal-primeira-liga">Portugal</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/england-premier-league">Engalnd</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/france-ligue-1">France</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/spain-la-liga">Spain</a></span>
+        <span class="league"><a target="nitro" href="https://nitrogensports.eu/sport/soccer/italy-serie-a">Italy</a></span>
+    </div>
+
+
+
+
+        <script>
+
+            (function () {
+
+                'use strict';
+
+                // click events
+                document.body.addEventListener('click', copy, true);
+
+                // event handler
+                function copy(e) {
+
+                    // find target element
+                    var
+                      t = e.target,
+                      c = t.dataset.copytarget,
+                      inp = (c ? document.querySelector(c) : null);
+
+                    // is element selectable?
+                    if (inp && inp.select) {
+
+                        // select text
+                        inp.select();
+
+                        try {
+                            // copy text
+                            document.execCommand('copy');
+                            inp.blur();
+
+                            // copied animation
+                            t.classList.add('copied');
+                            setTimeout(function () { t.classList.remove('copied'); }, 1500);
+                        }
+                        catch (err) {
+                            alert('please press Ctrl/Cmd+C to copy');
+                        }
+
+                    }
+
+                }
+
+            })();
+
+
+
+            function CalcBTC() {
+                var x = document.getElementById("myNumber").value;
+                var btc = 1 / x * 0.001;
+                document.getElementById("btc").innerHTML = parseFloat(btc.toFixed(8));
+            }
+
+
+        </script>
+
+
+</body>
+</html>
