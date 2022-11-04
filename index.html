@@ -26,12 +26,15 @@
   flex-direction: row;
   /* flex-basis: 100%;  flex-basis overrides the equal heights*/
 }
+#menu > .row:hover{background-color:orange;}
+
+#menu > .row:focus{background-color:red;}
 }
 </style>
 </head>
 <body>
 <div class="row">
-<div class="column" style="flex:1;">
+<div id="menu" class="column" style="flex:1;">
 <div class="row" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
 <div class="row" onclick="myFunction('js/news.js')">NewsTv</div>
 <div class="row" onclick="myFunction('js/blogs.js')">Blogs</div>
