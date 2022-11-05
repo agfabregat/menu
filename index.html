@@ -10,6 +10,11 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 	*{font-family: Verdana, Arial, Tahoma, Serif;}
+	hr {
+    display: none;
+}
+
+	
 .column {
   display: flex;
   flex-direction: column;
@@ -36,7 +41,7 @@
 </head>
 <body>
 <div class="row">
-<div id="menu" class="column" style="flex:1;margin-right:3px; background:lightgray">
+<div id="menu" class="column" style="flex:1;margin-right:3px; ">
 <div class="row" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
 <div class="row" onclick="myFunction('js/news.js')">NewsTv</div>
 <div class="row" onclick="myFunction('js/blogs.js')">Blogs</div>
@@ -109,6 +114,7 @@ async function updateScreen(jsonData){
 		let t = i.title;
 		let h = i.href;
 		sb.append(`<div class="row"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
+		sb.append('</hr>');
 		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
 	}
 	let content = document.getElementById("content");
