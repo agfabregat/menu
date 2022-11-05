@@ -30,13 +30,13 @@
 
 #menu > .row:hover{background-color:orange;}
 
-#menu > .row:active{background-color:red;}
+#menu > .row:focus{background-color:red;}
 }
 </style>
 </head>
 <body>
 <div class="row">
-<div id="menu" class="column" style="flex:1;margin-right:3px;">
+<div id="menu" class="column" style="flex:1;margin-right:3px; background:lightgray">
 <div class="row" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
 <div class="row" onclick="myFunction('js/news.js')">NewsTv</div>
 <div class="row" onclick="myFunction('js/blogs.js')">Blogs</div>
