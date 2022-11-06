@@ -42,15 +42,15 @@
 <body>
 <div class="row">
 <div id="menu" class="column" style="flex:1;margin-right:3px; ">
-<div class="row" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
-<div class="row" onclick="myFunction('js/news.js')">NewsTv</div>
-<div class="row" onclick="myFunction('js/blogs.js')">Blogs</div>
-<div class="row" onclick="myFunction('js/prototypes.js')">Prototypes</div>
-<div class="row" onclick="myFunction('js/Papers.js')">Papers</div>
-<div class="row" onclick="myFunction('js/PCMags.js')">PCMags</div>
-<div class="row" onclick="myFunction('js/radioTv.js')">RadioTv</div>
-<div class="row" onclick="myFunction('js/tools.js')">Tools</div>
-<div class="row" onclick="myFunction('js/static.js')">Static</div>
+<div class="row" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div><hr>
+<div class="row" onclick="myFunction('js/news.js')">NewsTv</div><hr>
+<div class="row" onclick="myFunction('js/blogs.js')">Blogs</div><hr>
+<div class="row" onclick="myFunction('js/prototypes.js')">Prototypes</div><hr>
+<div class="row" onclick="myFunction('js/Papers.js')">Papers</div><hr>
+<div class="row" onclick="myFunction('js/PCMags.js')">PCMags</div><hr>
+<div class="row" onclick="myFunction('js/radioTv.js')">RadioTv</div><hr>
+<div class="row" onclick="myFunction('js/tools.js')">Tools</div><hr>
+<div class="row" onclick="myFunction('js/static.js')">Static</div><hr>
 </div>
 
 <div class="column" style="flex:3;" id="content"></div>
@@ -114,7 +114,7 @@ async function updateScreen(jsonData){
 		let t = i.title;
 		let h = i.href;
 		sb.append(`<div class="row"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
-		sb.append('</hr>');
+		sb.append('<hr>');
 		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
 	}
 	let content = document.getElementById("content");
