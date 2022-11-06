@@ -90,7 +90,10 @@ function StringBuilder(value) {
 <script>
 let selectedElem = {};
 async function myFunction(url){
-selectedElem.classList.remove('active');
+if (typeof(selectedElem) != 'undefined' && selectedElem != null)
+{
+	selectedElem.classList.remove('active');
+}
 selectedElem = this;
 selectedElem.classList.add('active');
 const jsonData = await fetch(url, {
