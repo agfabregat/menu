@@ -11,9 +11,8 @@
 <style>
 	*{font-family: Verdana, Arial, Tahoma, Serif;}
 	
-hr {
-    border-top: 1px solid gray;
-    width: 100%;
+.active{
+background-color:red;
 }
 
 	
@@ -32,19 +31,19 @@ hr {
   flex: 1;
   flex-direction: row;
   /* flex-basis: 100%;  flex-basis overrides the equal heights*/
-  line-height:1.75;
+  line-height:2.0;
 }
 .irow{
   display: flex;
   flex: 1;
   flex-direction: row;
   /* flex-basis: 100%;  flex-basis overrides the equal heights*/
-  line-height:1.5;
+  line-height:1.75;
 }
 
-#menu > .row:hover{background-color:orange;}
+#menu > .mrow:hover{background-color:orange;}
 
-#menu > .row:focus{background-color:red;}
+#menu > .mrow:focus{background-color:red;}
 }
 </style>
 </head>
@@ -89,8 +88,11 @@ function StringBuilder(value) {
 
 
 <script>
-
+let selectedElem = null;
 async function myFunction(url){
+selectedElem.classList.remove('active');
+selectedElem = this;
+selectedElem.classList.add('active');
 const jsonData = await fetch(url, {
   headers: {
     'Accept': 'application/json',
