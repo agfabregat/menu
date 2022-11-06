@@ -1,0 +1,144 @@
+[
+{"href":"http://www.scorespro.com/","title":"Results&Fixture"},
+
+
+{"href":"http://rebelbetting.com/","title":"RebelBet"},
+{"href":"http://www.sportsoptions.com/products.html","title":"SportsOptions"},
+
+{"href":"http://www.osga.com/Books_list.htm#a","title":"OffShore Gaming Assoc."},
+{"href":"http://www.sportsarbitrageworld.com/bookmakers/index.htm","title":"ArbWorld Reviews"},
+{"href":"http://www.sportsbookreview.com/best-sportsbooks/","title":"SBR Reviews"},
+{"href":"http://www.goonersguide.com/betvictor-bookmaker-review.html","title":"Gooners Guide"},
+{"href":"http://online.casinocity.com/sportsbooks/","title":"Jurisdictions etc."},
+{"href":"http://www.top100bookmakers.com/","title":"Top100 books"},
+
+{"href":"http://odds.betfinder.co.uk/","title":"BetFinderUK"},
+{"href":"http://www.oddscomparisons.com/","title":"OddsComparison"},
+{"href":"http://www.goodbookmakerreviews.com/","title":"GoodBookmakerReviews"},
+
+{"href":"http://www.bestfightodds.com/","title":"BestFightOdds"},
+{"href":"https://smarkets.com/","title":"SMarkets"},
+{"href":"http://www.nowgoal.com/","title":"NowGoal"},
+{"href":"http://www.oddschecker.com/","title":"OddsChecker"},
+{"href":"http://www.livebestodds.com/","title":"LiveBestOdds"},
+{"href":"http://www.arbworld.net/","title":"ArbWorld"},
+{"href":"http://www.soccervista.com/","title":"SoccerVista RESULTS"},
+{"href":"http://www.embetted.com/","title":"Embetter widget"},
+{"href":"http://www.arbedia.com/","title":"Arbedia"},
+{"href":"http://txodds.com/oddcomp/","title":"TX Odds"},
+{"href":"http://www.oddsportal.com/","title":"OddsPortal"},
+{"href":"http://www.betbase.info/","title":"BetBase"},
+{"href":"http://www.checkyourodds.co.uk/","title":"CheckYourOdds"},
+{"href":"http://www.betbrain.com/","title":"BetBrain"},
+{"href":"http://www.betsquare.com/sport/index.html","title":"BetSquare"},
+{"href":"http://www.betexplorer.com/","title":"BetExplorer RESULTS"},
+{"href":"http://www.online-betting.me.uk/","title":"OnlinBetting"},
+{"href":"http://www.olbg.com/bookmakers.php","title":"OLBG"},
+{"href":"http://www.soccer4money.com/#","title":"Soccer4Money"},
+{"href":"http://www.bettingarbitrage.eu/sports-betting.html","title":"BettingArbitrage"},
+{"href":"http://codinginmysleep.com/","title":"CodingInMySleep"},
+{"href":"http://wizardofodds.com/","title":"WizardOfOdds"},
+{"href":"http://www.math.cornell.edu/~numb3rs/","title":"Numb3ers (Cornell)"},
+{"href":"http://www.sportsarbitrageguide.com/","title":"SportsArbitrageGuide"},
+{"href":"http://www.arbets.com/","title":"Arbets"},
+{"href":"http://www.sportsuntapped.com/","title":"SportsUntapped"},
+{"href":"http://www.therxforum.com/showthread.php?t=298923","title":"RxForum"},
+{"href":"http://surewins.net/bookmakers.html","title":"SureWins"},
+{"href":"http://www.freebets.com/","title":"FreeBets"},
+
+{"href":"http://www.betdsi.eu/sportsbook-betting/","title":"BetDSI (Diamond SportBook)"},
+{"href":"http://www.bookmaker.eu/sportsbook.aspx","title":"Bookmaker (Costa Rica & Kahnawake Canada"},
+{"href":"http://www.betcris.com/sportsbook.aspx","title":"BetCRIS (Costa Rica)"},
+
+{"href":"http://sports.bovada.lv/sports-betting/soccer-argentina-primera.jsp","title":"Bovada (Itertops same as Bovada)"},
+
+{"href":"http://sports.williamhill.com/bet/en-ca/betting/y/5/Soccer.html","title":"William Hill (Gibraltar)"},
+
+{"href":"http://www.marathonbet.com/en/betting/Football/","title":"Marathon (Curacao, Netherlads Antilles & Channel Is.)"},
+
+{"href":"http://www.pinnaclesports.com/","title":"Pinnacle (Curacao, Netherlads Antilles & Channel Is.)"},
+
+{"href":"http://www.betlegends.eu/sportsbook/","title":"Legends (Panama)"},
+
+{"href":"http://justbet.cx/sportsbook/soccer-odds/","title":"JustBet (Costa Rica) (US Friendly)(same as ucabet)"},
+{"href":"http://www.5dimes.eu/livelines/livelines.aspx","title":"5Dimes (Costa Rica)"},
+{"href":"http://topbet.eu/sportsbook/#fm","title":"TopBet (Netherlands Antilles) (US Friendly)"},
+{"href":"http://ucabet.co/sportbooks","title":"Ucabet (Costa Rica) (US Friendly)(same as justbet)"},
+{"href":"http://www.carbonsports.ag/livesports/indexmember.php","title":"CarbonSports (Antigua) (US Friendly)"},
+
+{"href":"https://www.unibet.co.uk/betting","title":"Unibet (Gibraltar) (No US)"},
+{"href":"http://www.888sport.com/bet","title":"888 (Gibraltar) (No US)"},
+{"href":"http://sports.betfair.com/football","title":"Betfair (Gibraltar & Malta)"},
+
+{"href":"https://mobile.bet365.com/sport/splash/Default.aspx","title":"Bet365 (Gibraltar) (text based)
+{"href":"http://www.bet365.com/home/FlashGen4/WebConsoleApp.asp?lng=1&cb=10881525945","title":"Bet365 (Gibraltar) (flash)"},
+{"href":"https://www.bwin.com/football","title":"Bwin (Gibraltar)(tunnel) (No US)"},
+{"href":"https://m.gamebookers.com/en/sports/main/4","title":"Bwin (Gibraltar)(mobile text)"},
+
+
+{"href":"http://www.sportsbook.ag/livesports/indexmember.php?sportsname=soccer","title":"Sportbook.ag"},
+{"href":"http://www.betonline.ag/sportsbook#","title":"BetOnline.ag (Panama) (US Friendly)"},
+{"href":"http://www.betonline.com/sportsbook#","title":"BetOnline.com (Panama)(US Friendly)"},
+{"href":"http://www.sportsbetting.ag/sportsbook","title":"Sportsbetting ag"},
+
+{"href":"http://lines.vietbet.eu/livelines/livelines.aspx","title":"VietBet (same as 5Dimes)"},
+{"href":"http://chinesebookie.eu/Sportsbook/LiveLines.aspx","title":"Chinese Bookie (same as 5Dimes when click -live lines-"},
+{"href":"http://www.islandcasino.com/LiveLines/lines.aspx","title":"Island (Costa Rica)"},
+{"href":"http://www.sportbet.com/LiveLines/lines.aspx","title":"SportBet"},
+{"href":"http://www.betanysports.eu/site/","title":"BetAnySports"},
+{"href":"http://www.bombaybets.eu/site/","title":"Bombay (variation of betanysports)(no way to get to live odds)"},
+{"href":"http://www.nicabet.eu/Sportsbook/LiveLines.aspx","title":"Nicabet"},
+
+{"href":"http://www.heritagesports.eu/index.asp","title":"The Heritage (Costa Rica) same as Horizon (US Friendly)"},
+{"href":"http://www.horizonsports.es/LiveLines.aspx?lg=1246","title":"Horizon (Costa Rica) same as Heritage (live lines) (US Friendly)"},
+
+{"href":"http://www.sportsinteraction.com/","title":"SportsInteraction (Kanhawake/Quebec) (No US)"},
+{"href":"http://sports.ladbrokes.com/en-gb/","title":"Ladbrokes (Gibraltar)"},
+{"href":"http://beta.betfair.com/","title":"Betfair"},
+{"href":"http://www.youwager.eu/sportsbook/betting-lines?sport=soccer&league=soccer","title":"YouWager (Costa Rica) (US Friendly)"},
+{"href":"http://www.sbgglobal.eu/sportsbook/sports-betting-live-lines","title":"SBG Global (Costa Rica) (US Friendly)"},
+{"href":"http://www.canbet.com/sport/soccer-football-betting.aspx","title":"CanBet (UK) (No US)"},
+{"href":"http://www.betrevolution.com/sportsbook/soccer/sports-betting-odds.aspx","title":"BetRevolution (Antigua) (US Friendly)"},
+{"href":"http://betmania.ag/sportsbook/sportsLines.html","title":"Betmania (Costa Rica) (No US)"},
+{"href":"http://www.sportingbet.com/sports-football/0-102-410.html","title":"SportingBet (Channel Is. & Malta) (No US)"},
+{"href":"https://www.tipico.com/en/online-sports-betting/soccer/g1101/","title":"Tipico (Malta) (No US)"},
+{"href":"http://www.intertops.eu/sportsbook/cgi-win-2/itwww.exe","title":"Intertops (Antigua & Kahnawake/Quebec) (US Friendly)"},
+{"href":"https://www.partybets.com/en/sports#sportId=4","title":"PartyBets (Gibraltar) same as Bwin but text (US Friendly)"},
+{"href":"http://sports.titanbet.com/en/football","title":"TitanBet (Barbuda & Mohawk Territory) (No US)"},
+{"href":"http://sports.sbobet.com/default.aspx?p=sport","title":"SboBet (Phillipines & Isle of Man)"},
+
+{"href":"https://www.nordicbet.com/eng/sportsbook#_50000000001","title":"NordicBet (Malta) (US Friendly)"},
+{"href":"https://www.triobet.com/eng/selection","title":"TrioBet (Malta)(US Friendly)"},
+
+
+{"href":"https://en.betboo.com/sports/","title":"Betboo (Netherlands Antilles) (No US)"},
+{"href":"https://www.luxbet.com/","title":"LuxBet (Australia) (No US)"},
+{"href":"http://centrebet.com/?btag=2546-5880-4065-/","title":"CentreBet (Australia)"},
+{"href":"https://www.interwetten.com/en/sportsbook/Default.aspx","title":"Interwetten (Malta) (No US)"},
+{"href":"https://sports.gamebookers.com/en/sports","title":"Gamebookers (Gibraltar) same as Bwin (No US)"},
+{"href":"http://www.betvictor.com/sports/en","title":"BetVictor (Gibraltar) (No US)"},
+{"href":"http://www.paddypower.com/football","title":"PaddyPower (Isle of Man) (No US)"},
+{"href":"http://www.stanjames.com/betting/?gi=1&sID=4103.2","title":"StanJames (Gibraltar) (No US)"},
+{"href":"https://www.betsson.com/web/en/sportsbook/","title":"Betsson (Malta) (No US)"},
+{"href":"https://odds.betsafe.com/en/","title":"BetSafe (Malta) (No US)"},
+{"href":"http://www.thegreek.com/sports/home.asp","title":"The Greek (Jamaica) (No US)"},
+{"href":"http://www.betfred.com/sport","title":"Betfred (Gibraltar) (No US)"},
+{"href":"http://www.totesport.com/portal?action=GoSportsOdds&tab=SP","title":"Totesport"},
+
+
+{"href":"https://www.comeon.com/sports/","title":"ComeOn! (Malta) (No US)"},
+{"href":"http://www.10bet.com/sports/soccer/","title":"10Bet (Curacao & UK) (No US)"},
+{"href":"https://www.betgun.com/en/index.php?ref_id=21800","title":"BetGun (Costa Rica) (US Friendly)"},
+{"href":"http://www.wagerweb.com/sportsbook/betting-odds","title":"WagerWeb (Costa Rica) (US Friendly)"},
+{"href":"http://www.livescore.bet3000.com/?/bet3000/en/page","title":"Bet300 (Malta) (No US)"},
+{"href":"http://www.expekt.com/en/","title":"Expekt (Gibraltar) (No US)"},
+{"href":"http://www.bet-at-home.com/start.aspx","title":"BetAtHome (Malta) (No US)"},
+{"href":"http://www.bet-at-home.com/start.aspx","title":"BetInternet (Is. of Man) (No US)"},
+{"href":"http://www.boylesports.com/Betting#13555392650461&init;nM+liSqPrwJiZ569h6Kru/FSH4YjQY43+pqessOtYq4=","title":"Bolesports (Is. of Man) (No US)"},
+{"href":"http://en.offsidebet.com/","title":"OffsideBet (Curacao) (No US)"},
+{"href":"https://www.vierklee.com/index.php","title":"Vierklee (Austria) (No US)"},
+{"href":"http://www.leonbets.com/?wm=7201818","title":"LeonBets (Belize) (No US)"},
+{"href":"https://www.redbet.com/en/betting","title":"RedBet (Malta) (No US)"},
+{"href":"http://www9.globetlive12.com/GLOBET_SPORTSBOOK_HOST/Portal/Default.aspx?ln=en","title":"GlobeBet (UK) (No US)"},
+{"href":"http://www.betpro.it/portal/odds/index.jsp","title":"BetPro.it (Camaiore IT) (No US)"}
+]
