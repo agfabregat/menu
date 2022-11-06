@@ -50,15 +50,15 @@ background-color:red;
 <body>
 <div class="mrow">
 <div id="menu" class="column" style="flex:1;margin-right:3px; ">
-<div class="mrow" onclick="myFunction('js/uruguayLinks.js')">UruguayTv</div>
-<div class="mrow" onclick="myFunction('js/news.js')">NewsTv</div>
-<div class="mrow" onclick="myFunction('js/blogs.js')">Blogs</div>
-<div class="mrow" onclick="myFunction('js/prototypes.js')">Prototypes</div>
-<div class="mrow" onclick="myFunction('js/Papers.js')">Papers</div>
-<div class="mrow" onclick="myFunction('js/PCMags.js')">PCMags</div>
-<div class="mrow" onclick="myFunction('js/radioTv.js')">RadioTv</div>
-<div class="mrow" onclick="myFunction('js/tools.js')">Tools</div>
-<div class="mrow" onclick="myFunction('js/static.js')">Static</div>
+<div class="mrow" onclick="myFunction(this, 'js/uruguayLinks.js')">UruguayTv</div>
+<div class="mrow" onclick="myFunction(this, 'js/news.js')">NewsTv</div>
+<div class="mrow" onclick="myFunction(this, 'js/blogs.js')">Blogs</div>
+<div class="mrow" onclick="myFunction(this, 'js/prototypes.js')">Prototypes</div>
+<div class="mrow" onclick="myFunction(this, 'js/Papers.js')">Papers</div>
+<div class="mrow" onclick="myFunction(this, 'js/PCMags.js')">PCMags</div>
+<div class="mrow" onclick="myFunction(this, 'js/radioTv.js')">RadioTv</div>
+<div class="mrow" onclick="myFunction(this, 'js/tools.js')">Tools</div>
+<div class="mrow" onclick="myFunction(this, 'js/static.js')">Static</div>
 </div>
 
 <div class="column" style="flex:3;" id="content"></div>
@@ -89,12 +89,12 @@ function StringBuilder(value) {
 
 <script>
 let selectedElem = {};
-async function myFunction(url){
+async function myFunction(el, url){
 if (typeof(selectedElem.classList) != 'undefined' && selectedElem.classList != null)
 {
 	selectedElem.classList.remove('active');
 }
-selectedElem = this;
+selectedElem = el;
 selectedElem.classList.add('active');
 const jsonData = await fetch(url, {
   headers: {
