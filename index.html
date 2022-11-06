@@ -10,8 +10,10 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 	*{font-family: Verdana, Arial, Tahoma, Serif;}
-	hr {
-    border-top: 1px solid red;
+	
+hr {
+    border-top: 1px solid gray;
+    width: 100%;
 }
 
 	
@@ -114,7 +116,7 @@ async function updateScreen(jsonData){
 		let t = i.title;
 		let h = i.href;
 		sb.append(`<div class="row"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
-		sb.append('<hr>');
+		//sb.append('<hr>');
 		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
 	}
 	let content = document.getElementById("content");
