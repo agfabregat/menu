@@ -90,7 +90,7 @@ function StringBuilder(value) {
 <script>
 let selectedElem = {};
 async function myFunction(url){
-if (typeof(selectedElem) != 'undefined' && selectedElem != null)
+if (typeof(selectedElem.classList) != 'undefined' && selectedElem.classList != null)
 {
 	selectedElem.classList.remove('active');
 }
