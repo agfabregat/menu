@@ -70,7 +70,7 @@
 {"href":"http://www.888sport.com/bet","title":"888 (Gibraltar) (No US)"},
 {"href":"http://sports.betfair.com/football","title":"Betfair (Gibraltar & Malta)"},
 
-{"href":"https://mobile.bet365.com/sport/splash/Default.aspx","title":"Bet365 (Gibraltar) (text based)
+{"href":"https://mobile.bet365.com/sport/splash/Default.aspx","title":"Bet365 (Gibraltar) (text based)"},
 {"href":"http://www.bet365.com/home/FlashGen4/WebConsoleApp.asp?lng=1&cb=10881525945","title":"Bet365 (Gibraltar) (flash)"},
 {"href":"https://www.bwin.com/football","title":"Bwin (Gibraltar)(tunnel) (No US)"},
 {"href":"https://m.gamebookers.com/en/sports/main/4","title":"Bwin (Gibraltar)(mobile text)"},
