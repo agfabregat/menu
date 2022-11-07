@@ -3,6 +3,10 @@
 {"href":"https://playarea.azurewebsites.net/papers.html","title":"Morning Papers"},
 {"href":"https://www.dailymail.co.uk/ushome/index.html","title":"Daily Mail US"},
 {"href":"https://www.the-sun.com/entertainment/","title":"The Sun Entertainment"},
+{"href":"https://binance.us/en/trade/pro/XNO_USD","title":"XNO USD"},
+{"href":"https://binance.us/en/trade/pro/ATOM_USD","title":"ATOM USD"},
+{"href":"https://binance.us/en/trade/pro/SOL_USD","title":"SOL USD"},
+{"href":"https://binance.us/en/trade/pro/BNB_USD","title":"BNB USD"},
 
 {"href":"https://1equals1.club","title":"Queries"},
 {"href":"https://agfservicecorsproxy20220326232156.azurewebsites.net/htmlget.html","title":"HtmlGet"},
@@ -15,7 +19,7 @@
 {"href":"https://popminute.com/tv-tonight/","title":"TV Primetime"},
 
 {"href":"https://noises.online/player.php?g=ha5","title":"MyNoise"},
-{"href":"https://binance.us/en/trade/pro/XNO_USD","title":"XNO USD"},
+
 {"href":"http://agfabregat-001-site2.atempurl.com","title":"DNS test"},
 
 
@@ -31,14 +35,6 @@
 
 {"href":"https://news.usni.org/","title":"US Naval Inst."},
 {"href":"https://nationalinterest.org/","title":"National Interest"},
-{"href":"https://www.strategypage.com/default.aspx","title":"Strategy Page"},
-{"href":"Nitrogen.html","title":"Nitrogen"},
-
-{"href":"http://oddsapi.azurewebsites.net/odds.html","title":"Odds"},
-{"href":"http://zjx.azurewebsites.net/zjx.html","title":"ZJX"},
-{"href":"MobileScreen.html","title":"Mobile Screen"},
-{"href":"ScreenWidths.html","title":"ScreenWidths"},
-{"href":"LineOriginators.html","title":"Line Originators"},
-{"href":"STICKYHEADERSFOOTERS.html","title":"StickyHeadersFooters"}
+{"href":"https://www.strategypage.com/default.aspx","title":"Strategy Page"}
 
 ]
