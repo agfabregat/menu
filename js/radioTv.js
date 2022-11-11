@@ -7,7 +7,6 @@
 
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
 
-{"href":"","title":""},
 
 {"href":"https://podcasts.google.com/search/no%20agenda","title":"No Agenda"},
 {"href":"https://podcasts.google.com/search/mark%20simone","title":"Mark Simone"},
