@@ -20,8 +20,7 @@
 {"href":"https://www.ebay.com/itm/254688120635","title":"S20 Ebay"},
 
 {"href":"https://www.ebay.com/itm/225022649272","title":"S20 Ebay"},
-{"href":"https://www.amazon.com/Battery-Unlocked-AMOLED-Display-Camera/dp/B0B3B8VY4D?&linkCode=sl1&tag=blucellphones-20&linkId=712368dfe18b9c90969569e954d45231&language=en_US&ref_=as_li_ss_tl
-","title":"BluN2 Amazon"}
+{"href":"https://www.amazon.com/Battery-Unlocked-AMOLED-Display-Camera/dp/B0B3B8VY4D?&linkCode=sl1&tag=blucellphones-20&linkId=712368dfe18b9c90969569e954d45231&language=en_US&ref_=as_li_ss_tl","title":"BluN2 Amazon"}
 
 
 ]
