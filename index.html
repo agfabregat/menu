@@ -129,8 +129,8 @@ async function getJson(url){
 
 <script>
 let r=0;
-let r0=".r0";
-let r1=".r1";
+let r0="r0";
+let r1="r1";
 
 async function updateScreen(jsonData){
 	let sb = new StringBuilder();
@@ -140,7 +140,7 @@ async function updateScreen(jsonData){
 		let t = i.title;
 		let h = i.href;
 		let color = r % 2 == 0 ? r0 : r1;
-		sb.append(`<div class=\"irow "${color}"\"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
+		sb.append(`<div class="irow ${color}"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
 		r++;
 		//sb.append('<hr>');
 		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
