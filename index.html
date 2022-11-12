@@ -134,17 +134,18 @@ let r1="r1";
 
 async function updateScreen(jsonData){
 	let sb = new StringBuilder();
-	r=!r;
+	let rx =r;
 	for (let i of await jsonData.json()) 
 	{ 
 		let t = i.title;
 		let h = i.href;
-		let color = r % 2 == 0 ? r0 : r1;
+		let color = rx % 2 == 0 ? r0 : r1;
 		sb.append(`<div class="irow ${color}"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
-		r++;
+		rx++;
 		//sb.append('<hr>');
 		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
-	}
+	
+	r = !r;
 	let content = document.getElementById("content");
 	content.innerHTML=sb.toString(); 
 	sb.clear();
