@@ -4,8 +4,6 @@
 
 {"href":"https://www.amazon.com/Samsung-Galaxy-S20-5G-Cosmic/dp/B08B8Y5R4Y/ref=sr_1_3?adgrpid=1338106293166487&hvadid=83631961466878&hvbmt=bp&hvdev=c&hvlocphy=80127&hvnetw=o&hvqmt=p&hvtargid=kwd-83632051969727%3Aloc-190&hydadcr=14907_13423935&keywords=samson+galaxy+s20&qid=1668107297&sr=8-3","title":"S20 Amazon"},
 
-{"href":"https://www.amazon.com/Samsung-Galaxy-S20-5G-Cosmic/dp/B08B8Y5R4Y/ref=sr_1_4?adgrpid=1342504269271595&hvadid=83906731256880&hvbmt=be&hvdev=c&hvlocphy=80962&hvnetw=o&hvqmt=e&hvtargid=kwd-83906878661861%3Aloc-190&hydadcr=7502_13183129&keywords=sm-g981u&qid=1668181602&sr=8-4","title":"S20 Amazon"},
-
 {"href":
 "https://www.dhgate.com/product/refurbished-original-samsung-galaxy-s20-g781u/712651238.html?f=bm|GDN|Dyn|18628599031|139812864702|628790807259|||200560|www.youtube.com|c|2|&gclid=Cj0KCQiA37KbBhDgARIsAIzce15owK5hy2sYiXdLK9AXCcSPiWdonHvcC5pSGHQZQpspnw1wuyC3MOYaArZAEALw_wcB&skuid=961835166149476392","title":"S20 DHGate"},
 

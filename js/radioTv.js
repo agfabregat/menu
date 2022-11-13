@@ -129,27 +129,20 @@
 {"href":"http://okteve.com/categories/","title":"OkTeve"},
 {"href":"https://wwitv.com/portal.htm","title":"WWitv"},
 {"href":"http://oklivetv.com/","title":"OkLiveTv"},
-{"href":"http://freetvall.live/","title":"FreeTvAll"},
-{"href":"http://livetvcafe.me/","title":"LiveTvCafe"},
+
+
 {"href":"http://www.freeintertv.com/view/id-2566","title":"Free internet TV"},
 {"href":"http://ufreetv.com/","title":"UFreeTV"},
 {"href":"http://ustv247.com/","title":"UStv 247"},
-{"href":"http://ustvgo.com/","title":"UStv Go"},
 {"href":"http://watchnewslive.tv/","title":"WatchNewsLive"},
 {"href":"https://wwitv.com/portal.htm","title":"WWItv"},
-{"href":"https://tklist.us/channels/","title":"Tklist"},
-{"href":"http://sports24.club/tv/","title":"Sports24"},
 
 
 {"href":"http://livetvmania.net/","title":"Live TV Mania"},
 {"href":"http://www.livenewsmag.com/","title":"Livenews Channel(s)"},
 {"href":"https://www.livenewson.com/united-kingdom/sky-news-hd.html","title":"LivenewsOn"},
-{"href":"http://www.zahistationtv.com/","title":"Zahistation tv"},
-
  
-{"href":"http://www.mclaughlin.com/","title":"McLaughlinGr"}, 
 {"href":"http://freshair.npr.org/","title":"FreshAir"},
-{"href":"http://www.thislife.org/","title":"ThisAmerLife"},
-{"href":"http://www.theconnection.org/shows/","title":"TheConnection"}, 
-{"href":"http://fora.tv/","title":"Fora.Tv"}
+{"href":"http://www.thislife.org/","title":"ThisAmerLife"}
+
 ]
