@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ARBS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    /*
+        @font-face {
+            font-family: 'Hangyaku';
+            src: url('/fonts/Hangyaku/Hangyaku.ttf.woff') format('woff'), url('/fonts/Hangyaku/Hangyaku.ttf.svg#Hangyaku') format('svg'), url('/fonts/Hangyaku/Hangyaku.ttf.eot'), url('/fonts/Hangyaku/Hangyaku.ttf.eot?#iefix') format('embedded-opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        */
+        :root {
+            --blue: #1e90ff;
+            --white: #ffffff;
+            --britishRacingGreen: #004225;
+            --amber: #ffbf00;
+            --margin5:3px;
+            --int: 1.2;
+            --scale0: 1rem;
+            --scale_1: calc(var(--scale0) / var(--int));
+            --scale_2: calc(var(--scale_1) / var(--int));
+            --scale1: calc(var(--scale0) * var(--int));
+            --scale2: calc(var(--scale1) * var(--int));
+            --scale3: calc(var(--scale2) * var(--int));
+        }
+        @media (min-width: 10em) {
+            :root {
+                --int: 0.95
+            }
+        }
+        @media (min-width: 20em) {
+            :root {
+                --int: 1.0
+            }
+        }
+        @media (min-width: 30em) {
+            :root {
+                --int: 1.1
+            }
+        }
+        @media (min-width: 40em) {
+            :root {
+                --int: 1.2
+            }
+        }
+
+        @media (min-width: 50em) {
+            :root {
+                --int: 1.3
+            }
+        }
+
+        @media (min-width: 60em) {
+            :root {
+                --int: 1.4
+            }
+        }
+
+        
+        
+        * {
+            /*background: var(--britishRacingGreen)*/ /*!important;*/
+        }
+            
+        html {
+            /*font-family: 'Hangyaku';*/
+            font-size: var(--scale2);
+            color: var(--amber);
+            min-width:320px;
+            max-width:960px;
+        }
+        body {
+
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+              "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+
+           margin-top: 0px;
+           margin-bottom:0px;
+           margin-left:0px;
+           margin-right:0px;
+        }
+        
+        #cbox {
+            text-align: center;
+            font-size: var(--scale0);
+            margin:var(--margin5);
+        }
+            
+        #vars {
+            text-align: center;
+            margin-top:20px;      
+            padding-bottom:15px;
+        }
+        #odds {
+            color: var(--amber);
+            background-color:var(--britishRacingGreen);
+            font-size: var(--scale0);
+        }
+        #payoff {
+            color: var(--amber);
+            background-color: var(--britishRacingGreen);
+            font-size: var(--scale0);
+            float:right;
+            
+        }
+        #oddsType {
+            color: var(--amber);
+            background-color: var(--britishRacingGreen);
+            font-size: var(--scale0);
+        }
+        #base {
+            
+        }
+
+        #ranges {
+       
+        }
+        
+        hr{            
+            margin-bottom: 0px;
+            margin-top:0px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: stretch; /* will apply equal heights to flex items */
+            height: 100%;
+            text-align: right;
+            background-color: var(--britishRacingGreen);
+            /*padding-top:4px;*/
+        }
+
+        .cell1 {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+            
+        }
+        
+        .cell3 {
+            display: flex;
+            flex: 1.5;
+            flex-direction: column;
+            font-style:italic;
+            color:white;
+            /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+        }
+        .cell2 {
+            display: flex;
+            flex: 1.5;
+            flex-direction: column;
+            /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+        }
+
+        .cell1R {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+            color:red;
+        }
+        .cell2R {
+            display: flex;
+            flex: 1.5;
+            flex-direction: column;
+            /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+            color: red;
+        }
+        #head {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background-color: var(--britishRacingGreen);
+            padding-right:3px;
+            padding-bottom: 1px;
+        }
+        #topEmptyBuffer{
+           color:var(--britishRacingGreen);
+           font-size:8px;
+        }
+        #scroll {
+            padding-right:3px;
+        }
+        .op{
+            opacity:93%;
+            background-color:var(--britishRacingGreen);
+        }
+        .pd{
+            padding-right:3px;
+        }
+        #group{
+            margin-bottom:10px;
+            clear:both;
+
+        }
+        #headlabels{
+
+        }
+        #baseOdds {
+            font-size: var(--scale_2);
+            margin:var(--margin5);
+            float:left;
+        }
+        #targetPayoff {
+            font-size: var(--scale_2);
+            float:right;
+            margin:var(--margin5);
+        }
+        #chartRow {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: stretch; /* will apply equal heights to flex items */
+            height: 100%;
+            text-align: right;
+            background-color: var(--britishRacingGreen);
+            padding-top: 4px;
+        }
+        #chart_div {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="head">
+            <div id="topEmptyBuffer">e</div>
+            <div id="basePlayer" style="text-align: center;"><input type="text" id="playerName" spellcheck='false' size="25" onblur="SetTitle(this);" placeholder="base player name"></div>
+            <div id="headlabels">
+                <span id="baseOdds">BASE ODDS</span>
+                <span id="targetPayoff">TARGET PAYOFF</span>
+            </div>
+            <div id="group">
+                <span id="cbox">
+                    <select id="oddsType" name="oddsType">
+                        <option value="American" selected>American</option>
+                        <option value="Decimal">Decimal</option>
+                        <option value="Percentage">Percentage</option>
+                    </select>
+                </span>
+                <span id="vars">
+                    <input type="text" id="odds" size="5" onkeyup="processOdds(event)" placeholder="+175">
+                    <button onclick="addOne(1.0)">+</button>
+                    <button onclick="addOne(0.1)">.+</button>
+                    <button onclick="addOne(0.01)">.++</button>
+                    <input type="text" id="payoff" size="5" onkeyup="processOdds(event)" placeholder="130.00">
+                    <button onclick="addOne(-1.0)">-</button>
+                    <button onclick="addOne(-0.1)">.-</button>
+                    <button onclick="addOne(-0.01)">.--</button>
+                </span>
+            </div>
+
+            <div id='base'>
+
+            </div>
+
+        </div>
+        <div id="scroll">
+
+            <div id='ranges'>
+            </div>
+        </div>
+        <!--<div id="chartRow">
+            <div id="chart_div"></div>
+        </div>-->
+    </div>
+
+<!--
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        function drawChart(data) {
+
+            //var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            var options = {
+                title: 'ARBS',
+                hAxis: { titleTextStyle: { color: '#333' } },
+                vAxis: { minValue: 0 }
+            };
+
+            chart.draw(data, options);
+        }
+
+        
+    </script>
+-->
+    <script>
+        class Odds {
+            constructor(name) {
+                this.name = name;
+                this.oddstbDouble;
+                this.payofftbDouble;
+                this.placeholder;
+                this.validateInputs;
+                this.american;
+                this.decimal;
+                this.percentage;
+                this.amtToBet;
+                this.profit;
+                this.ranges;
+            }
+
+            doIt(tbOdds, tbPayoff) {
+
+                if (this.validateInputs(tbOdds, tbPayoff)) {
+                    //console.log(`${this.name} doIt.`);
+                    this.toPercentage();
+                    if (this.percentage < 1.0) {
+                        this.toAmerican();
+                        this.toDecimal();
+                    }
+
+                    this.amtToBet = (this.percentage * this.payofftbDouble);
+                    this.profit = this.payofftbDouble - this.amtToBet;
+
+                }
+            }
+        }
+
+        class American extends Odds {
+            constructor(name) {
+                super(name); // call the super class constructor and pass in the name parameter
+                this.placeholder = +175;
+
+            }
+
+            validateInputs(tbOdds, tbPayoff) {
+                this.oddstbDouble = parseInt(tbOdds);
+                this.payofftbDouble = parseFloat(tbPayoff);
+                if ((this.oddstbDouble > 99) || (this.oddstbDouble < -99)) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            toAmerican() {
+                //console.log(`${this.name} toAmerican.`);
+                this.american = this.oddstbDouble;
+            }
+            toDecimal() {
+                //console.log(`${this.name} toDecimal.`);
+                let _decimalOdds;
+                if (this.oddstbDouble < 0) { //favorite
+                    _decimalOdds = 1 - (100.0 / this.oddstbDouble);
+
+                }
+                else {
+                    // positive odds - underdog
+                    _decimalOdds = (this.oddstbDouble / 100.0) + 1;
+
+                }
+                this.decimal = _decimalOdds;
+            }
+            toPercentage() {
+                //console.log(`${this.name} toPercent.`);
+                let _perc;
+                if (this.oddstbDouble < 0) { //favorite
+                    let _absOdds = this.oddstbDouble * -1;
+                    _perc = _absOdds / (_absOdds + 100);
+
+                }
+                else {
+                    // positive odds - underdog
+                    _perc = 100.0 / (this.oddstbDouble + 100.0);
+
+                }
+                this.percentage = _perc;
+            }
+        }
+
+        class Decimal extends Odds {
+            constructor(name) {
+                super(name); // call the super class constructor and pass in the name parameter
+                this.placeholder = '2.15';
+            }
+
+            validateInputs(tbOdds, tbPayoff) {
+                this.oddstbDouble = parseFloat(tbOdds);
+                this.payofftbDouble = parseFloat(tbPayoff);
+                if ((this.oddstbDouble > 1.0) && (this.oddstbDouble < 99.9)) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            toAmerican() {
+                //console.log(`${this.name} toAmerican.`);
+                let _amerOdds;
+                if (this.oddstbDouble >= 2.0) { // undergod
+                    _amerOdds = (this.oddstbDouble - 1) * 100.0;
+
+                }
+                else {
+                    // less than 2.0 means favorite
+                    _amerOdds = (-100) / (this.oddstbDouble - 1);
+
+                }
+                this.american = _amerOdds;
+            }
+            toDecimal() {
+                //console.log(`${this.name} toDecimal.`);
+                this.decimal = this.oddstbDouble;
+            }
+            toPercentage() {
+                //console.log(`${this.name} toPercent.`);
+                let _perc = 1 / (this.oddstbDouble);
+                this.percentage = _perc;
+            }
+        }
+
+        class Percentage extends Odds {
+            constructor(name) {
+                super(name); // call the super class constructor and pass in the name parameter
+                this.placeholder = '0.40';
+            }
+            validateInputs(tbOdds, tbPayoff) {
+                this.oddstbDouble = parseFloat(tbOdds);
+                this.payofftbDouble = parseFloat(tbPayoff);
+                if (this.oddstbDouble <= 1.0) {
+                    if (this.oddstbDouble == 1.0) {
+                        this.american = "Infinity";
+                        this.decimal = "Infinity";
+                    }
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            toAmerican() {
+                //console.log(`${this.name} toAmerican.`);
+                let _amerOdds = 0.0;
+                if (this.oddstbDouble < 0.5) { //underdog
+
+                    _amerOdds = ((1 - this.oddstbDouble) / this.oddstbDouble) * 100;
+
+                }
+                else {
+                    // favorite
+                    let percRange = 1 - this.oddstbDouble;
+                    if (percRange == 0.0) {
+
+                    }
+                    _amerOdds = ((this.oddstbDouble / (percRange)) * 100.0) * -1.0;
+                }
+                this.american = _amerOdds;
+            }
+            toDecimal() {
+                //console.log(`${this.name} toDecimal.`);
+                var _decimalOdds = 1 / this.oddstbDouble;
+                this.decimal = _decimalOdds;
+            }
+            toPercentage() {
+                //console.log(`${this.name} toPercent.`);
+                this.percentage = this.oddstbDouble;
+            }
+        }
+
+        var classes = {
+            American: American,
+            Decimal: Decimal,
+            Percentage: Percentage
+        };
+    </script>
+
+    
+
+
+    <script>
+        let oddsType;
+        let cb_oddsType;
+        let tb_odds;
+        let tb_payoff;
+        let baseOddsObj;
+        let rangesDiv;
+        let baseDiv;
+
+        (function () {
+            //we ready baby
+            tb_odds = document.getElementById("odds");
+            tb_payoff = document.getElementById("payoff");
+            rangesDiv = document.getElementById("ranges");
+            baseDiv = document.getElementById("base");
+            playerNameDiv = document.getElementById("playerName");
+
+            cb_oddsType = document.getElementById("oddsType");
+            cb_oddsType.onchange = function () { clearTextBoxes() };
+            clearTextBoxes();
+
+            //google.charts.load('current', { packages: ['corechart'] });
+            //google.charts.setOnLoadCallback(drawChart);
+
+        })();
+        
+        function SetTitle(elem){
+            document.title="arb:" + elem.value;
+        }
+        function clearTextBoxes() {
+            //alert("In Clear TextBoxes");
+            oddsType = cb_oddsType.options[cb_oddsType.selectedIndex].value;
+            baseOddsObj = new classes[oddsType](oddsType);
+            tb_odds.placeholder = baseOddsObj.placeholder;
+            tb_odds.value = tb_odds.placeholder;
+            tb_payoff.value = tb_payoff.placeholder;
+            rangesDiv.innerHTML = "";
+            baseDiv.innerHTML = "";
+
+        }
+        function checkForEnter(event) {
+            if (event.keyCode === 13) {
+                //console.log("Enter key pressed!!!!!");
+                clearTextBoxes();
+                processOdds();
+                
+            }
+        }
+        function processOdds() {
+            //alert("In ProcessOdds");
+
+            if (event.keyCode === 13) {
+                //console.log("Enter key pressed!!!!!");
+
+                rangesDiv.innerHTML = "";
+                baseDiv.innerHTML = "";
+
+                baseOddsObj.doIt(tb_odds.value, tb_payoff.value);
+
+                let alternatingRow = false;
+                baseDiv.innerHTML += "<hr />";
+                baseDiv.innerHTML += getRow(baseOddsObj, alternatingRow);
+                baseDiv.innerHTML += "<hr />";
+
+                ranges = getRanges(baseOddsObj.percentage, baseOddsObj.amtToBet, baseOddsObj.payofftbDouble);
+
+                
+
+                //let data = new google.visualization.DataTable();
+                // Add columns
+                //data.addColumn('number', 'PROFIT');
+                //data.addColumn('number', 'PERCENTAGE');
+
+                // Add empty rows
+                //data.addRows(ranges.length);
+                let i = ranges.length-1;
+                ranges.slice().reverse().forEach(item => {
+                    //console.log(item.profit.toFixed(2));
+                    //data.setCell(i, 0, item.profit);
+                    //data.setCell(i, 1, item.percentage);
+                    i--;
+                    alternatingRow = !alternatingRow;
+                    let row = getRow(item, alternatingRow);
+
+                    rangesDiv.innerHTML += row;
+                    
+                });
+
+
+
+                //drawChart(data);
+            }
+        }
+        var isNumber = function isNumber(value) {
+            return typeof value === 'number' && isFinite(value);
+        }
+        function getRow(item, alternatingRow) {
+
+            let american;
+            let sign = '';
+            if (!isNumber(item.american)) {
+                american = "&#x221e;"
+            }
+            else {
+                american = item.american.toFixed(0);
+                sign = item.american > 99.0 ? "+" : "";
+            }
+            let amerRow = `<div class="cell1">${sign}${american}</div>`;
+
+            let decimal = '';
+            if (isNumber(item.decimal)) {
+
+                decimal = item.decimal.toFixed(2);
+
+            }
+            let deciRow = `<div class="cell1">${decimal}</div>`;
+
+            let percentage = '1.0';
+            if (isNumber(item.percentage)) {
+                percentage = item.percentage.toFixed(4);
+                percentage = percentage.replace("0.", ".");
+            }
+            let percRow = `<div class="cell1">${percentage}</div>`;
+
+            let amtToBet = '';
+            if (isNumber(item.amtToBet)) {
+                amtToBet = item.amtToBet.toFixed(2);
+            }
+            let amtToBetRow = `<div class="cell3">${amtToBet}</div>`;
+
+            let profit = item.profit.toFixed(2);
+            let cellColor = item.profit > 0.0 ? "cell2" : "cell2R";
+            let profitRow = `<div class="${cellColor}">${profit}</div>`;
+
+            let cls = alternatingRow ? "row pd op" : "row pd";
+            //let row = `<div class='${cls}'>${percRow}${amerRow}${amtToBetRow}${deciRow}${profitRow}</div>`;
+            let row = `<div class='${cls}'>${percRow}${amerRow}${amtToBetRow}${profitRow}</div>`;
+            return row;
+        }
+
+        function getRanges(basePercentage, baseAmtToBet, payoff) {
+
+            let increment = 0.01; //0.005;
+            let range = (1.0); // - (basePercentage);
+            let ranges = [];
+            for (let i = 0.000; i < range; i += increment) {
+                let oRange = new Percentage("Percentage");
+
+                oRange.doIt(i, payoff);
+                let sumOfBets = oRange.amtToBet + baseAmtToBet;
+                let profit = payoff - sumOfBets;
+                oRange.profit = profit;
+                ranges.push(oRange);
+            }
+            ranges.push({ american: '&#x221e;', percentage: '1.0000', percent: '1.0000', amtToBet: '0.00', profit: baseAmtToBet * -1 })
+            return ranges;
+        }
+        
+        function addOne(fraction){
+            let payofftbDouble = parseFloat(tb_payoff.value);
+            payofftbDouble = payofftbDouble + fraction;
+            tb_payoff.value = payofftbDouble.toFixed(2);
+            event.keyCode = 13;
+            processOdds(event);
+            //alert('A'+tb_payoff.value);
+        }
+        
+        
+
+    </script>
+
+
+</body>
+</html>

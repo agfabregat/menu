@@ -1,0 +1,110 @@
+
+<html>
+    <head>
+        <title>pkMessage</title>
+    </head>
+    <body>        
+
+        <script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.0/nacl-util.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.1/nacl.min.js"></script>
+        <script>
+            //fetch('https://localhost:44333/pub/g')
+            //  .then(function(data) {
+            //        alert('GET:'+data);
+            //    })
+            //  .catch(function(error) {
+            //    alert('GET:'+error);
+            //});
+        </script>
+        <script>
+            function postJson(url, dataBuffer, cb, er)
+            {
+                
+                fetch(url, {
+                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                    //mode: 'cors', // no-cors, *cors, same-origin
+                    //cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                    //credentials: 'same-origin', // include, *same-origin, omit
+                    //headers: {
+                      //  'Content-Type': "text/plain"
+                      //'Content-Type': 'application/json'
+                      // 'Content-Type': 'application/x-www-form-urlencoded',
+                    //},
+                    //redirect: 'follow', // manual, *follow, error
+                    //referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+
+                    body: dataBuffer //JSON.stringify(jsonObj)
+                    }).then(result => {
+                        // do something with the result
+                        //console.log("Completed with result:", result);
+                        cb('POST:'+result);
+                    }).catch(err => {
+                        // if any error occured, then catch it here
+                        //console.error(err);
+                        er('POST:'+err);
+                    });
+    
+            };
+        </script>
+        
+        <script>
+            let baseUrl = 'http://localhost:44333/';
+        </script>
+        <script>
+            function RemotePkHandler(res){
+                alert('RemotePk:' + res);
+            }
+            function ErrorHandler(err){
+                alert('Error:' + err);
+            }
+
+            function GetPKfromRemote(signature, publicKey){
+
+                let reqObj = {
+                    'm' : signature,
+                    'spk' : publicKey
+                }
+                let jsonReqObj = JSON.stringify(reqObj);
+                let jsonReqObjB64 = nacl.util.encodeBase64(jsonReqObj);
+                let url = baseUrl + 'pub/pkx';
+                postJson(url, jsonReqObjB64, RemotePkHandler, ErrorHandler );
+
+            }
+        </script>
+
+        <script>
+
+            //const bytesString = String.fromCharCode.apply(byteArray)
+            //UnicodeEncoding encoding = new UnicodeEncoding();
+            //byte[] bytes = encoding.GetBytes(plainString);
+
+            //let xxx = nacl.util.decodeUTF8(plainString)  ENCODES
+            //let xxx = nacl.util.encodeUTF8(encodedString)  DECODES
+
+            //let messageObject = JSON.parse(json);
+            //let jout = JSON.stringify(object);
+
+
+            //sender encodes
+            let keyPair = nacl.sign.keyPair();
+            let secretKey  = keyPair.secretKey;
+            let publicKey = keyPair.publicKey;
+            
+            let msg = nacl.util.decodeUTF8("pkExchage");  //nacl misnamed the function, should be encode
+
+            let signature = nacl.sign(msg, secretKey);
+
+            GetPKfromRemote(signature, publicKey);
+
+            // receiver decodes
+            let signatureB64 = nacl.util.encodeBase64(signature); //nacl misnamed the function, should be decode
+            //console.log(signatureB64.replace(/(.{64})/g,'$1\n')); // Display signature plus message (Base64 encoded)
+            let signatureMsgPart = signature.slice(64); 
+            //console.log(nacl.util.encodeUTF8(signatureMsgPart));  // Display message from nacl.sign() return value: signing is not for encryption!
+            let verifiedMsg = nacl.sign.open(signature, publicKey);
+            //console.log(nacl.util.encodeUTF8(verifiedMsg));       // Display message after successfull verification
+        </script>
+
+        
+    </body>
+</html>

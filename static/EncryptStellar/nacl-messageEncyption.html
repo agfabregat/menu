@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <title>MyNacl2</title>
+    </head>
+    <body>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.0/nacl-util.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.1/nacl.min.js"></script>
+        <script>
+        
+            var msgStr = "The quick brown fox jumps over the lazy dog";
+
+            //sender encodes
+            var keyPair = nacl.sign.keyPair();
+            var secretKey  = keyPair.secretKey;
+            var publicKey = keyPair.publicKey;
+            
+            var msg = nacl.util.decodeUTF8(msgStr);  //nacl misnamed the function, should be encode
+            var signature = nacl.sign(msg, secretKey);
+
+
+            // receiver decodes
+            var signatureB64 = nacl.util.encodeBase64(signature); //nacl misnamed the function, should be decode
+            console.log(signatureB64.replace(/(.{64})/g,'$1\n')); // Display signature plus message (Base64 encoded)
+            var signatureMsgPart = signature.slice(64); 
+            console.log(nacl.util.encodeUTF8(signatureMsgPart));  // Display message from nacl.sign() return value: signing is not for encryption!
+            var verifiedMsg = nacl.sign.open(signature, publicKey);
+            console.log(nacl.util.encodeUTF8(verifiedMsg));       // Display message after successfull verification
+        </script>
+    </body>
+</html>

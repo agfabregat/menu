@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STELLAR</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+    <meta name="description" content="">            
+    <meta name="author" content="">               
+    <meta name="robots" content="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/10.0.1/stellar-sdk.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+
+    
+        const server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+        // create a completely new and unique pair of keys
+        // see more about KeyPair objects: https://stellar.github.io/js-stellar-sdk/Keypair.html
+        
+        //const pair = StellarSdk.Keypair.random();
+        //console.log(pair.secret());
+        //console.log(pair.publicKey());
+        
+        const a1_secretKey = "SDPGNOSWEDC732Y35H6HXR7GCV7YRSYHYNKE3TJ4W72TMZD23C42JM3L";
+        const a1_publicKey = "GCWCJKG6LX5DWJ46VFDRBRC6M7UNXMCWGMQUKLNCWB5M2NELJQTX5HHL";
+        
+        const a2_secretKey = "SBYSQIJOJMTLHRAN5YGYQWTD2GTGAGT62MVSA45VTFZFT56V6RGQHUYR";
+        const a2_publicKey = "GAPGLQ3WDMN6QUVWZ7IL4A5DSCZXQ7ZBVPUH2UXWLXCBGNZWVVOMMJJV";
+
+    
+    </script>
+    
+    <!--
+    <script>
+        
+        // get a list of transactions that occurred in ledger 1400
+        server.transactions()
+            .forLedger(1400)
+            .call().then(function(r){ console.log(r); });
+        
+        // get a list of transactions submitted by a particular account
+        server.transactions()
+            .forAccount('GASOCNHNNLYFNMDJYQ3XFMI7BYHIOCFW3GJEOWRPEGK2TDPGTG2E5EDW')
+            .call().then(function(r){ console.log(r); });
+        
+    </script>
+    
+    
+    
+    <script>
+
+        const account = await server.loadAccount(pair.publicKey);
+        /* 
+            Right now, we have one function that fetches the base fee.
+            In the future, we'll have functions that are smarter about suggesting fees,
+            e.g.: `fetchCheapFee`, `fetchAverageFee`, `fetchPriorityFee`, etc.
+        */
+        const fee = await server.fetchBaseFee();
+        
+        const transaction = new StellarSdk.TransactionBuilder(account, { fee })
+            .addOperation(
+                // this operation funds the new account with XLM
+                StellarSdk.Operation.payment({
+                    destination: "GASOCNHNNLYFNMDJYQ3XFMI7BYHIOCFW3GJEOWRPEGK2TDPGTG2E5EDW",
+                    asset: StellarSdk.Asset.native(),
+                    amount: "20000000"
+                })
+            )
+            .addMemo(StellarSdk.Memo.text('Test Transaction'))
+            .setTimeout(30)
+            .build();
+        
+        // sign the transaction
+        transaction.sign(StellarSdk.Keypair.fromSecret(secretString)); 
+        
+        try {
+            const transactionResult = await server.submitTransaction(transaction);
+            console.log(transactionResult);
+        } catch (err) {
+            console.error(err);
+        }
+    </script>
+    
+-->
+
+
+    <script>
+    async function getBalance(pk) {
+        const account = await server.loadAccount(pk);
+        console.log("Balances for account: " + pk);
+        account.balances.forEach(function (balance) {
+          console.log("Type:", balance.asset_type, ", Balance:", balance.balance);
+        });
+    }
+
+    </script>
+    
+    
+<!--
+    <script>
+    
+    // The SDK does not have tools for creating test accounts, so you'll have to
+    // make your own HTTP request.
+    
+    // if you're trying this on Node, install the `node-fetch` library and
+    // uncomment the next line:
+    // const fetch = require('node-fetch');
+    
+    async function fundAccountWithFriendBot(pk) {
+      try {
+        const response = await fetch(
+          `https://friendbot.stellar.org?addr=${encodeURIComponent(
+            pk,
+          )}`,
+        );
+        const responseJSON = await response.json();
+        console.log("SUCCESS! You have a new account :)\n", responseJSON);
+        
+        getBalance(pk);
+        
+      } catch (e) {
+        console.error("ERROR!", e);
+      }
+    };
+    
+    fundAccountWithFriendBot(a2_publicKey);
+    
+    </script>
+    -->
+    
+    <script>
+        function streamPaymentsToAccount(accountId){
+
+            // Create an API call to query payments involving the account.
+            var payments = server.payments().forAccount(accountId);
+            
+            // If some payments have already been handled, start the results from the
+            // last seen payment. (See below in `handlePayment` where it gets saved.)
+            var lastToken = loadLastPagingToken();
+            if (lastToken) {
+              payments.cursor(lastToken);
+            }
+            
+            // `stream` will send each recorded payment, one by one, then keep the
+            // connection open and continue to send you new payments as they occur.
+            payments.stream({
+              onmessage: function (payment) {
+                // Record the paging token so we can start from here next time.
+                savePagingToken(payment.paging_token);
+            
+                // The payments stream includes both sent and received payments. We only
+                // want to process received payments here.
+                if (payment.to !== accountId) {
+                  return;
+                }
+            
+                // In Stellar’s API, Lumens are referred to as the “native” type. Other
+                // asset types have more detailed information.
+                var asset;
+                if (payment.asset_type === "native") {
+                  asset = "lumens";
+                } else {
+                  asset = payment.asset_code + ":" + payment.asset_issuer;
+                }
+            
+                console.log(payment.amount + " " + asset + " from " + payment.from);
+              },
+            
+              onerror: function (error) {
+                console.error("Error in payment stream");
+              },
+            });
+            
+            function savePagingToken(token) {
+              // In most cases, you should save this to a local database or file so that
+              // you can load it next time you stream new payments.
+            }
+            
+            function loadLastPagingToken() {
+              // Get the last paging token from a local database or file
+            }
+        }
+    </script>
+    
+    
+    <script>
+
+    function makePayment(a1secretKey, a2publicKey, amount, memo){
+    
+        var sourceKeys = StellarSdk.Keypair.fromSecret(
+          a1secretKey,
+        );
+        var destinationId = a2publicKey;
+        // Transaction will hold a built transaction we can resubmit if the result is unknown.
+        var transaction;
+        
+        // First, check to make sure that the destination account exists.
+        // You could skip this, but if the account does not exist, you will be charged
+        // the transaction fee when the transaction fails.
+        server
+          .loadAccount(destinationId)
+          // If the account is not found, surface a nicer error message for logging.
+          .catch(function (error) {
+            if (error instanceof StellarSdk.NotFoundError) {
+              throw new Error("The destination account does not exist!");
+            } else return error;
+          })
+          // If there was no error, load up-to-date information on your account.
+          .then(function () {
+            return server.loadAccount(sourceKeys.publicKey());
+          })
+          .then(function (sourceAccount) {
+            // Start building the transaction.
+            transaction = new StellarSdk.TransactionBuilder(sourceAccount, {
+              fee: StellarSdk.BASE_FEE,
+              networkPassphrase: StellarSdk.Networks.TESTNET,
+            })
+              .addOperation(
+                StellarSdk.Operation.payment({
+                  destination: destinationId,
+                  // Because Stellar allows transaction in many currencies, you must
+                  // specify the asset type. The special "native" asset represents Lumens.
+                  asset: StellarSdk.Asset.native(),
+                  amount: amount,
+                }),
+              )
+              // A memo allows you to add your own metadata to a transaction. It's
+              // optional and does not affect how Stellar treats the transaction.
+              .addMemo(StellarSdk.Memo.text(memo))
+              // Wait a maximum of three minutes for the transaction
+              .setTimeout(180)
+              .build();
+            // Sign the transaction to prove you are actually the person sending it.
+            transaction.sign(sourceKeys);
+            // And finally, send it off to Stellar!
+            return server.submitTransaction(transaction);
+          })
+          .then(function (result) {
+            console.log("Success! Results:", result);
+          })
+          .catch(function (error) {
+            console.error("Something went wrong!", error);
+            // If the result is unknown (no response body, timeout etc.) we simply resubmit
+            // already built transaction:
+            // server.submitTransaction(transaction);
+          });
+    }
+    </script>
+    
+    <script>
+        //streamPaymentsToAccount(a2_publicKey)
+        makePayment(a1_secretKey, a2_publicKey, "9", "1234567890123456789012345678")
+        //getBalance(a1_publicKey);
+        //getBalance(a2_publicKey);
+    </script>
+    
+
+    
+    
+    
+</body>
+</html>

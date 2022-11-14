@@ -1,0 +1,224 @@
+<html>
+<head>
+    <title>MyNacl2</title>
+    <style>
+    body{
+        font-size: 1em;
+    }
+#wrapper {
+      margin-right: auto;
+      margin-left: auto;
+      width: 96%; /* Holding outermost DIV */
+    }
+    #header {
+      margin-right: 10px;
+      margin-left: 10px;
+      width: 97.9166667%; /* 940 divided by 960 */
+    }
+#navigation {
+      padding-bottom: 25px;
+      margin-top: 26px;
+      margin-left: -1.0416667%; /* 10 divided by 960 */
+      padding-right: 1.0416667%; /* 10 divided by 960 */
+      padding-left: 1.0416667%; /* 10 divided by 960 */
+      width: 97.9166667%; /* 940 divided by 960 */
+      background-repeat: repeat-x;
+      background-image: url(../img/atwiNavBg.png);
+      border-bottom-color: #bfbfbf;
+      border-bottom-style: double; border-bottom-width: 4px;
+    }
+    #navigation ul li {
+      display: inline-block;
+      margin-right: 2.6595745%; /* 25 divided by 940 */
+    }
+    #navigation ul li a {
+      height: 42px;
+      line-height: 42px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: Arial, "Lucida Grande", Verdana, sans-serif;
+      font-size: 27px;
+      color: black;
+    }
+    #content h1 {
+      font-family: Arial, Helvetica, Verdana, sans-serif; text-transform: uppercase;
+      font-size: 4.3125em; } /* 69 divided by 16 */
+      #content h1 span {
+      display: block;
+      line-height: 1.052631579em; /* 40 divided by 38 */ color: #757474;
+      font-size: .550724638em; /* 38 divided by 69 */
+}
+    #sidebar {
+      border-right-color: #e8e8e8; border-right-style: solid; border-right-width: 2px; margin-top: 58px;
+      margin-right: 10px;
+      margin-left: 10px;
+      float: left;
+      width: 22.7083333%; /* 218 divided by 960 */
+    }
+    #footer {
+      float: left;
+      margin-top: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+      clear: both;
+      width: 97.9166667%; /* 940 divided by 960 */
+    }
+    #logo {
+      display: block;
+      padding-top: 75px;
+      color: #0d0c0c;
+      text-transform: uppercase;
+      font-family: Arial, "Lucida Grande", Verdana, sans-serif; font-size: 3em; /* 48 divided by 16 = 3*/
+    }
+    </style>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.0/nacl-util.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.1/nacl.min.js"></script>
+<script>
+    function Sign (message, secretKey) {
+    if (!(secretKey instanceof Uint8Array)) {
+        secretKey = nacl.util.decodeBase64(secretKey.toString());
+    }
+    if (!(message instanceof Uint8Array)) {
+        message = nacl.util.decodeUTF8(message.toString());
+    }
+    const signature = nacl.sign.detached(message, secretKey);
+
+    return nacl.util.encodeBase64(signature);
+}
+
+function Verify (message, signature, publicKey) {
+    if (!(publicKey instanceof Uint8Array)) {
+        publicKey = nacl.util.decodeBase64(publicKey.toString());
+    }
+    if (!(message instanceof Uint8Array)) {
+        message = nacl.util.decodeUTF8(message.toString());
+    }
+    if (!(signature instanceof Uint8Array)) {
+        signature = nacl.util.decodeBase64(signature.toString());
+    }
+
+    return nacl.sign.detached.verify(message, signature, publicKey)
+}
+    
+    
+</script>
+
+<script>
+function rpk(d){
+    console.log(d);
+}
+</script>
+
+
+<script>
+let asyncGetCall = async (url, callback) => {
+try {
+    let response = await fetch(url);
+     let data = await response.json();
+        // enter you logic when the fetch is successful
+        callback(data);
+   } catch(error) {
+// enter your logic for when there is an error (ex. error toast)
+      console.log(error)
+     } 
+}
+</script>
+
+<script>
+let asyncPostCall = async ( postObject) => {
+try {
+    let response = await fetch('https://localhost:44333/pub/p', {
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json'
+       },
+       body: JSON.stringify(postObject)
+     });
+
+     let data = await response.json();
+     console.log(data);
+
+   } catch(error) {
+        // enter your logic for when there is an error (ex. error toast)
+      console.log(error)
+     } 
+}
+</script>
+
+
+<script>
+//public key authenticated encryption
+//https://neilmadden.blog/2018/11/14/public-key-authenticated-encryption-and-why-you-want-it-part-i/
+
+// https://medium.com/zinc_work/using-cryptography-tweetnacl-js-to-protect-user-data-intro-tips-tricks-a8e38e1818b5
+//https://medium.com/sharenowtech/high-speed-public-key-cryptography-in-javascript-part-1-3eefb6f91f77
+//asyncGetCall('https://localhost:44333/pub/pk', rpk);
+//let recipient = nacl.box.keyPair();   // nacl.sign.keyPair();
+let senderSignKeyPair = nacl.sign.keyPair();
+let messageToSign = nacl.util.encodeBase64(senderSignKeyPair.publicKey); // using the public key string as an example
+let signature = Sign(messageToSign, senderSignKeyPair.secretKey);
+if (Verify(messageToSign, signature, senderSignKeyPair.publicKey)){
+ console.log('Signature is valid');
+}
+else{
+    console.log('Signature is invalid');
+};
+
+
+let sender = nacl.box.keyPair();
+let jsonOut = SendEncryptedMessage(sender.publicKey, sender.secretKey, sender.publicKey, recipient.publicKey );
+asyncPostCall(jsonOut);
+let decryptedMessage = DecryptReceivedMessage(jsonOut, recipient.secretKey);
+
+jsonOut = SendEncryptedMessage("Are you happy to see me?", sender.secretKey, sender.publicKey, recipient.publicKey );
+asyncPostCall(jsonOut);
+decryptedMessage = DecryptReceivedMessage(jsonOut, recipient.secretKey);
+console.log(response.m);
+console.log(response.k);
+
+function SendEncryptedMessage(plainTextMessage, senderSk, senderPk, recipientPk){
+    let senderSharedKey = nacl.box.before(recipientPk, senderSk)
+    let nonce = nacl.randomBytes(24)
+    let box = nacl.box.after(
+      nacl.util.decodeUTF8(plainTextMessage),
+      nonce,
+      senderSharedKey 
+    )
+    
+    let messageOutBox = nacl.util.encodeBase64(box);
+    let nonceB64 = nacl.util.encodeBase64(nonce);
+    let senderPkB64 = nacl.util.encodeBase64(senderPk);
+    let c = {
+        m:messageOutBox, n:nonceB64, p:senderPkB64
+    };
+    let jout = JSON.stringify(c);
+    return jout;
+}
+
+
+function DecryptReceivedMessage(jsonIn, recipientSk){
+    let messageObject = JSON.parse(jsonIn);
+    let messageInBox = nacl.util.decodeBase64(messageObject.m);
+    let nonce = nacl.util.decodeBase64(messageObject.n);
+    let senderPk = nacl.util.decodeBase64(messageObject.p)
+    let recipientSharedKey = nacl.box.before(senderPk, recipientSk)
+
+    let payload = nacl.box.open.after(
+      messageInBox, 
+      nonce, 
+      recipientSharedKey 
+    )
+
+    let plainTextMessage = nacl.util.encodeUTF8(payload);
+    return {m:plainTextMessage, k:messageObject.p};
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,4 +1,13 @@
 [
+{"href":"./static/arbCalculator.html","title":"Arb"},
+{"href":"./static/arbCalculatorT.html","title":"ArbT"},
+
+{"href":"./static/EncryptStellar/nacl.html","title":"Nacl"},
+{"href":"./static/EncryptStellar/nacl2.html","title":"Nacl2"},
+{"href":"./static/EncryptStellar/nacl-messageEncyption.html","title":"NaclMssgEncrypt"},
+{"href":"./static/EncryptStellar/nacl-pkMsgEncryption.html","title":"pkNaclMssgEncrypt"},
+{"href":"./static/EncryptStellar/stellar.html","title":"Stellar"},
+
 {"href":"./static/Nitrogen.html","title":"Nitrogen"},
 {"href":"http://oddsapi.azurewebsites.net/odds.html","title":"Odds"},
 {"href":"http://zjx.azurewebsites.net/zjx.html","title":"ZJX"},
