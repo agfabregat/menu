@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>DeviceDetector</title>
+        <style>
+            .top{padding-top:25px;}
+        </style>
+    </head>
+    <body>
+        <div class='top'>DETECTOR</div>
+        <textarea id="res"  rows="34" cols="50"></textarea>
+        <script>
+        (function() {
+            
+            let res = document.getElementById("res");
+            let cDate=new Date();
+            dw(cDate.toString());
+            
+            let wsh = window.screen.height;
+            let wsw = window.screen.width;
+
+            dw('screenHeight=' + wsh); 
+            dw('screenWidth=' + wsw); 
+
+            
+            let isTouch = ('ontouchstart' in document.documentElement);
+            dw('isTouch=' + isTouch); 
+            
+            let isAnyPointer = window.matchMedia("(any-pointer:coarse)").matches;
+            dw('isAnyPointer=' + isAnyPointer); 
+            
+            let isPortrait = window.orientation % 180 === 0;
+            dw('isPortrait=' + isPortrait); 
+            
+            let isMobileUA = (navigator.userAgent.match(/Mobi/));
+            dw('isMobileUA=' + isMobileUA); 
+            
+            let cp;
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    //do succes handling
+                    dw('Geolocation:');
+                    dw('Latitude=' + position.coords.latitude);
+                    dw('Longitude=' + position.coords.longitude);
+                    dw('FINISHED!');
+                },
+                function errorCallback(error) {
+                    //do error handling
+                    showError(error);
+                },
+                {
+                    timeout:25000
+                }
+            );
+            
+            function showError(error) {
+              switch(error.code) {
+                case error.PERMISSION_DENIED:
+                  dw('User denied the request for Geolocation.');
+                  break;
+                case error.POSITION_UNAVAILABLE:
+                  dw('Location information is unavailable.');
+                  break;
+                case error.TIMEOUT:
+                  dw('The request to get user location timed out.');
+                  break;
+                case error.UNKNOWN_ERROR:
+                  dw('An unknown error occurred.');
+                  break;
+              }
+            }
+            
+            
+            
+            
+            function dw(m){
+                res.value += m+"\n";
+                
+            }
+            
+            //let magSensor = new Magnetometer({frequency: 60});
+
+            //magSensor.addEventListener('reading', e => {
+            //  document.write("Magnetic field along the X-axis " + magSensor.x + '\n'); 
+            //  document.write("Magnetic field along the Y-axis " + magSensor.y + '\n'); 
+            //  document.write("Magnetic field along the Z-axis " + magSensor.z + '\n'); 
+            //})
+            //magSensor.addEventListener('error', event => {
+            //  document.write(event.error.name, event.error.message + '\n'); 
+            //})
+            //magSensor.start();
+            
+        })();
+            
+        </script>
+    </body>
+</html>
