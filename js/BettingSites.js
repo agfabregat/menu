@@ -1,4 +1,5 @@
 [
+{"href":"./static/bovada.html","title":"Bovada"},
 {"href":"http://www.scorespro.com/","title":"Results&Fixture"},
 
 

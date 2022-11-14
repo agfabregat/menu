@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>BOVADA</title>
+  </head>
+
+  <body
+      <div id='content'></div>
+
+    <script>
+function httpGet(theUrl) {
+  let xmlHttpReq = new XMLHttpRequest();
+  xmlHttpReq.open("GET", theUrl, false); 
+  xmlHttpReq.send(null);
+  return xmlHttpReq.responseText;
+}
+
+function unixToDate(unixTimestamp){
+    const dateObject = new Date(unixTimestamp);
+    const humanDateFormat = dateObject.toLocaleString(); //2019-12-9 10:30:15
+    return humanDateFormat;
+}
+
+ const contentElem = document.getElementById('content');
+ const json = httpGet('https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis/wta?marketFilterId=def&preMatchOnly=true&eventsLimit=50&lang=en');
+ contentElem.textContent = json;
+
+ const tournaments = JSON.parse(json);
+ tournaments.forEach(tournament => {
+    const tournamentName = tournament.path[0].description;
+	console.log(tournamentName);
+    console.log('---------------------------------------------------');
+
+	tournament.events.forEach(evnt => {
+	   const type = evnt.type;
+	   const stat = evnt.status;
+	   const startTime = evnt.startTime;
+	   const startTimeHuman = unixToDate(startTime);
+	   const dispGrps = evnt.displayGroups;
+	   
+	   dispGrps.forEach(grp => {
+	       const markets = grp.markets
+            
+            markets.forEach(market =>{
+                const marketId = market.id;
+                const marketDescriptionKey = market.descriptionKey;
+                const marketDescription = market.description;
+                const marketKey = market.key;
+                const period = market.period.description;
+                if (marketKey == "2W-12"){
+                    if (period=='Match'){
+                                                    
+                        console.log('mktId:'+marketId + ' marketKey:'+marketKey + ' period:'+period
+                            +' marketDescKey:'+marketDescriptionKey + ' startTime:' + startTimeHuman);
+                        
+                        const outcomes = market.outcomes;
+                        
+                        outcomes.forEach(outcome =>{
+                            const competitor = outcome.description;
+                            const status = outcome.status;
+                            const type = outcome.type;
+                            const americanStr = outcome.price.american;
+                            const decimalStr = outcome.price.decimal;
+                            const double = parseFloat(decimalStr);
+                            const perc = (1.0 / double).toFixed(2);
+
+                            console.log('competitor:' + competitor + ' status:'+status + ' type:' + type + ' amer:'+americanStr+ ' dec:' + decimalStr + ' perc:' + perc
+                            );
+                        })
+                        
+                        console.log('---------------------------------------------------');
+                    }
+                }
+            })	       
+	   })
+    });
+});
+
+    </script>
+  </body>
+</html>
