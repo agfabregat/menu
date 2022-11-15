@@ -15,7 +15,8 @@
 {"href":"./static/MobileScreen.html","title":"Mobile Screen"},
 {"href":"./static/deviceDetector.html","title":"DeviceDetector"},
 {"href":"./static/ScreenWidths.html","title":"ScreenWidths"},
-{"href":"./static/LineOriginators.html","title":"Line Originators"},
+{"href":"./static/lineOriginators.html","title":"Line Originators"},
+{"href":"./static/LinkForDownload.htm","title":"LinkForDownload"},
 {"href":"./static/STICKYHEADERSFOOTERS.html","title":"StickyHeadersFooters"}
 
 ]

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,
+                                         initial-scale=1.0">
+    <title>LV Line Originators</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <style type="text/css">
+        html, body {
+            width: 480px;
+            font-family: arial,helvetica,sans-serif;
+            margin: 0 auto;
+        }
+
+
+        .container {
+            margin-left: 2px;
+            margin-right: 2px;
+            background: lavenderblush;
+        }
+
+
+        .row {
+            font-size: 12px;
+        }
+
+        .w0 {
+            display: inline-block;
+            width: 155px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .w1 {
+            display: inline-block;
+            width: 155px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .w2 {
+            display: inline-block;
+            width: 145px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .header {
+            background: gray;
+            color: white;
+            font-variant: small-caps;
+            font-weight: bold;
+            text-align: center;
+            height: 2em;
+            vertical-align: middle;
+        }
+
+        .head {
+            background: gray;
+            font-variant: small-caps;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            color: white;
+            height: 1.75em;
+            cursor: pointer;
+        }
+
+        .filter {
+            font-variant: small-caps;
+        }
+    </style>
+
+</head>
+<body ng-app="App">
+    <div class="container" ng-controller="mainCtrl">
+        <div class="header">
+            las vegas line originators v1.8
+        </div>
+        <hr />
+        <div style="text-align: center;">
+            <div class="filter">filter</div>
+            <input type="text" ng-model="locFilter" />
+        </div>
+        <hr />
+        <div style="margin-top:5px;">
+            <span class="w0 head" ng-click="setOrderBy('sb')">sportsbook</span>
+            <span class="w2 head" ng-click="setOrderBy(['org', 'cy','sb'])">originator</span>
+            <span class="w1 head" ng-click="setOrderBy(['cy','sb'])">city</span>
+        </div>
+        <table ng-repeat="o in originators | filter:locFilter | orderBy:orderby">
+            <tr class="row">
+                <td class="w0">{{::o.sb}}</td>
+                <td class="w2">{{::o.org}}</td>
+                <td class="w1">{{::o.cy}}</td>
+            </tr>
+
+        </table>
+    </div>
+    <script>
+        var app = angular.module('App', []);
+        app.controller("mainCtrl", [
+            "$scope", function ($scope) {
+
+                $scope.orderby = ['sb'];
+                $scope.setOrderBy = function (prop) {
+                    $scope.orderby = prop;
+                }
+
+                $scope.originators = [
+                    { sb: 'Alamo', cy: 'Sparks', org: 'William Hill' },
+                    { sb: 'Aliante', cy: 'North Las Vegas', org: 'Independent' },
+                    { sb: 'Aria', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'Arizona Charlie\'s Boulder', cy: 'Las Vegas', org: 'Stratosphere' },
+                    { sb: 'Arizona Charlie\'s Decatur', cy: 'Las Vegas', org: 'Stratosphere' },
+                    { sb: 'Atlantis', cy: 'Reno', org: 'Independent' },
+                    { sb: 'AVI Resort', cy: 'Laughlin', org: 'William Hill' },
+                    { sb: 'Baldini\'s', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Bally\'s', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Barley\'s', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Bellagio', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'Bill\'s Gamblin\' Hall', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Binions', cy: 'Las Vegas (d)', org: 'William Hill' },
+                    { sb: 'Bodines', cy: 'Carson City', org: 'William Hill' },
+                    { sb: 'Bordertown', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Bonanza', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Boomtown', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Boulder Station', cy: 'Las Vegas', org: 'Station Casinos' },
+                    { sb: 'Buffalo Bill\'s', cy: 'Primm', org: 'William Hill' },
+                    { sb: 'Caesars Palace', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Cactus Jacks Sentator Club', cy: 'Carson City', org: 'William Hill' },
+                    { sb: 'Cactus Petes', cy: 'Jackpot', org: 'William Hill' },
+                    { sb: 'California', cy: 'Las Vegas (d)', org: 'Boyd Gaming/Coasts Casinos' },
+                    { sb: 'William Hill', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Club Fortune', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Cannery', cy: 'North Las Vegas', org: 'South Point Casino' },
+                    { sb: 'Carson Station (Best Western)', cy: 'Carson City', org: 'William Hill' },
+                    { sb: 'Carson Valley Inn', cy: 'Minden', org: 'Independent' },
+                    { sb: 'Casino Fandango', cy: 'Carson City', org: 'William Hill' },
+                    { sb: 'Casino Valle Verde', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Circus Circus', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'Circus Circus Reno', cy: 'Reno', org: 'MGM Resorts' },
+                    { sb: 'Club Fortune', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Colorado Belle', cy: 'Laughlin', org: 'William Hill' },
+                    { sb: 'Comstock', cy: 'Carson City', org: 'William Hill' },
+                    { sb: 'Cosmopolitan', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Crystal Bay Club', cy: 'Lake Tahoe/Crystal Bay', org: 'William Hill' },
+                    { sb: 'The D Las Vegas', cy: 'Las Vegas (d)', org: 'William Hill' },
+                    { sb: 'Diamond\'s (Ramada)', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Dini\'s Lucky Club', cy: 'Yerington', org: 'William Hill' },
+                    { sb: 'Eastside Cannery', cy: 'Las Vegas', org: 'South Point Casino' },
+                    { sb: 'Edgewater', cy: 'Laughlin', org: 'William Hill' },
+                    { sb: 'El Capitan', cy: 'Hawthorne', org: 'William Hill' },
+                    { sb: 'El Cortez', cy: 'Las Vegas (d)', org: 'Station Casinos' },
+                    { sb: 'Eldorado', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Ellis Island', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Encore', cy: 'Las Vegas', org: 'Wynn Resorts' },
+                    { sb: 'Excalibur', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'Fallon Nugget', cy: 'Fallon', org: 'William Hill' },
+                    { sb: 'Fernley Nugget', cy: 'Fernley', org: 'William Hill' },
+                    { sb: 'Fiesta Henderson', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Fiesta Rancho', cy: 'North Las Vegas', org: 'Station Casinos' },
+                    { sb: 'Flamingo', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Four Queens', cy: 'Las Vegas (d)', org: 'William Hill' },
+                    { sb: 'Fremont', cy: 'Las Vegas (d)', org: 'Boyd Gaming/Coasts Casinos' },
+                    { sb: 'Gold Coast', cy: 'Las Vegas', org: 'Boyd Gaming/Coasts Casinos' },
+                    { sb: 'Gold Dust West', cy: 'Carson City', org: 'William Hill' },
+                    { sb: 'Gold Spike', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Gold Strike', cy: 'Jean', org: 'William Hill' },
+                    { sb: 'Golden Gate', cy: 'Las Vegas (d)', org: 'William Hill' },
+                    { sb: 'Golden Nugget', cy: 'Las Vegas (d)', org: 'Independent' },
+                    { sb: 'Grand Lodge', cy: 'Lake Tahoe/Incline Village', org: 'William Hill' },
+                    { sb: 'Grand Sierra', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Green Valley Ranch', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Hacienda', cy: 'Boulder City', org: 'William Hill' },
+                    { sb: 'Hard Rock Hotel', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Harrah\'s', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Harrah\'s', cy: 'Laughlin', org: 'Caesars Entertainment' },
+                    { sb: 'Harrah\'s', cy: 'Reno', org: 'Caesars Entertainment' },
+                    { sb: 'Hobey\'s', cy: 'Sun Valley', org: 'William Hill' },
+                    { sb: 'Hooter\'s', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Hotel Nevada Gambling Hall', cy: 'Ely', org: 'William Hill' },
+                    { sb: 'Jerry\'s Nugget', cy: 'Las Vegas', org: 'Independent' },
+                    { sb: 'John Ascuaga\'s Nugget', cy: 'Sparks', org: 'William Hill' },
+                    { sb: 'Joker\'s Wild', cy: 'Henderson', org: 'Boyd Gaming/Coasts Casinos' },
+                    { sb: 'Klondike Sunset', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Lake Mead Lounge', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Longhorn', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Lucky Club (Speedway Casino)', cy: 'North Las Vegas', org: 'William Hill' },
+                    { sb: 'Luxor', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'M Resort', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Mandalay Bay', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'MGM Grand', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'Mirage', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'Model T', cy: 'Winnemucca', org: 'William Hill' },
+                    { sb: 'MontBleu', cy: 'Lake Tahoe', org: 'William Hill' },
+                    { sb: 'Monte Carlo', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'New York New York', cy: 'Las Vegas', org: 'MGM Resorts' },
+                    { sb: 'Opera House', cy: 'North Las Vegas', org: 'William Hill' },
+                    { sb: 'Orleans', cy: 'Las Vegas', org: 'Boyd Gaming/Coasts Casinos' },
+                    { sb: 'Palace Station', cy: 'Las Vegas', org: 'Station Casinos' },
+                    { sb: 'Palazzo', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Palms', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Paris', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Peppermill', cy: 'Reno', org: 'Independent' },
+                    { sb: 'Pahrump Nugget', cy: 'Pahrump', org: 'William Hill' },
+                    { sb: 'Pioneer', cy: 'Laughlin', org: 'William Hill' },
+                    { sb: 'Pioneer Crossing', cy: 'Dayton', org: 'William Hill' },
+                    { sb: 'Pioneer Crossing', cy: 'Fernley', org: 'William Hill' },
+                    { sb: 'Planet Hollywood', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Plaza', cy: 'Las Vegas (d)', org: 'William Hill' },
+                    { sb: 'Poker Palace', cy: 'North Las Vegas', org: 'William Hill' },
+                    { sb: 'Pony Express', cy: 'Jackpot', org: 'William Hill' },
+                    { sb: 'Primm Valley', cy: 'Primm', org: 'William Hill' },
+                    { sb: 'The Quad', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Railroad Pass', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Rampart Casino', cy: 'Las Vegas', org: 'South Point Casino' },
+                    { sb: 'Red Garter', cy: 'Wendover', org: 'William Hill' },
+                    { sb: 'Red lion', cy: 'Elko', org: 'William Hill' },
+                    { sb: 'Red Rock', cy: 'Las Vegas', org: 'Station Casinos' },
+                    { sb: 'Rio', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Riverside Resort', cy: 'Laughlin', org: 'South Point Casino' },
+                    { sb: 'Riviera', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Saddle West', cy: 'Pahrump', org: 'William Hill' },
+                    { sb: 'Sam\'s Town', cy: 'Las Vegas', org: 'Boyd Gaming/Coasts Casinos' },
+                    { sb: 'Sands Regency', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Santa Fe Station', cy: 'Las Vegas', org: 'Station Casinos' },
+                    { sb: 'Railroad Pass', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Siegal Slots (Barcelona)', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Siena', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Silver Nugget', cy: 'North Las Vegas', org: 'William Hill' },
+                    { sb: 'Silver Springs Nugget', cy: 'Silver Springs', org: 'William Hill' },
+                    { sb: 'Silverado', cy: 'Fernley', org: 'William Hill' },
+                    { sb: 'Silverton', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Skyline', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Slotworld', cy: 'Carson City', org: 'William Hill' },
+                    { sb: 'South Point Casino', cy: 'Las Vegas', org: 'South Point Casino' },
+                    { sb: 'Stagecoach', cy: 'Beatty', org: 'William Hill' },
+                    { sb: 'Stetsons', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Stockman\'s', cy: 'Fallon', org: 'William Hill' },
+                    { sb: 'Stockmen\'s', cy: 'Elko', org: 'William Hill' },
+                    { sb: 'Stratosphere', cy: 'Las Vegas', org: 'Stratosphere' },
+                    { sb: 'Sturgeon Inn', cy: 'Lovelock', org: 'William Hill' },
+                    { sb: 'Suncoast', cy: 'Las Vegas', org: 'Boyd Gaming/Coasts Casinos' },
+                    { sb: 'Sunset Station', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Tahoe Biltmore Lodge', cy: 'Lake Tahoe/Crystal Bay', org: 'William Hill' },
+                    { sb: 'Tamarack Junction', cy: 'Reno', org: 'William Hill' },
+                    { sb: 'Terrible\'s', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Terrible\'s Dayton', cy: 'Dayton', org: 'William Hill' },
+                    { sb: 'Terrible\'s Lakeside', cy: 'Verdi', org: 'William Hill' },
+                    { sb: 'Terrible\'s Gold Ranch', cy: 'Verdi', org: 'William Hill' },
+                    { sb: 'Terrible\'s Rail City', cy: 'Sparks', org: 'William Hill' },
+                    { sb: 'Terrible\'s Town', cy: 'Pahrump', org: 'William Hill' },
+                    { sb: 'Texas Station', cy: 'North Las Vegas', org: 'Station Casinos' },
+                    { sb: 'The Westin Casuarina', cy: 'Henderson', org: 'William Hill' },
+                    { sb: 'Treasure Island', cy: 'Las Vegas', org: 'Independent' },
+                    { sb: 'Tropicana', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Tropicana Express', cy: 'Laughlin', org: 'William Hill' },
+                    { sb: 'Tuscany', cy: 'Las Vegas', org: 'William Hill' },
+                    { sb: 'Venetian', cy: 'Las Vegas', org: 'CG Technology' },
+                    { sb: 'Wendover Nugget', cy: 'Wendover', org: 'William Hill' },
+                    { sb: 'Westgate LV Superbook', cy: 'Las Vegas', org: 'Independent' },
+                    { sb: 'Wild Bills', cy: 'Las Vegas', org: 'Caesars Entertainment' },
+                    { sb: 'Wild Wild West', cy: 'Las Vegas', org: 'Station Casinos' },
+                    { sb: 'Wildfire Boulder', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Wildfire Lanes', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Wildfire Rancho', cy: 'Las Vegas', org: 'Station Casinos' },
+                    { sb: 'Wildfire Sunset', cy: 'Henderson', org: 'Station Casinos' },
+                    { sb: 'Winnemucca Inn', cy: 'Winnemucca', org: 'William Hill' },
+                    { sb: 'Winners Hotel', cy: 'Winnemucca', org: 'William Hill' },
+                    { sb: 'Wynn Las Vegas', cy: 'Las Vegas', org: 'Wynn Resorts' }
+
+                ];
+            }
+        ]);
+
+    </script>
+</body>
+</html>
