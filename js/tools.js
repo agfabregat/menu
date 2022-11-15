@@ -1,4 +1,8 @@
 [
+
+{"href":"https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/165.140.84.51","title":"Proxy Detect"},
+{"href":"https://ip.teoh.io/vpn-detection","title":"Proxy Detect"},
+
 {"href":"https://testmy.net/","title":"TestMy Speed"},
 {"href":"https://whoer.net/","title":"Whoer Secure Internet Check"},
 {"href":"https://www.doileak.com","title":"DoIleak Internet Check"},
