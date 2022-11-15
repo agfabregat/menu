@@ -22,9 +22,6 @@
 {"href":"http://rojadirecta.su/","title":"RojaDirecta SU"},
 {"href":"http://www.tarjetaroja.eu/","title":"TarjetaRoja"},
 
-{"href":"http://www.freeintertv.com/view/id-2023","title":"CSPAN"},
-{"href":"http://www.freeintertv.com/view/id-2814","title":"CSPAN2"},
-{"href":"http://www.freeintertv.com/view/id-2815","title":"CSPAN3"},
 
 {"href":"http://www.rtve.es/noticias/directo-la-1/","title":"RTVE.ES San Fermin"},
 {"href":"http://www.radios.co.ve/rcr-caracas/#","title":"RCR Vz"},
@@ -39,14 +36,13 @@
 {"href":"https://www.raiplay.it/dirette/rainews24","title":"RAI"},
 
 {"href":"http://cricfree.ws/update/bt1","title":"BT 1"},
-{"href":"http://yoursports.stream/live.php?v=fs1","title":"Fox Sports 1"},
 {"href":"https://www.rt.com/on-air/","title":"Russia Today"},
 {"href":"https://www.dw.com/en/media-center/live-tv/s-100825?channel=1","title":"DWTV (Deutsche Welle)"},
 
 {"href":"https://www.bfmtv.com/mediaplayer/live-video/","title":"BFMtv France"},
 
-{"href":"https://www.youtube.com/watch?v=XOacA3RYrXk","title":"SkyTV"},
-{"href":"http://www.freeintertv.com/view/id-1695","title":"Fox Sports"},
+{"href":"https://www.youtube.com/watch?v=9Auq9mYxFEE","title":"SkyTV"},
+{"href":"http://www.freeintertv.com/view/id-1695","title":"FreeInterTv"},
 {"href":"http://totalsport.me/schedule.txt","title":"TotalSport"},
 {"href":"http://www.livenewsmag.com/bbc-news-uk-live-stream/","title":"BBC News"},
 {"href":"http://tv-online.us/infowars-live-stream/","title":"InfoWars"},
@@ -81,7 +77,7 @@
 {"href":"http://www.streamgaroo.com/television/united-states/","title":"Streamgaroo"},
 
 
-{"href":"http://yoursports.stream/","title":"Yoursports(sports/everything)"},
+{"href":"https://watchsports.to/","title":"WatchSports"},
 {"href":"http://nflstream.io/espn-live-stream-online-live/stream-1","title":"NflStream"},
 {"href":"http://chanfeed.com/","title":"Chanfeed.com"},
 {"href":"http://www.720pstream.me/","title":"720pstream (all live sports)"},
