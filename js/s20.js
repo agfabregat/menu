@@ -15,8 +15,7 @@
 {"href":"https://www.ebay.com/itm/334470159283","title":"S20 Ebay"},
 {"href":"https://www.ebay.com/itm/334470185625","title":"S20 Ebay"},
 {"href":"https://www.ebay.com/itm/254688120635","title":"S20 Ebay"},
-{"href":"https://www.walmart.com/ip/BLU-F91-5G-F0030UU-128GB-Dual-SIM-GSM-Unlocked-Android-Smartphone-Oceanic-Blue/261145934
-","title":"BLU F91 5G F0030UU Walmart"},
+{"href":"https://www.walmart.com/ip/BLU-F91-5G-F0030UU-128GB-Dual-SIM-GSM-Unlocked-Android-Smartphone-Oceanic-Blue/261145934","title":"BLU F91 5G F0030UU Walmart"},
 
 {"href":"https://www.ebay.com/itm/134311547879","title":"BLU F91 5G F0030UU Ebay"},
 {"href":"https://www.amazon.com/Battery-Unlocked-AMOLED-Display-Camera/dp/B0B3B8VY4D","title":"BluN2 Amazon"}
