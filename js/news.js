@@ -2,7 +2,7 @@
 [
 {"href":"http://www.mediaresearch.org/","title":"MRC CyberAlert"},
 {"href":"http://www.lucianne.com/","title":"Lucianne"},
-{"href":"https://agfservicecorsproxy20220326232156.azurewebsites.net/htmlget.html?url=https://drudgereport.com","title":"Drudge Report"},
+
 {"href":"http://freebeacon.com/","title":"Free Beacon"},
 {"href":"http://pajamasmedia.com/?src=network","title":"PajamasMedia"},
 {"href":"http://www.breitbart.com/","title":"Breibart"},
@@ -11,7 +11,6 @@
 {"href":"http://www.freerepublic.com/tag/news-forum/index","title":"Free Republic"},
 {"href":"https://thelibertydaily.com/","title":"Liberty Daily"},
 {"href":"https://www.citizenfreepress.com/","title":"Citizen FreePress"},
-{"href":"https://thedonald.win/","title":"TheDonald Win"},
 
 {"href":"https://protrumpnews.com/","title":"ProTrump News"},
 {"href":"https://rantingly.com/","title":"Rantingly"},
@@ -19,7 +18,7 @@
 
 
 {"href":"https://www.memeorandum.com/","title":"Memeorandum"},
-{"href":"https://www.circa.com/","title":"Circa News"},
+
 {"href":"https://www.axios.com/","title":"Axios"},
 
 {"href":"http://www.noticierodigital.com/","title":"NoticieroDigital"},
