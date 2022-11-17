@@ -19,14 +19,13 @@
         <input type="text" id="linkin" placeholder="http://whatever/whatever.mp3">
         <br><br>
 <div>
-	<a id="linkout" href="" onclick="myFunction(); return false">Download</a>
+	<a id="linkout" href="" onclick="myFunction();">Download</a>
 </div>
 <script>
 function myFunction() {
 	var lo = document.getElementById("linkout");
     var li = document.getElementById("linkin");
     lo.setAttribute("href", li.value);
-	return false;
 }
 
 </script>
