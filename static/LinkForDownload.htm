@@ -15,8 +15,20 @@
 </style>
 </head>
 <body>
-<div id="container">
-	<a href="">Download</a>
+<label>Enter http to download:</label>
+        <input type="text" id="linkin" placeholder="http://whatever/whatever.mp3">
+        <br><br>
+<div id="linkout">
+	<a href="" onclick="myFunction(); return false">Download</a>
 </div>
+<script>
+function myFunction() {
+	var lo = document.getElementById("linkout");
+    var li = document.getElementById("linkin");
+    lo.setAttribute("href", li);
+	return false;
+}
+
+</script>
 </body>
 </html>
