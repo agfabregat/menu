@@ -1,6 +1,4 @@
 [
-{"href":"http://www.firmaspress.com/","title":"Carlos Montaner"},
-
 {"href":"http://www.nationaljournal.com/","title":"  NatJournal/Hotline"},
 {"href":"https://patriotpost.us/opinion","title":"Patriot Post"},
 {"href":"http://powerlineblog.com/","title":"Powerlineblog"},
