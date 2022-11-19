@@ -15,7 +15,7 @@
 {"href":"https://www.ebay.com/itm/334470185625","title":"S20 Excellent 219 Ebay"},
 {"href":"https://www.ebay.com/itm/254688120635","title":"S20 Excellent 249 Ebay"},
 
-{"href":"https://www.amazon.com/BLU-Battery-Unlocked-Display-Warranty/dp/B09WJM9XVW/ref=sr_1_1_sspa","title":"BLU F91 5G F0030UU 229 Amazon"},
+{"href":"https://www.amazon.com/dp/B09WJM9XVW/ref=sr_1_1_sspa","title":"BLU F91 5G F0030UU 229 Amazon"},
 {"href":"https://www.walmart.com/ip/BLU-F91-5G-F0030UU-128GB-Dual-SIM-GSM-Unlocked-Android-Smartphone-Oceanic-Blue/261145934","title":"BLU F91 5G F0030UU 229 Walmart"},
 
 
