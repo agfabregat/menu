@@ -1,5 +1,5 @@
 [
-{"href":"http://www.nationaljournal.com/","title":"  NatJournal/Hotline"},
+
 {"href":"https://patriotpost.us/opinion","title":"Patriot Post"},
 {"href":"http://powerlineblog.com/","title":"Powerlineblog"},
 {"href":"http://libaterian.blogspot.com/","title":"Libaterian"},
@@ -30,7 +30,6 @@
 {"href":"https://twitter.com/aaronjmate","title":"Twitter Aaron Mate"},
 {"href":"https://twitter.com/jsolomonReports","title":"Twitter John Solomon"},
 
-{"href":"https://news.idealmedia.com/","title":"Ideal Media"},
 {"href":"https://www.buzzfeed.com/news","title":"BuzzFeed"},
 
 
