@@ -14,8 +14,6 @@
 
 {"href":"https://protrumpnews.com/","title":"ProTrump News"},
 {"href":"https://rantingly.com/","title":"Rantingly"},
-{"href":"https://warroom.org/","title":"WarRoom Impeachment"},
-
 
 {"href":"https://www.memeorandum.com/","title":"Memeorandum"},
 
