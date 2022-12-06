@@ -2,7 +2,6 @@
 {"href":"http://www.slickdeals.net/","title":"SlickDeals"},
 {"href":"https://www.511tactical.com/","title":"511 Tactical"},
 {"href":"https://www.outerknown.com/","title":"OuterKnown"},
-{"href":"http://www.pocketdeal.com/","title":"PocketDeal"},
 {"href":"http://www.passwird.com/","title":"PassWird"},
 {"href":"http://www.jcrew.com/","title":"JCrew"},
 {"href":"http://www.oldnavy.com/","title":"OldNavy"},
