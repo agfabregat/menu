@@ -11,6 +11,7 @@
 {"href":"http://www.freerepublic.com/tag/news-forum/index","title":"Free Republic"},
 {"href":"https://thelibertydaily.com/","title":"Liberty Daily"},
 {"href":"https://www.citizenfreepress.com/","title":"Citizen FreePress"},
+{"href":"https://www.fortune.com/","title":"Fortune"},
 
 {"href":"https://protrumpnews.com/","title":"ProTrump News"},
 {"href":"https://rantingly.com/","title":"Rantingly"},
