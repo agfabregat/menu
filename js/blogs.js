@@ -5,7 +5,6 @@
 {"href":"http://libaterian.blogspot.com/","title":"Libaterian"},
 {"href":"http://www.steynonline.com/","title":"Steyn online"},
 {"href":"http://theconservativetreehouse.com/","title":"Conservative TreeHouse"},
-{"href":"https://truepundit.com/","title":"TruePundit"},
 {"href":"https://thedesk.matthewkeys.net/","title":"TheDesk Matthew Keys"},
 
 {"href":"https://www.scottadamssays.com/","title":"Scott Adams"},
