@@ -1,7 +1,7 @@
 [
 {"href":"http://www.thelocalpapers.com/by_country.html","title":"Diarios del mundo"},
 {"href":"http://www.clarin.com/","title":"ARG Clarin"},
-{"href":"http://www.larazon.com.ar/","title":"ARG LaRazon"},
+{"href":"https://www.larazon.es/tags/argentina/","title":"ARG LaRazon"},
 {"href":"http://www.lanacion.com.ar/","title":"ARG LaNacion"},
 
 {"href":"http://www.diarioelpais.com/?","title":"URU ElPais"},
