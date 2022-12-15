@@ -19,7 +19,7 @@
 {"href":"https://twitter.com/jamiedupree?lang=en","title":"Jamie Dupree Twitter"},
 {"href":"http://donsurber.blogspot.com/","title":"Don Surber"},
 {"href":"https://danieljmitchell.wordpress.com/","title":"Daniel Mitchell Int. Liberty"},
-{"href":"https://meaninginhistory.blogspot.com/","title":"Meaning of History"},
+{"href":"https://meaninginhistory.substack.com/archive?utm_source=menu-dropdown","title":"Meaning of History"},
 {"href":"https://themarketswork.com/","title":"The MarketsWork"},
 
 
