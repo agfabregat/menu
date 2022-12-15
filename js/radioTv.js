@@ -1,6 +1,6 @@
 [
 {"href":"https://www.livenewsworld.com/fox-news-live-stream/","title":"FoxNews TV"},
-{"href":"https://streema.com/tv/country/Argentina","title":"TV Argentina"},
+{"href":"https://ustvgo.tv/","title":"USTVGO"},
 
 {"href":"http://tunein.com/","title":"Radio TuneIn"},
 {"href":"http://tunein.com/radio/Conservative-c57917/","title":"Conservative Talk"},
