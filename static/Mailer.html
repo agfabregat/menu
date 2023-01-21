@@ -19,7 +19,7 @@
         <input type="text" id="akey" placeholder="http://whatever/whatever.mp3">
         <br><br>
 <div>
-	<a id="linkout" href="" onclick="mail();">SEND MAIL 8</a>
+	<a id="linkout" href="" onclick="mail();">SEND MAIL 9</a>
 </div>
 <script>
 
@@ -43,7 +43,7 @@ let pdata = {
 
 
 
-let response = await fetch('smtp-relay.sendinblue.com:587', {
+let response = await fetch('https://smtp-relay.sendinblue.com:587', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json;charset=utf-8',
