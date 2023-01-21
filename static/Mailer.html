@@ -19,7 +19,7 @@
         <input type="text" id="akey" placeholder="http://whatever/whatever.mp3">
         <br><br>
 <div>
-	<a id="linkout" href="" onclick="mail();">SEND MAIL 1</a>
+	<a id="linkout" href="" onclick="mail();">SEND MAIL 2</a>
 </div>
 <script>
 
@@ -52,7 +52,7 @@ let response = fetch('https://smtp-relay.sendinblue.com:587', {
   body: JSON.stringify(pData)
 });
 
-funtion mail(){
+function mail(){
 var k = document.getElementById("akey").value;
 let result = response.json();
 alert(result.message);
