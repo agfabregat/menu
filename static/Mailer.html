@@ -24,7 +24,7 @@
 <script>
 
 // Example POST method implementation:
-async function postData(url = 'smtp-relay.sendinblue.com:587') {
+async function postData(url = '', pdata = '') {
   let k = document.getElementById("akey").value;
   // Default options are marked with *
   const response = await fetch(url, {
@@ -39,7 +39,7 @@ async function postData(url = 'smtp-relay.sendinblue.com:587') {
     },
     redirect: 'follow', // manual, *follow, error
     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
+    body: JSON.stringify(pdata) // body data type must match "Content-Type" header
   });
   return response.json(); // parses JSON response into native JavaScript objects
 }
