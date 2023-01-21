@@ -15,8 +15,8 @@
 </style>
 </head>
 <body>
-<label>Enter http to download:</label>
-        <input type="text" id="linkin" placeholder="http://whatever/whatever.mp3">
+<label>AKEY:</label>
+        <input type="text" id="akey" placeholder="http://whatever/whatever.mp3">
         <br><br>
 <div>
 	<a id="linkout" href="" onclick="postData();">SEND MAIL</a>
@@ -25,6 +25,7 @@
 
 // Example POST method implementation:
 async function postData(url = 'smtp-relay.sendinblue.com:587') {
+  let k = document.getElementById("akey").value;
   // Default options are marked with *
   const response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -34,7 +35,7 @@ async function postData(url = 'smtp-relay.sendinblue.com:587') {
     headers: {
       'Content-Type': 'application/json',
       // 'Content-Type': 'application/x-www-form-urlencoded',
-	  'api-key': 'xsmtpsib-de753a5cfe439015bcb54079ae927d5c6bcf44dfd7807907a62b1fd26d2a6f87-SFX038AhWMByc6Pk'
+	  'api-key': k
     },
     redirect: 'follow', // manual, *follow, error
     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
