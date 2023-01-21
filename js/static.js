@@ -17,6 +17,7 @@
 {"href":"./static/ScreenWidths.html","title":"ScreenWidths"},
 {"href":"./static/lineOriginators.html","title":"Line Originators"},
 {"href":"./static/LinkForDownload.htm","title":"LinkForDownload"},
+{"href":"./static/Mailer.html","title":"Mailer"},
 {"href":"./static/STICKYHEADERSFOOTERS.html","title":"StickyHeadersFooters"}
 
 ]
