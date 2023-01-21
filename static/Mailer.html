@@ -19,7 +19,7 @@
         <input type="text" id="akey" placeholder="http://whatever/whatever.mp3">
         <br><br>
 <div>
-	<a id="linkout" href="" onclick="postData();">SEND MAIL 4</a>
+	<a id="linkout" href="" onclick="postData();">SEND MAIL 5</a>
 </div>
 <script>
 
@@ -27,7 +27,7 @@
 async function postData(url = '', pdata = '') {
   let k = document.getElementById("akey").value;
   // Default options are marked with *
-  const response = await fetch(url, pdata) {
+  const response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
