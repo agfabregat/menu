@@ -7,7 +7,7 @@
 {"href":"./static/EncryptStellar/nacl-messageEncyption.html","title":"NaclMssgEncrypt"},
 {"href":"./static/EncryptStellar/nacl-pkMsgEncryption.html","title":"pkNaclMssgEncrypt"},
 {"href":"./static/EncryptStellar/stellar.html","title":"Stellar"},
-
+{"href":"./static/fonts.html","title":"Fonts"},
 {"href":"./static/Nitrogen.html","title":"Nitrogen"},
 {"href":"http://oddsapi.azurewebsites.net/odds.html","title":"Odds"},
 {"href":"http://zjx.azurewebsites.net/zjx.html","title":"ZJX"},

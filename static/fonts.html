@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<title>Index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">      
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+	*{font-family: Verdana, Arial, Tahoma, Serif;
+	font-size: clamp(0.8rem, 0.8rem + 1vw, 2.2rem);
+	}
+	
+	
+
+
+	
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+
+  align-items: stretch; /* will apply equal heights to flex items */
+  height: 100%;
+}
+
+.mrow{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+  line-height:2.0;
+  
+}
+.irow{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+  line-height:1.75;
+}
+
+.em075 {
+ font-size:0.75em
+ }
+ .em100 {
+ font-size:1.00em
+ }
+ .em150 {
+ font-size:1.50em
+ }
+ .em200 {
+ font-size:2.00em
+ }
+
+
+</style>
+</head>
+<body>
+<div class="mrow">
+<div id="menu" class="column" style="flex:1;margin-right:3px; ">
+   <div class="em075>Class 0.75em</div>
+   <div class="em100>Class 1.00em</div>
+      <div class="em150>Class 1.50em</div>
+	     <div class="em200>Class 2.00em</div>
+</div>
+
+<div class="column" style="flex:4;" id="content">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
