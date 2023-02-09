@@ -59,17 +59,17 @@
  font-size:2.00rem
  }
 
-.clamp075{
-	font-size: clamp(0.75rem, 0.75rem + 0.8vw, 1.25rem);
+.minmax075{
+	font-size: minmax(0.75vw, 1.25vw);
 }
-.clamp100{
-	font-size: clamp(1.00rem, 1.00rem + 0.8vw, 1.75rem);
+.minmax100{
+	font-size: minmax(1.00vw, 1.00vw);
 }
-.clamp150{
-	font-size: clamp(1.50rem, 1.50rem + 0.8vw, 2.25rem);
+.minmax150{
+	font-size: minmax(1.50vw, 2.00vw);
 }
-.clamp200{
-	font-size: clamp(2.00rem, 2.00rem + 0.8vw, 2.75rem);
+.minmax200{
+	font-size: minmax(2.00vw, 2.75vw);
 }
 
 </style>
@@ -83,10 +83,10 @@
 </div>
 
 <div class="mrow">
-<div class="column clamp075" style="flex:1;">C1 Clamp 0.75rem</div>
-<div class="column clamp100" style="flex:1;">C2 Clamp 1.00rem</div>
-<div class="column clamp150" style="flex:1;">C3 Clamp 1.50rem</div>
-<div class="column clamp200" style="flex:1;">C4 Clamp 2.00rem</div>
+<div class="column minmax075" style="flex:1;">C1 minmax 0.75rem</div>
+<div class="column minmax100" style="flex:1;">C2 minmax 1.00rem</div>
+<div class="column minmax150" style="flex:1;">C3 minmax 1.50rem</div>
+<div class="column minmax200" style="flex:1;">C4 minmax 2.00rem</div>
 </div>
 
 
