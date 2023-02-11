@@ -9,6 +9,10 @@
 {"href":"https://frankspeech.com/","title":"Real America's Voice(FrankSpeech)"},
 
 {"href":"http://www.talkstreamlive.com","title":"TalkStream live"},
+{"href":"https://www.rsbnetwork.com/category/video/","title":"RSBN"},
+{"href":"https://gettr.com/","title":"GTTR gb PE#5"},
+
+
 
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
 
