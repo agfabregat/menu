@@ -11,26 +11,20 @@
 
 <style>
 :root {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
-    --font-color: #424242;
-    --bg-color: #fff;
-    --heading-color: #292922;
+    --primary-bk-color: #302AE6;
+    --secondary-bk-color: #536390;
+    --primary-font-color: #424242;
+    --secondary-font-color: #1e1e1e;
+    
 }
-[data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --heading-color: #818cab;
-}
+
 body {
     font-family: "Source Sans Pro", sans-serif;
     <!--background-color: #1e1e1e;
     color: #d3d3d3;
 	-->
-	background-color: var(--bg-color);
-    color: var(--font-color);
+	background-color: var(--primary-bk-color);
+    color: var(--primary-font-color);
 
     font-weight: 300;
     margin-top: 0px;
@@ -48,8 +42,13 @@ body {
     <!--background: #b3b3b3;
     color: #1e1e1e;
 	-->
-	color: var(--secondary-color);
+	
     font-weight: bold;
+}
+
+#content{
+   background-color: var(--secondary-bk-color);
+    color: var(--secondary-font-color);
 }
 .rowh {
     display: flex;
@@ -57,7 +56,6 @@ body {
     flex-wrap: wrap;
     width: 98%;
     align-items: stretch;
-	color: var(--primary-color);
 }
 .cellh {
     display: flex;
