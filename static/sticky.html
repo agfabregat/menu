@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-<title>4STICKY</title>
+<title>5STICKY</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">      
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -74,10 +74,11 @@ hr {
 </style>
 <script>
 let t = 0;
+let tarr = [9788, 9728];
 function T(elem){
  t++;
  t = t>1?0:1;
- elem.innerHTML=t;
+ elem.innerHTML=tarr[t];
  }
 </script>
 </head>
@@ -96,7 +97,7 @@ function T(elem){
          </div>
       </div>
       <div id="content">
-	  <div>white-sun&nbsp;&#x263C;</div>
+	  <div>white-sun&nbsp;&#9788;</div>
 	  <div>dark-sun&nbsp;&#9728;</div>
 	  <div onclick="T(this)">xxxxxx</div>
 	  <div>yyyyyy</div>
