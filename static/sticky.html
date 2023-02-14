@@ -72,6 +72,9 @@ hr {
 }
 
 </style>
+<script>
+let t = 0;
+</script>
 </head>
 <body>
 
@@ -90,7 +93,7 @@ hr {
       <div id="content">
 	  <div>white-sun&nbsp;&#x263C;</div>
 	  <div>dark-sun&nbsp;&#9728;</div>
-	  <div onclick="alert('HI');">xxxxxx</div>
+	  <div onclick="t++; this.innerHtml(t); t>1?t=0;">xxxxxx</div>
 	  <div>yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
