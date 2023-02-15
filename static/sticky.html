@@ -28,8 +28,8 @@ body {
     font-weight: 300;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: .2rem;
+    margin-right: .2rem;
 	/* overflow: hidden;  Hide scrollbars */
 }
 #head {
@@ -38,15 +38,12 @@ body {
     text-align: center;
     z-index: 99;
     font-size: clamp(1.1rem, 2.5vw, 2.2rem);
-	background-color: var(--primary-bk-color);
-    color: var(--primary-font-color);
-	
+
     font-weight: bold;
 }
 
 #content{
-   background-color: var(--secondary-bk-color);
-    color: var(--secondary-font-color);
+   
 }
 .rowh {
     display: flex;
@@ -67,8 +64,8 @@ body {
 }
 
 hr {
-    margin-top: 0.125rem;
-    margin-bottom: 0.125rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
     opacity: 60%;
 }
 #theme{
@@ -100,7 +97,7 @@ hr {
       <div id="content">
 	  
 	  
-	  <div class="tOddRow">0yyyyy</div>
+	  <div class="tOddRow">6yyyyy</div>
 	  <div class="tEvenRow">zzzzzz</div>
 	  <hr />
 	  <div class="tOddRow">0yyyyy</div>
@@ -198,8 +195,11 @@ function T(elem){
  }
 </script>
 <script>
-elem.innerHTML=tarr[t];
+document.addEventListener("DOMContentLoaded", function(){
+    elem.innerHTML=tarr[t];
  	changeStyle(t);
+});
+
 </script>
 </body>
 </html>
