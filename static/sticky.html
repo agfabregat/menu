@@ -92,7 +92,7 @@ hr {
       <div id="content">
 	  <div><span>&#9788;</span><span>&#9728;</span></div>
 	  
-	  <div onclick="T(this)">8xxxxx</div>
+	  <div onclick="T(this)">9xxxxx</div>
 	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
@@ -136,7 +136,7 @@ hr {
   function toggleTheme()
   {
 	var theme = document.getElementsByTagName('link')[0];
-	changeStyle();
+
   }
 </script>	  
 <script>
@@ -153,6 +153,7 @@ function T(elem){
  t++;
  t = t>1?0:1;
  elem.innerHTML=tarr[t];
+ 	changeStyle();
  }
 </script>
 </body>
