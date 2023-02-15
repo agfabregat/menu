@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+<link id="theme" rel="stylesheet" href="light.css" type="text/css">
 <style>
 :root {
     --primary-bk-color: #fff;
@@ -72,18 +72,10 @@ hr {
 }
 
 </style>
-<script>
-let t = 0;
-let tarr = ['&#9788;', '&#9728;'];
-function T(elem){
- t++;
- t = t>1?0:1;
- elem.innerHTML=tarr[t];
- }
-</script>
+
 </head>
 <body>
-
+	<div id="style"></div>
       <div id="head">
          <div class="rowh">
             <div class="cellh">111</div>
@@ -100,44 +92,67 @@ function T(elem){
 	  <div><span>&#9788;</span><span>&#9728;</span></div>
 	  
 	  <div onclick="T(this)">6xxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
+	  <div class="blue">yyyyyy</div>
 	  <div>zzzzzz</div>
 	  <div>xxxxxx</div>
-	  <div>yyyyyy</div>
-	  <div>zzzzzz</div>
+	  
 	  </div>
+	  
+<script>
+  function toggleTheme()
+  {
+	var theme = document.getElementsByTagName('link')[0];
+	changeStyle();
+  }
+</script>	  
+<script>
+let style = document.getElementById('style');
+function changeStyle(){
+  style.innerHTML = "<style>.blue{background:'blue';}</style>";
+}
+</script>
+	  
+<script>
+let t = 0;
+let tarr = ['&#9788;', '&#9728;'];
+function T(elem){
+ t++;
+ t = t>1?0:1;
+ elem.innerHTML=tarr[t];
+ }
+</script>
 </body>
 </html>
