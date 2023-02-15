@@ -97,7 +97,7 @@ hr {
       <div id="content">
 	  
 	  
-	  <div id="theme" onclick="T(this)">4xxxxx</div>
+	  <div id="theme" onclick="T(this)">5xxxxx</div>
 	  <div class="tOddRow">yyyyyy</div>
 	  <div class="tEvenRow">zzzzzz</div>
 	  <div>xxxxxx</div>
@@ -170,8 +170,8 @@ hr {
 </script>	  
 <script>
 let style = document.getElementById('style');
-let styles = ["<style> .tOddRow {color: orange;} .tEvenRow {color: yellow;}</style>",
-"<style> .tOddRow {color: purple;} .tEvenRow {color: red;}</style>"];
+let styles = ["<style> .tOddRow {color: orange; background:white;} .tEvenRow {color: yellow; background:black;}</style>",
+"<style> .tOddRow {color: purple; background:darkgray;} .tEvenRow {color: red; background: lightgray;}</style>"];
 function changeStyle(styleIdx){
   style.innerHTML = styles[styleIdx];
 }
