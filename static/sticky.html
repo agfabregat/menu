@@ -140,16 +140,15 @@ body {color:white; background:black;}  .tOddRow {color: white; background:#47474
 	let tarr = ['&#9788;', '&#9728;'];
 	let styles = ["<style> body {color:white; background:black;}  .tOddRow {color: white; background:#474747; line-height:1.1rem; margin:5px;} .tEvenRow {color: white; background:#595959; line-height:1.1rem; margin:5px;}</style>",
 	"<style> body {color:black; background:white;}  .tOddRow {color: black; background:#f5f5f5; line-height:1.1rem; margin:5px;} .tEvenRow {color: black; background: #dedede; line-height:1.1rem; margin:5px;}</style>"];
-	let style;
-	let theme;
 	
+	let style;
+	let theme;	
 	document.addEventListener("DOMContentLoaded", function(){
-
-	style = document.getElementById('style');
-	theme = document.getElementById('theme');
-	style.innerHTML=tarr[t];
-	T(t);
-});
+		style = document.getElementById('style');
+		theme = document.getElementById('theme');
+		style.innerHTML=tarr[t];
+		T(t);
+	});
 </script>
 
 <script>
