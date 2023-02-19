@@ -26,6 +26,7 @@
 body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;    
+	margin:0;
 	/* overflow: hidden;  Hide scrollbars */
 }
 
@@ -44,6 +45,7 @@ body {
 
 #content{
     line-height:2rem;	
+	font-size: clamp(1rem, 1rem + 1vw, 1.3rem);
 }
 
 .rowh0 {
@@ -66,15 +68,13 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-    opacity: 85%;
+    font-size: clamp(1.2rem, 1.2rem + 1vw, 2.2rem);
 }
 .cellh1 {
     display: flex;
     flex: 1;
     flex-direction: column;
-    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-    opacity: 85%;
+	font-size: clamp(1rem, 1rem + 1vw, 2.2rem);
 }
 
 #theme{
@@ -97,8 +97,8 @@ body {
             <div class="cellh0">222</div>
          </div>
          <div class="rowh1">
-            <div class="cellh1">222</div>
-            <div class="cellh1">1EQUALS3</div>
+            <div class="cellh1">333</div>
+            <div class="cellh1">1EQUALS1</div>
             <div class="cellh1"><div id="theme" onclick="T()">XXX</div></div>
          </div>
       </div>
