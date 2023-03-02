@@ -8,10 +8,10 @@
 
 {"href":"https://binance.us/en/trade/pro/XNO_USD","title":"XNO USD"},
 {"href":"https://binance.us/en/trade/pro/ATOM_USD","title":"ATOM USD"},
-{"href":"https://binance.us/en/trade/pro/SOL_USD","title":"SOL USD"},
+{"href":"https://binance.us/en/trade/pro/XLM_USD","title":"XLM USD"},
 {"href":"https://binance.us/en/trade/pro/BNB_USD","title":"BNB USD"},
 
-{"href":"https://1equals1.club","title":"Queries"},
+{"href":"https://archive.is/","title":"Archive is"},
 {"href":"https://agfservicecorsproxy20220326232156.azurewebsites.net/htmlget.html","title":"HtmlGet"},
 
 {"href":"https://www.livesporttv.com/","title":"SportsOnTv"},

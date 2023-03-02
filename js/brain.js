@@ -6,6 +6,4 @@
     {"href":"https://absolutist.com/online/slidey-block-puzzle/","title":"Slidy Block"},
     {"href":"https://slidingtiles.com/en/puzzle/play/art/25367-3x3-puzzle#3x3","title":"3x3 Puzzle"}
   
-    
-    
-    ]
+]
