@@ -15,7 +15,7 @@
 {"href":"http://www.salon.com","title":"Salon"},
 {"href":"http://www.theatlantic.com","title":"Atlantic Monthly"},
 {"href":"http://www.newyorker.com/","title":"New Yorker"},
-{"href":"http://www.newyorkmetro.com/","title":"New York Mag"},
+{"href":"http://www.nymag.com/","title":"New York Mag"},
 
 {"href":"http://www.nyobserver.com/","title":"NY Observer"},
 {"href":"http://www.thenation.com/","title":"The Nation"},
