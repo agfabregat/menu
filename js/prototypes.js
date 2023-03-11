@@ -1,7 +1,6 @@
 [
 {"href":"https://www.flashscore.com/tennis/wta-singles/","title":"WTA Schedule"},
 {"href":"https://playarea.azurewebsites.net/papers.html","title":"Morning Papers"},
-{"href":"https://www.dailymail.co.uk/ushome/index.html","title":"Daily Mail US"},
 {"href":"https://www.the-sun.com/entertainment/","title":"The Sun Entertainment"},
 {"href":"https://www.investopedia.com/what-to-expect-for-the-markets-next-week-4584772","title":"Investopedia This Week"},
 {"href":"http://playarea.azurewebsites.net/brinkster/test.aspx","title":"Test Aspx"},
@@ -17,8 +16,6 @@
 {"href":"https://www.livesporttv.com/","title":"SportsOnTv"},
 {"href":"https://www.fis-ski.com/DB/general/live.html","title":"Alpine Skiing"},
 
-{"href":"https://www.rocketlaunch.live/","title":"Rocket Launches"},
-{"href":"https://spaceflightnow.com/launch-schedule/","title":"Rocket Launches2"},
 {"href":"https://popminute.com/tv-tonight/","title":"TV Primetime"},
 
 {"href":"https://noises.online/player.php?g=ha5","title":"MyNoise"},
