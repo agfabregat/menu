@@ -10,6 +10,6 @@
     {"href":"https://twitter.com/FinancialTimes","title":"Financial Times"},
     {"href":"https://twitter.com/business","title":"Bloomberg"},
     {"href":"https://twitter.com/NewYorker","title":"The New Yorker"},
-    {"href":"https://twitter.com/villagevoice","title":"Village Voice"},
+    {"href":"https://twitter.com/villagevoice","title":"Village Voice"}
   
 ]
