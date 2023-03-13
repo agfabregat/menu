@@ -17,6 +17,9 @@
     {"href":"https://citizenfreepress.com/","title":"CitizenFreePress"},
     {"href":"https://freerepublic.com/tag/news-forum/index","title":"FreeRepublic"},
 
+    
+    {"href":"https://www.theepochtimes.com/","title":"The Epoch Times"},
+    {"href":"https://freebeacon.com/","title":"Free Beacon"},
     {"href":"https://spectator.org/","title":"American Spectator"},
     {"href":"https://newrepublic.com/","title":"The New Republic"},
     {"href":"https://www.salon.com/","title":"Salon"},
