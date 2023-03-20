@@ -1,7 +1,5 @@
 [
 {"href":"https://www.livenewsworld.com/fox-news-live-stream/","title":"FoxNews TV"},
-{"href":"https://ustvgo.tv/","title":"USTVGO"},
-
 {"href":"http://tunein.com/","title":"Radio TuneIn"},
 {"href":"http://tunein.com/radio/Conservative-c57917/","title":"Conservative Talk"},
 {"href":"https://americasvoice.news/","title":"Real America's Voice"},
@@ -12,32 +10,23 @@
 {"href":"https://www.rsbnetwork.com/category/video/","title":"RSBN"},
 {"href":"https://gettr.com/","title":"GTTR gb PE#5"},
 
-
-
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
-
-
 {"href":"https://podcasts.google.com/search/no%20agenda","title":"No Agenda"},
 {"href":"https://podcasts.google.com/search/mark%20simone","title":"Mark Simone"},
 {"href":"https://podcasts.google.com/search/ask%20a%20spaceman","title":"Ask A Spaceman"},
 {"href":"https://podcasts.google.com/search/dot%20net%20rocks","title":"DotNet Rocks!"},
 {"href":"https://podcasts.google.com/search/security%20now","title":"Security Now"},
 
-
-
 {"href":"http://streamuruguay5.blogspot.com/","title":"StreamUruguay5"},
-
 {"href":"http://www.rojadirecta.me/","title":"RojaDirecta ME"},
 {"href":"http://rojadirecta.su/","title":"RojaDirecta SU"},
 {"href":"http://www.tarjetaroja.eu/","title":"TarjetaRoja"},
-
 
 {"href":"http://www.rtve.es/noticias/directo-la-1/","title":"RTVE.ES San Fermin"},
 {"href":"http://www.radios.co.ve/rcr-caracas/#","title":"RCR Vz"},
 {"href":"http://www.radios.co.ve/actualidad-caracas/#","title":"Union Radio Caracas Vz"},
 {"href":"http://streema.com/radios/play/93215","title":"Union Radio Barqui Vz"},
 {"href":"http://streema.com/radios/play/38123","title":"Union Radio P.Ordaz Vz"},
-
 
 {"href":"https://www.hispantv.com/directo","title":"Hispantv"},
 {"href":"https://www.cronoco.com/2014/03/vtv-en-vivo-vea-venezolana-de.html","title":"VTV Vz"},
@@ -49,7 +38,6 @@
 {"href":"https://www.dw.com/en/media-center/live-tv/s-100825?channel=1","title":"DWTV (Deutsche Welle)"},
 
 {"href":"https://www.bfmtv.com/mediaplayer/live-video/","title":"BFMtv France"},
-
 {"href":"https://www.youtube.com/watch?v=9Auq9mYxFEE","title":"SkyTV"},
 {"href":"http://www.freeintertv.com/view/id-1695","title":"FreeInterTv"},
 {"href":"http://totalsport.me/schedule.txt","title":"TotalSport"},
@@ -58,9 +46,7 @@
 {"href":"https://www.nasa.gov/nasalive","title":"NASA Live"},
 {"href":"https://eol.jsc.nasa.gov/ESRS/HDEV/","title":"NASA Remote Sensing Unit"},
 {"href":"https://www.aljazeera.com/live/","title":"AlJazeera"},
-
 {"href":"http://www.epctv.com/","title":"Epctv"},
-
 {"href":"https://video.sky.it/news/diretta","title":"SkyNews (all in italian)"},
 {"href":"http://123tv.live/category/united-states-usa/","title":"123tv"},
 {"href":"https://livestream.com/watch/browse/sports","title":"LiveStream"},
@@ -85,7 +71,6 @@
 {"href":"https://firstsrowsports.tv/","title":"FirstRow"},
 {"href":"http://www.streamgaroo.com/television/united-states/","title":"Streamgaroo"},
 
-
 {"href":"https://watchsports.to/","title":"WatchSports"},
 {"href":"http://nflstream.io/espn-live-stream-online-live/stream-1","title":"NflStream"},
 {"href":"http://chanfeed.com/","title":"Chanfeed.com"},
@@ -93,12 +78,10 @@
 {"href":"https://www.stream2watch.org/","title":"Stream2watch (sports)"},
 {"href":"https://www.mamahd.org/","title":"MamaHd"},
 
-
 {"href":"http://www.livehere.one/canale-5-italia-1-rete-4-rai-1-dmax-realtime-diretta-streaming-estero/","title":"LiveHere ita"},
 {"href":"http://okteve.com/categories/","title":"OkTeve"},
 {"href":"https://wwitv.com/portal.htm","title":"WWitv"},
 {"href":"http://oklivetv.com/","title":"OkLiveTv"},
-
 
 {"href":"http://www.freeintertv.com/view/id-2566","title":"Free internet TV"},
 {"href":"http://ufreetv.com/","title":"UFreeTV"},
@@ -106,12 +89,10 @@
 {"href":"http://watchnewslive.tv/","title":"WatchNewsLive"},
 {"href":"https://wwitv.com/portal.htm","title":"WWItv"},
 
-
 {"href":"http://livetvmania.net/","title":"Live TV Mania"},
 {"href":"http://www.livenewsmag.com/","title":"Livenews Channel(s)"},
 {"href":"https://www.livenewson.com/united-kingdom/sky-news-hd.html","title":"LivenewsOn"},
  
 {"href":"http://freshair.npr.org/","title":"FreshAir"},
 {"href":"http://www.thislife.org/","title":"ThisAmerLife"}
-
 ]
