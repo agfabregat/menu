@@ -16,6 +16,7 @@
 {"href":"https://podcasts.google.com/search/ask%20a%20spaceman","title":"Ask A Spaceman"},
 {"href":"https://podcasts.google.com/search/dot%20net%20rocks","title":"DotNet Rocks!"},
 {"href":"https://podcasts.google.com/search/security%20now","title":"Security Now"},
+{"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xMjhkMDcyYy9wb2RjYXN0L3Jzcw?sa=X&ved=0CA4Q27cFahcKEwiIxIrfl_r9AhUAAAAAHQAAAAAQAQ","title":"Scott Adams"},
 
 {"href":"http://streamuruguay5.blogspot.com/","title":"StreamUruguay5"},
 {"href":"http://www.rojadirecta.me/","title":"RojaDirecta ME"},
