@@ -11,11 +11,11 @@
 {"href":"https://gettr.com/","title":"GTTR gb PE#5"},
 
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
-{"href":"https://podcasts.google.com/search/no%20agenda","title":"No Agenda"},
-{"href":"https://podcasts.google.com/search/mark%20simone","title":"Mark Simone"},
-{"href":"https://podcasts.google.com/search/ask%20a%20spaceman","title":"Ask A Spaceman"},
-{"href":"https://podcasts.google.com/search/dot%20net%20rocks","title":"DotNet Rocks!"},
-{"href":"https://podcasts.google.com/search/security%20now","title":"Security Now"},
+{"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLm5hc2hvd25vdGVzLmNvbS9yc3MueG1s","title":"No Agenda"},
+{"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9wb3N0LmZ1dHVyaW1lZGlhLmNvbS93b3IvcGxheWxpc3QvcnNzLzIueG1s","title":"Mark Simone"},
+{"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9hc2thc3BhY2VtYW4ubGlic3luLmNvbS9yc3M","title":"Ask A Spaceman"},
+{"href":"https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvNTYzNDc5My9lcGlzb2Rlcy9mZWVk","title":"DotNet Rocks!"},
+{"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy50d2l0LnR2L3NuLnhtbA","title":"Security Now"},
 {"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xMjhkMDcyYy9wb2RjYXN0L3Jzcw?sa=X&ved=0CA4Q27cFahcKEwiIxIrfl_r9AhUAAAAAHQAAAAAQAQ","title":"Scott Adams"},
 
 {"href":"http://streamuruguay5.blogspot.com/","title":"StreamUruguay5"},

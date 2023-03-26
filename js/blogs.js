@@ -7,7 +7,6 @@
 {"href":"http://theconservativetreehouse.com/","title":"Conservative TreeHouse"},
 {"href":"https://thedesk.matthewkeys.net/","title":"TheDesk Matthew Keys"},
 
-{"href":"https://www.scottadamssays.com/","title":"Scott Adams"},
 {"href":"http://ace.mu.nu/","title":"Ace Of Spades"},
 {"href":"http://www.theamericanconservative.com/","title":"Am Conservative"},
 {"href":"https://amgreatness.com/","title":"Am Greatness"},
