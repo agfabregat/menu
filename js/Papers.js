@@ -3,6 +3,7 @@
 {"href":"http://www.clarin.com/","title":"ARG Clarin"},
 {"href":"https://www.larazon.es/tags/argentina/","title":"ARG LaRazon"},
 {"href":"http://www.lanacion.com.ar/","title":"ARG LaNacion"},
+{"href":"https://buenosairesherald.com/","title":"Buenos Aires Herald"},
 
 {"href":"http://www.diarioelpais.com/?","title":"URU ElPais"},
 {"href":"http://www.observa.com.uy/","title":"URU ElObservador"},

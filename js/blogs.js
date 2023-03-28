@@ -62,8 +62,6 @@
 {"href":"https://dolartoday.com/","title":"DolarToday"},
 {"href":"https://www.lapatilla.com/","title":"La Patilla"},
 {"href":"https://www.analitica.com/","title":"Analitica"},
-{"href":"http://www.vcrisis.com/","title":"Vz VC Crisis"},
-{"href":"http://www.laht.com/","title":"Latin American Heral Tribune"},
 {"href":"http://lasarmasdecoronel.blogspot.com/","title":"Gustavo Coronel"},
 {"href":"http://daniel-venezuela.blogspot.com/","title":"Vz News & Views"},
 {"href":"http://devilsexcrement.com/","title":"Vz Devil's Excrement"},
