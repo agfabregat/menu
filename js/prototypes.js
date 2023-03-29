@@ -22,7 +22,7 @@
 
 {"href":"http://agfabregat-001-site2.atempurl.com","title":"DNS test"},
 
-
+{"href":"https://www.bing.com/search?q=Jason+Wingard+resigns&filters=tnTID%3a%22B5D56CB0-FF9A-41c8-BFA5-8C3125CC4D34%22+tnVersion%3a%225034561%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%223%22+tnOrder%3a%22f4918dff-af58-431d-a412-e5a42c1a11d8%22&FORM=TOBRR0&ecount=50","title":"Trending Now"},
 {"href":"http://clexplorer.azurewebsites.net/clexplorer.html","title":"clExplorer"},
 {"href":"http://agfabregat-001-site1.atempurl.com/","title":"Awesome Airfare Helper"},
 {"href":"http://agfabregat-001-site3.atempurl.com/rss-reader.html#","title":"rssReader"},
