@@ -13,6 +13,9 @@
 {"href":"http://americanlookout.com/","title":"Am Lookout"},
 {"href":"https://bigleaguepolitics.com/","title":"Big League Politics"},
 {"href":"https://www.dailywire.com/","title":"Daily Wire"},
+{"href":"https://www.dailysignal.com/","title":"Daily Signal"},
+{"href":"http://www.dailycaller.com/","title":"Daily Caller"},
+{"href":"https://www.thedailybeast.com/","title":"Daily Beast"},
 
 
 {"href":"https://twitter.com/jamiedupree?lang=en","title":"Jamie Dupree Twitter"},
@@ -21,8 +24,6 @@
 {"href":"https://meaninginhistory.substack.com/archive?utm_source=menu-dropdown","title":"Meaning of History"},
 {"href":"https://themarketswork.com/","title":"The MarketsWork"},
 
-
-{"href":"http://www.dailycaller.com/","title":"Daily Caller"},
 {"href":"https://twitter.com/donsurber","title":"Twitter Don Surber"},
 {"href":"https://twitter.com/johnwhuber?lang=en","title":"Twitter Undercover Huber"},
 {"href":"https://twitter.com/aaronjmate","title":"Twitter Aaron Mate"},
@@ -35,9 +36,9 @@
 {"href":"https://gatesofvienna.net/","title":"Gates of Vienna"},
 {"href":"https://theintercept.com/","title":"The Intercept"},
 {"href":"https://thepoliticalinsider.com/","title":"Political Insider"},
-{"href":"https://www.thedailybeast.com/","title":"Daily Beast"},
+
 {"href":"https://www.emptywheel.net/","title":"EmptyWheel"},
-{"href":"http://turcopolier.typepad.com/sic_semper_tyrannis/","title":"Sic Semper Tyrannis"},
+{"href":"https://turcopolier.com/","title":"Sic Semper Tyrannis"},
 {"href":"http://www.captainsquartersblog.com/mt/","title":"Captain's Quarters"},
 {"href":"http://littlegreenfootballs.com/weblog/","title":"Little Green Footballs"},
 {"href":"http://www.michellemalkin.com/","title":"Michelle Malkin"},
