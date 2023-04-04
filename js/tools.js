@@ -1,5 +1,8 @@
 [
 
+{"href":"https://speed.measurementlab.net/#/","title":"Speed Test Measurementlab"},
+{"href":"https://fast.com/","title":"Speed Test Fast.com"},
+{"href":"https://speedof.me/","title":"Speed Test SppedOfMe"},
 {"href":"https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/165.140.84.51","title":"Proxy Detect"},
 {"href":"https://ip.teoh.io/vpn-detection","title":"Proxy Detect"},
 
