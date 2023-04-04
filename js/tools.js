@@ -3,10 +3,24 @@
 {"href":"https://speed.measurementlab.net/#/","title":"Speed Test Measurementlab"},
 {"href":"https://fast.com/","title":"Speed Test Fast.com"},
 {"href":"https://speedof.me/","title":"Speed Test SppedOfMe"},
+{"href":"https://testmy.net/","title":"TestMy Speed"},
+{"href":"https://extreme-ip-lookup.com/","title":"ExtremeIp"},
+{"href":"https://www.ip2location.com/demo/","title":"IPLocation"},
+{"href":"https://whatismyipaddress.com/","title":"Whats my ip address"},
+{"href":"https://ip-lookup.net","title":"Ip lookup"},
+
+{"href":"http://www.whatismyproxy.com","title":"WhatsMyProxy"},
+{"href":"https://www.myip.com","title":"My Ip"},
+{"href":"https://www.whatismyip.com/what-is-my-public-ip-address/?iref=homep5","title":"Whats my ip"},
+{"href":"https://www.showmyip.com","title":"ShowMyIp"},
+{"href":"https://www.google.com/search?q=what%27s+my+IP+address%3F","title":"Google your public ip"},
+{"href":"https://www.iplocation.net","title":"Ip location"},
+
+
 {"href":"https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/165.140.84.51","title":"Proxy Detect"},
 {"href":"https://ip.teoh.io/vpn-detection","title":"Proxy Detect"},
 
-{"href":"https://testmy.net/","title":"TestMy Speed"},
+
 {"href":"https://whoer.net/","title":"Whoer Secure Internet Check"},
 {"href":"https://www.doileak.com","title":"DoIleak Internet Check"},
 {"href":"http://checkmyip.torrentprivacy.com","title":"CheckMyIp Torrent Privacy"},
@@ -21,20 +35,11 @@
 
 {"href":"https://www.yougetsignal.com/tools/open-ports/","title":"You get signal"},
 
-{"href":"https://extreme-ip-lookup.com/","title":"ExtremeIp"},
-{"href":"https://www.ip2location.com/demo/","title":"IPLocation"},
-{"href":"https://whatismyipaddress.com/","title":"Whats my ip address"},
+
 {"href":"https://dnschecker.org/ip-location.php","title":"DNSChecker IP"},
 {"href":"https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/","title":"IPQualityScore"},
 {"href":"https://mxtoolbox.com/SuperTool.aspx","title":"MXToolBox"},
-{"href":"https://ip-lookup.net","title":"Ip lookup"},
 
-{"href":"http://www.whatismyproxy.com","title":"WhatsMyProxy"},
-{"href":"https://www.myip.com","title":"My Ip"},
-{"href":"https://www.whatismyip.com/what-is-my-public-ip-address/?iref=homep5","title":"Whats my ip"},
-{"href":"https://www.showmyip.com","title":"ShowMyIp"},
-{"href":"https://www.google.com/search?q=what%27s+my+IP+address%3F","title":"Google your public ip"},
-{"href":"https://www.iplocation.net","title":"Ip location"},
 
 {"href":"https://tenta.com/test/#advanceddnstest","title":"IP Check Tenta"},
 {"href":"https://www.dnsleaktest.com","title":"DnsLeakTest"},
