@@ -33,7 +33,9 @@
 {"href":"https://m.facebook.com/marcy.supovitz","title":"Marcy"},
 {"href":"https://m.facebook.com/100000239832202","title":"Elena"},
 {"href":"https://m.facebook.com/graciela.duce","title":"Graciela"},
-{"href":"https://m.facebook.com/estela.dagatiduce","title":"Estela"}
+{"href":"https://m.facebook.com/estela.dagatiduce","title":"Estela"},
+{"href":"https://www.facebook.com/doug.szper/","title":"Szper"}
+
 
 
 ]
