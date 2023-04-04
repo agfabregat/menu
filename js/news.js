@@ -6,7 +6,7 @@
 {"href":"http://freebeacon.com/","title":"Free Beacon"},
 {"href":"http://pajamasmedia.com/?src=network","title":"PajamasMedia"},
 {"href":"http://www.breitbart.com/","title":"Breibart"},
-{"href":"http://www.whatfinger.com/","title":"Whatfinger"},
+{"href":"https://www.whatfinger.com/home2/","title":"Whatfinger"},
 
 {"href":"http://www.freerepublic.com/tag/news-forum/index","title":"Free Republic"},
 {"href":"https://thelibertydaily.com/","title":"Liberty Daily"},
