@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>INCBET</title>
+    <style>
+        button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+
+button.orange:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}button.orange {
+    color: white;
+    border: 1px solid #FB8F3D; 
+    background: -webkit-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -moz-linear-gradient(top, #FDA251, #FB8F3D);
+    background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
+}
+
+button.orange:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B); 
+    background: -moz-linear-gradient(top, #FD924C, #F9760B); 
+    background: -ms-linear-gradient(top, #FD924C, #F9760B); 
+    box-shadow: 0 1px #EFEFEF;
+}
+
+    </style>
+  </head>
+
+  <body>     
+    <div class='content'>
+        <div>
+            <label for="aggInvestment">Aggregate Investment:</label>
+            <input type="number" id="aggInvestment"  min="0" max="5000">
+        </div>
+        <div>
+            <label for="initialProfit">Initial Profit:</label>
+            <input type="number" id="initialProfit"  min="1" max="20">
+        </div>
+        <div>
+            <label for="profitIncrement">Profit Increment:</label>
+            <input type="number" id="profitIncrement"  min="1" max="20">
+        </div>
+        <div>
+
+            <button class="orange">Run Model!</button>
+        </div>
+    </div>  
+
+    <script>
+
+    </script>
+
+    <script>
+        function betContext(_aggInvestment, _initialProfit, _profitIncrementByStep){
+            this.aggInvestment = _aggInvestment;
+            this.initialProfit = _initialProfit;
+            this.profitIncrementByStep = _profitIncrementByStep;
+            this.targetPayoff = 0.0;
+            this.currBet = 0.0;
+            this.currBetRounded = 0.0;
+            this.neededProfit = 0.0;
+            this.potProfit  = 0.0;
+        }
+
+        function nextBet(bc, currOdds, profitIncrement)
+        {
+            bc.neededProfit = bc.aggInvestment + bc.initialProfit + profitIncrement;			
+            bc.currBet = bc.neededProfit / (currOdds - 1.0);
+            bc.currBetRounded = Math.Round(bc.currBet, 0);
+            bc.targetPayoff = bc.currBetRounded * currOdds;
+            bc.potProfit= bc.neededProfit - bc.aggInvestment;
+            bc.aggInvestment = bc.aggInvestment+bc.currBetRounded;
+        }
+
+        document.onload = function(){ 
+            const aggInvestmentElem = document.querySelector("#aggInvestment");
+            const initialProfitElem = document.querySelector("#initialProfit");
+            const profitIncrementElem = document.querySelector("#profitIncrement");
+            const runModel = document.querySelector(".orange");
+            
+            runModel.addEventListener("click", function () {
+                let aggInvestment = aggInvestmentElem.textContent;
+                let initialProfit = initialProfitElem.textContent;
+                let profitIncrement = profitIncrementElem.textContent;
+                alert(aggInvestment);
+                alert(initialProfit);
+                alert(profitIncrement);
+                }
+            )
+        }
+    </script>
+
+  </body>
+</html>
