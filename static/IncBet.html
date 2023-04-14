@@ -55,13 +55,11 @@ button.orange:hover {
         </div>
         <div>
 
-            <button class="orange">Run Model!</button>
+            <button id="orange" class="orange">Run Model!</button>
         </div>
     </div>  
 
-    <script>
 
-    </script>
 
     <script>
         function betContext(_aggInvestment, _initialProfit, _profitIncrementByStep){
@@ -86,10 +84,10 @@ button.orange:hover {
         }
 
         document.onload = function(){ 
-            const aggInvestmentElem = document.querySelector("#aggInvestment");
-            const initialProfitElem = document.querySelector("#initialProfit");
-            const profitIncrementElem = document.querySelector("#profitIncrement");
-            const runModel = document.querySelector(".orange");
+            const aggInvestmentElem = document.getElementById("aggInvestment");
+            const initialProfitElem = document.getElementById("initialProfit");
+            const profitIncrementElem = document.getElementById("profitIncrement");
+            const runModel = document.getElementById("orange");
             
             runModel.addEventListener("click", function () {
                 let aggInvestment = aggInvestmentElem.textContent;
