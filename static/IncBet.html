@@ -43,15 +43,19 @@ button.orange:hover {
     <div class='content'>
         <div>
             <label for="aggInvestment">Aggregate Investment:</label>
-            <input type="number" id="aggInvestment"  min="0" max="5000">
+            <input type="number" id="aggInvestment" value="14.0">
         </div>
         <div>
             <label for="initialProfit">Initial Profit:</label>
-            <input type="number" id="initialProfit"  min="1" max="20">
+            <input type="number" id="initialProfit" value="4.00">
         </div>
         <div>
             <label for="profitIncrement">Profit Increment:</label>
-            <input type="number" id="profitIncrement"  min="1" max="20">
+            <input type="number" id="profitIncrement" value="1.00">
+        </div>
+        <div>
+            <label for="currentOdds">Current Odds:</label>
+            <input type="number" id="currentOdds" value="1.80">
         </div>
         <div>
 
@@ -77,7 +81,7 @@ button.orange:hover {
         {
             bc.neededProfit = bc.aggInvestment + bc.initialProfit + profitIncrement;			
             bc.currBet = bc.neededProfit / (currOdds - 1.0);
-            bc.currBetRounded = Math.Round(bc.currBet, 0);
+            bc.currBetRounded = Math.round(bc.currBet);
             bc.targetPayoff = bc.currBetRounded * currOdds;
             bc.potProfit= bc.neededProfit - bc.aggInvestment;
             bc.aggInvestment = bc.aggInvestment+bc.currBetRounded;
@@ -87,15 +91,24 @@ button.orange:hover {
             const aggInvestmentElem = document.getElementById("aggInvestment");
             const initialProfitElem = document.getElementById("initialProfit");
             const profitIncrementElem = document.getElementById("profitIncrement");
+            const currentOddsElem = document.getElementById("currentOdds");
             const runModel = document.getElementById("orange");
             
             runModel.addEventListener("click", function () {
-                let aggInvestment = aggInvestmentElem.value;
-                let initialProfit = initialProfitElem.value;
-                let profitIncrement = profitIncrementElem.value;
-                alert(aggInvestment);
-                alert(initialProfit);
-                alert(profitIncrement);
+                let aggInvestmentStr = aggInvestmentElem.value;
+                let initialProfitStr = initialProfitElem.value;
+                let profitIncrementStr = profitIncrementElem.value;
+                let currentOddsStr = currentOddsElem.value;
+                let aggInvestmentF = parseFloat(aggInvestmentStr) || 0;
+                let initialProfitF = parseFloat(initialProfitStr) || 0;
+                let profitIncrementF = parseFloat(profitIncrementStr) || 0;
+                let currentOddsF = parseFloat(currentOddsStr) || 0;
+
+                let bctx = new betContext(aggInvestmentF, initialProfitF, profitIncrementF);
+                nextBet(bctx, currentOddsF, profitIncrementF);
+
+                //document.getElementById("content").innerHTML += 
+                //"<h3>This is the text which has been inserted by JS</h3>";
                 }
             )
         }
