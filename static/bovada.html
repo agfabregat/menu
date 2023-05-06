@@ -25,7 +25,7 @@ function unixToDate(unixTimestamp){
 }
 
  const contentElem = document.getElementById('content');
- const json = httpGet('https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis/wta?marketFilterId=def&preMatchOnly=true&eventsLimit=50&lang=en');
+ const json = httpGet('https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis/?marketFilterId=def&preMatchOnly=true&eventsLimit=50&lang=en');
  contentElem.textContent = json;
 
  const tournaments = JSON.parse(json);
