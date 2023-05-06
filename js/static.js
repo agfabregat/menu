@@ -10,6 +10,8 @@
 {"href":"./static/fonts.html","title":"Fonts"},
 {"href":"./static/sticky.html","title":"Sticky"},
 {"href":"./static/Nitrogen.html","title":"Nitrogen"},
+{"href":"./static/bovada.html","title":"Bovada"},
+{"href":"./static/binance.html","title":"Binance"},
 {"href":"http://oddsapi.azurewebsites.net/odds.html","title":"Odds"},
 {"href":"http://zjx.azurewebsites.net/zjx.html","title":"ZJX"},
 {"href":"./static/agatefont.html","title":"AgateFont"},
