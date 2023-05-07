@@ -9,15 +9,15 @@
 
   <body
       <div id='content'>
-        
+
       </div>
 
     <script>
 
     window.onload = function(){ 
         const contentElem = document.getElementById('content');
-        const url1 = 'https://api.binance.us/api/v3/ticker/depth??symbol=XNOUSD';
-        const url2 = 'https://api.binance.us/api/v3/ticker/depth??symbol=XLMUSD';
+        const url1 = 'https://api.binance.us/api/v3/ticker/depth?symbol=XNOUSD';
+        const url2 = 'https://api.binance.us/api/v3/ticker/depth?symbol=XLMUSD';
         Promise.all([
             fetch(url1).then(value => value.json()),
             fetch(url2).then(value => value.json())
