@@ -23,7 +23,8 @@
             fetch(url2).then(value => value.json())
             ])
             .then((value) => {
-               console.log(value)
+               console.log('XNO='+value[0]);
+               console.log('XML='+value[1]);
               //json response
             })
             .catch((err) => {
