@@ -1,40 +1,102 @@
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-    <title>BOVADA</title>
+    <title>BINANCE</title>
+
+    <style>
+        input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+    </style>
   </head>
 
   <body
+  <h2>Binance Symbols</h2>
+
+  <form>
+    <label for="sym1">SYMBOL1</label>
+    <input type="text" id="sym1" name="sym1" value="XNOUSD">
+    <label for="sym2">SYMBOL2</label>
+    <input type="text" id="sym2" name="sym2" value="XLMUSD">
+  </form>
+
+
       <div id='content'>
 
       </div>
 
     <script>
-
+    let syms = ['',''];
+    let units = 0.0;
+    let amount = 0.0;
+    let tranche = 0;
     window.onload = function(){ 
         const contentElem = document.getElementById('content');
-        const url1 = 'https://api.binance.us/api/v3/depth?symbol=XNOUSD';
-        const url2 = 'https://api.binance.us/api/v3/depth?symbol=XLMUSD';
-        Promise.all([
-            fetch(url1).then(value => value.json()),
-            fetch(url2).then(value => value.json())
+        const symbol1 = document.getElementById('sym1');
+        const symbol2 = document.getElementById('sym2');
+
+        syms[0] = symbol1.value;
+        syms[1] = symbol2.value
+        const url0 = 'https://api.binance.us/api/v3/depth?symbol=' + syms[0];
+        const url1 = 'https://api.binance.us/api/v3/depth?symbol=' + syms[1];
+        CallApi(url0, url1);
+
+    }
+
+function CallApi(url0, url1){
+
+    Promise.all([
+            fetch(url0).then(value => value.json()),
+            fetch(url1).then(value => value.json())
             ])
             .then((value) => {
-               console.log('XNO='+value[0]);
-               console.log('XML='+value[1]);
+               console.log(value);
+               value.forEach(TopLevel);
+
               //json response
             })
             .catch((err) => {
                 console.log(err);
             });
+}
 
-    }
+function TopLevel(item, index){
+    units = 0.0;
+    amount = 0.0;
+    tranche = 1000;
+    console.log("-----------------------------------");
+    console.log(index + " SYMBOL: " + syms[index] + " ASKS");
+    item.asks.forEach(DepthLevel);
+    //console.log("TOTALS: " + units + " " + amount+ " " + amount/units);
+    
+    units = 0.0;
+    amount = 0.0;
+    tranche = 1000;
+    console.log("++++++++++++++++++++++++++++++++++++++++")
+    console.log(index + " SYMBOL: " + syms[index] + " BIDS");
+    item.bids.forEach(DepthLevel);
+    //console.log("TOTALS: " + units.toFixed(2) + " " + amount.toFixed(2) + " " + (amount/units).toFixed(2));
 
-
-
+}
+function DepthLevel(item, index){
+   let price = Number(item[0]);
+   let noUnits= Number(item[1]);
+   units = units + noUnits;
+   amount = amount + (noUnits * price);
+   if (units>tranche){
+     //console.log(item[0] + ' ' + item[1]);
+     console.log("TOTALS: " + units.toFixed(2) + " " + amount.toFixed(2) + " " + (amount/units).toFixed(2));
+     tranche = units + 1000;
+     
+   }
+}
 
     </script>
   </body>
