@@ -31,14 +31,47 @@
       <div id='content'>
 
       </div>
+<script>
+function StringBuilder(value) {
+		this.strings = new Array();
+		this.append(value);
+	}
 
+	StringBuilder.prototype.append = function (value) {
+		if (value) {
+			this.strings.push(value);
+		}
+	}
+
+	StringBuilder.prototype.clear = function () {
+		this.strings.length = 0;
+	}
+
+	StringBuilder.prototype.toString = function () {
+		return this.strings.join("");
+	}
+  //var sb = new StringBuilder();
+	//for (let i of jsondata) 
+	//{ 
+	//	var t = i.title;
+	//	var h = i.href;
+	//	sb.append(`<div><a target="_blank" href="${i.href}">${i.title}</a></div>`);
+	//	//sb.append(`<div><span>${i.title}</span><span>${i.href}</span></div>`);
+	//}
+	//let content = document.getElementById("content");
+	//content.innerHTML=sb.toString(); 
+	//sb.clear();
+
+</script>
     <script>
     let syms = ['',''];
     let units = 0.0;
     let amount = 0.0;
     let tranche = 0;
+    let sb = new StringBuilder();
+    let contentElem = '';
     window.onload = function(){ 
-        const contentElem = document.getElementById('content');
+        contentElem = document.getElementById('content');
         const symbol1 = document.getElementById('sym1');
         const symbol2 = document.getElementById('sym2');
 
@@ -57,13 +90,13 @@ function CallApi(url0, url1){
             fetch(url1).then(value => value.json())
             ])
             .then((value) => {
-               console.log(value);
+               //console.log(value);
                value.forEach(TopLevel);
 
               //json response
             })
             .catch((err) => {
-                console.log(err);
+                //console.log(err);
             });
 }
 
@@ -71,19 +104,26 @@ function TopLevel(item, index){
     units = 0.0;
     amount = 0.0;
     tranche = 1000;
-    console.log("-----------------------------------");
-    console.log(index + " SYMBOL: " + syms[index] + " ASKS");
-    item.asks.forEach(DepthLevel);
+    //console.log("-----------------------------------");
+    //console.log(index + " SYMBOL: " + syms[index] + " ASKS");
+    //item.asks.forEach(DepthLevel);
     //console.log("TOTALS: " + units + " " + amount+ " " + amount/units);
-    
+    //console.log(index + " SYMBOL: " + syms[index] + " ASKS");
+    sb.append(`<div>${syms[index]} ${" ASKS (you want to buy)"}</div>`);
+    item.asks.forEach(DepthLevel);
+
+  
     units = 0.0;
     amount = 0.0;
     tranche = 1000;
-    console.log("++++++++++++++++++++++++++++++++++++++++")
-    console.log(index + " SYMBOL: " + syms[index] + " BIDS");
+    //console.log("++++++++++++++++++++++++++++++++++++++++")
+    //console.log(index + " SYMBOL: " + syms[index] + " BIDS");
+    sb.append(`<div>${syms[index]} ${" BIDS you want to sell"}</div>`);
     item.bids.forEach(DepthLevel);
     //console.log("TOTALS: " + units.toFixed(2) + " " + amount.toFixed(2) + " " + (amount/units).toFixed(2));
 
+    contentElem.innerHTML=sb.toString(); 
+    
 }
 function DepthLevel(item, index){
    let price = Number(item[0]);
@@ -92,10 +132,14 @@ function DepthLevel(item, index){
    amount = amount + (noUnits * price);
    if (units>tranche){
      //console.log(item[0] + ' ' + item[1]);
-     console.log("TOTALS: " + units.toFixed(2) + " " + amount.toFixed(2) + " " + (amount/units).toFixed(2));
+     //console.log("TOTALS: " + units.toFixed(2) + " " + amount.toFixed(2) + " " + (amount/units).toFixed(2));
+     
+     sb.append(`<div><span>${units.toFixed(2)}</span>&nbsp;<span>${(amount/units).toFixed(5)}</span></div>`);
+     
      tranche = units + 1000;
      
    }
+
 }
 
     </script>
