@@ -132,7 +132,7 @@ function TopLevel(item, index){
     units = 0.0;
     amount = 0.0;
     tranche = 1000;
-    let maxIdx = 10;
+    let maxIdx = 1;
 
     sb.append(`<div>${syms[index]} ${" ASKS (if you are buying)"}</div>`);
     //item.asks.forEach(DepthLevel);
@@ -170,14 +170,13 @@ function TopLevel(item, index){
     
 }
 function DepthLevel(item){
-   let count = 0;
-   let maxCount = 10;
+
    let price = Number(item[0]);
    let noUnits= Number(item[1]);
    units = units + noUnits;
    amount = amount + (noUnits * price);
    if (units>tranche){
-     sb.append(`<div><span>${units.toFixed(2)}</span>&nbsp;<span>${(amount/units).toFixed(5)}</span></div>`);
+     sb.append(`<div><span>${units.toFixed(2)}</span>&nbsp;&nbsp;&nbsp;<span>${(amount/units).toFixed(5)}</span></div>`);
      tranche = units + 1000;     
    }
 
