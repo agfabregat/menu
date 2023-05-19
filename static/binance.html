@@ -14,6 +14,22 @@
   margin: 8px 0;
   box-sizing: border-box;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  align-items: stretch; /* will apply equal heights to flex items */
+  height: 100%;
+}
+
+.cell{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* flex-basis: 100%;  flex-basis overrides the equal heights*/
+}
     </style>
   </head>
 
@@ -27,10 +43,15 @@
     <input type="text" id="sym2" name="sym2" value="XLMUSD">
   </form>
 
+  <div>
+    <div id="g0"></div>
+    <div id="g1"></div>
+  </div>
+  <div>
+    <div id="g2"></div>
+    <div id="g3"></div>
+  </div>
 
-      <div id='content'>
-
-      </div>
 <script>
 function StringBuilder(value) {
 		this.strings = new Array();
@@ -63,15 +84,22 @@ function StringBuilder(value) {
 	//sb.clear();
 
 </script>
-    <script>
+
+<script>
     let syms = ['',''];
     let units = 0.0;
     let amount = 0.0;
     let tranche = 0;
     let sb = new StringBuilder();
-    let contentElem = '';
+    let grid = ['','','',''];
+    let gridIndex =0;
     window.onload = function(){ 
-        contentElem = document.getElementById('content');
+        grid[0] = document.getElementById('g0');
+        grid[1] = document.getElementById('g1');
+        grid[2] = document.getElementById('g2');
+        grid[3] = document.getElementById('g3');
+         
+
         const symbol1 = document.getElementById('sym1');
         const symbol2 = document.getElementById('sym2');
 
@@ -104,44 +132,58 @@ function TopLevel(item, index){
     units = 0.0;
     amount = 0.0;
     tranche = 1000;
-    //console.log("-----------------------------------");
-    //console.log(index + " SYMBOL: " + syms[index] + " ASKS");
-    //item.asks.forEach(DepthLevel);
-    //console.log("TOTALS: " + units + " " + amount+ " " + amount/units);
-    //console.log(index + " SYMBOL: " + syms[index] + " ASKS");
-    sb.append(`<div>${syms[index]} ${" ASKS (you want to buy)"}</div>`);
-    item.asks.forEach(DepthLevel);
+    let maxIdx = 10;
 
-  
+    sb.append(`<div>${syms[index]} ${" ASKS (people selling)"}</div>`);
+    //item.asks.forEach(DepthLevel);
+    let idx = 0;   
+    for (var ask of item.asks){
+
+        DepthLevel(ask);
+        idx++;
+        if (idx>maxIdx){
+          break;
+        }
+    }
+    grid[gridIndex].innerHTML=sb.toString(); 
+    gridIndex++;
+    sb.clear();
+    // //////////////////////////////////////////////////////////
     units = 0.0;
     amount = 0.0;
     tranche = 1000;
-    //console.log("++++++++++++++++++++++++++++++++++++++++")
-    //console.log(index + " SYMBOL: " + syms[index] + " BIDS");
-    sb.append(`<div>${syms[index]} ${" BIDS you want to sell"}</div>`);
-    item.bids.forEach(DepthLevel);
-    //console.log("TOTALS: " + units.toFixed(2) + " " + amount.toFixed(2) + " " + (amount/units).toFixed(2));
 
-    contentElem.innerHTML=sb.toString(); 
+    sb.append(`<div>${syms[index]} ${" BIDS people wanting to buy"}</div>`);
+    //item.bids.forEach(DepthLevel);
+    idx = 0;   
+    for (var bid of item.bids){
+
+        DepthLevel(bids);
+        idx++;
+        if (idx>maxIdx){
+          break;
+        }
+    }
+    grid[gridIndex].innerHTML=sb.toString(); 
+    gridIndex++;
+    sb.clear();  
     
 }
-function DepthLevel(item, index){
+function DepthLevel(item){
+   let count = 0;
+   let maxCount = 10;
    let price = Number(item[0]);
    let noUnits= Number(item[1]);
    units = units + noUnits;
    amount = amount + (noUnits * price);
    if (units>tranche){
-     //console.log(item[0] + ' ' + item[1]);
-     //console.log("TOTALS: " + units.toFixed(2) + " " + amount.toFixed(2) + " " + (amount/units).toFixed(2));
-     
      sb.append(`<div><span>${units.toFixed(2)}</span>&nbsp;<span>${(amount/units).toFixed(5)}</span></div>`);
-     
-     tranche = units + 1000;
-     
+     tranche = units + 1000;     
    }
 
 }
 
-    </script>
+</script>
+
   </body>
 </html>
