@@ -43,14 +43,14 @@
     <input type="text" id="sym2" name="sym2" value="XLMUSD">
   </form>
 
-  <div>
+  
     <div id="g0"></div>
     <div id="g1"></div>
-  </div>
-  <div>
+  
+  
     <div id="g2"></div>
     <div id="g3"></div>
-  </div>
+  
 
 <script>
 function StringBuilder(value) {
@@ -134,7 +134,7 @@ function TopLevel(item, index){
     tranche = 1000;
     let maxIdx = 10;
 
-    sb.append(`<div>${syms[index]} ${" ASKS (people selling)"}</div>`);
+    sb.append(`<div>${syms[index]} ${" ASKS (if you are buying)"}</div>`);
     //item.asks.forEach(DepthLevel);
     let idx = 0;   
     for (var ask of item.asks){
@@ -153,12 +153,12 @@ function TopLevel(item, index){
     amount = 0.0;
     tranche = 1000;
 
-    sb.append(`<div>${syms[index]} ${" BIDS people wanting to buy"}</div>`);
+    sb.append(`<div>${syms[index]} ${" BIDS (if you are selling)"}</div>`);
     //item.bids.forEach(DepthLevel);
     idx = 0;   
     for (var bid of item.bids){
 
-        DepthLevel(bids);
+        DepthLevel(bid);
         idx++;
         if (idx>maxIdx){
           break;
