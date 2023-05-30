@@ -16,6 +16,7 @@
 
 {"href":"https://hesgoal.jokerlivestream.vip/homePage","title":"JokerLiveStream"},
 
+{"href":"https://esradio.libertaddigital.com/es-la-manana-de-federico/","title":"Es la Mañana de Federico"},
 {"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLm5hc2hvd25vdGVzLmNvbS9yc3MueG1s","title":"No Agenda"},
 {"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9wb3N0LmZ1dHVyaW1lZGlhLmNvbS93b3IvcGxheWxpc3QvcnNzLzIueG1s","title":"Mark Simone"},
 {"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9hc2thc3BhY2VtYW4ubGlic3luLmNvbS9yc3M","title":"Ask A Spaceman"},
