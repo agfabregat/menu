@@ -12,6 +12,8 @@
 
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
 {"href":"http://livetv.sx/es/allupcoming/","title":"LiveTv Sx"},
+{"href":"https://sport2.live/","title":"Sport2"},
+
 {"href":"https://hesgoal.jokerlivestream.vip/homePage","title":"JokerLiveStream"},
 
 {"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLm5hc2hvd25vdGVzLmNvbS9yc3MueG1s","title":"No Agenda"},
