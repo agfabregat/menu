@@ -8,6 +8,8 @@
 {"href":"https://www.ip2location.com/demo/","title":"IPLocation"},
 {"href":"https://whatismyipaddress.com/","title":"Whats my ip address"},
 {"href":"https://ip-lookup.net","title":"Ip lookup"},
+{"href":"https://www.whatsmydns.net","title":"DNS propagation checker"},
+
 
 {"href":"http://www.whatismyproxy.com","title":"WhatsMyProxy"},
 {"href":"https://www.myip.com","title":"My Ip"},
@@ -31,7 +33,6 @@
 {"href":"https://ipleak.org","title":"IP Leak.org"},
 {"href":"https://2ip.io/privacy/","title":"2ip Privacy check"},
 {"href":"https://ipapi.co","title":"Geolocation 30K free/mo"},
-{"href":"https://www.whatsmydns.net","title":"DNS propagation checker"},
 
 {"href":"https://www.yougetsignal.com/tools/open-ports/","title":"You get signal"},
 
