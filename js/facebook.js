@@ -18,6 +18,7 @@
 {"href":"https://m.facebook.com/carlos.costa.37454961","title":"Tato"},
 {"href":"https://m.facebook.com/jack.broughton1","title":"Jack"},
 {"href":"https://m.facebook.com/scpackfan","title":"Gregg"},
+{"href":"https://www.facebook.com/legaulois.lausi/","title":"Lausi"},
 {"href":"https://m.facebook.com/joline.harlow","title":"Joline"},
 {"href":"https://m.facebook.com/barbara.s.brown.16","title":"Barbara"},
 {"href":"https://m.facebook.com/robertwdorsey","title":"Dorsey"},
