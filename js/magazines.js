@@ -33,7 +33,7 @@
 {"href":"http://www.techcentralstation.com/","title":"TechCentralStation"},
 {"href":"http://www.sciam.com/","title":"ScientificAm"},
 {"href":"http://www.popphoto.com/","title":"PopularPhotography"},
-{"href":"http://www.pcphotomag.com/","title":"PCPhotoMag"},
+{"href":"https://www.dpmag.com/","title":"Digital Photography"},
 {"href":"http://www.boatingmag.com/","title":"BoatingMag"},
 {"href":"http://sailingworld.com/","title":"SailingWorld"},
 {"href":"http://www.rollingstone.com/","title":"Rolling Stone"},
