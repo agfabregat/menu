@@ -64,7 +64,7 @@
 {"href":"https://www.lapatilla.com/","title":"La Patilla"},
 {"href":"https://www.analitica.com/","title":"Analitica"},
 {"href":"http://lasarmasdecoronel.blogspot.com/","title":"Gustavo Coronel"},
-{"href":"http://daniel-venezuela.blogspot.com/","title":"Vz News & Views"},
+{"href":"https://twitter.com/danielduquenal","title":"Vz News & Views"},
 {"href":"http://devilsexcrement.com/","title":"Vz Devil's Excrement"},
 {"href":"http://www.infobae.com/","title":"Infobae ARG left"},
 {"href":"http://www.pagina12.com.ar/","title":"Pagina12 ARG left"},
