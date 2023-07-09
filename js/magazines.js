@@ -26,7 +26,7 @@
 {"href":"http://www.time.com/","title":"TIME"},
 {"href":"http://www.msnbc.com/news/NW-front_Front.asp","title":"NewsWeek"},
 {"href":"http://www.popularmechanics.com/","title":"PopMechanics"},
-{"href":"http://www.sailmag.com/","title":"SAIL Mag"},
+{"href":"https://www.sailmagazine.com/","title":"SAIL Mag"},
 {"href":"http://www.consumerreports.org/","title":"ConsumerRepts"},
 {"href":"http://www.reason.com/index.html","title":"Reason"},
 {"href":"http://www.nypress.com/","title":"NYPress"},
