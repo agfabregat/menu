@@ -1,5 +1,6 @@
 [
-    {"href":"https://www.dailymail.co.uk/ushome/index.html","title":"Daily Mail US"},
+    {"href":"https://cdn.livetv693.me/webplayer.php?t=ifr&c=2187077&lang=ru&eid=148232930&lid=2187077&fwm", "title":"Rybakina v Samsonova"},
+	{"href":"https://www.dailymail.co.uk/ushome/index.html","title":"Daily Mail US"},
     {"href":"https://www.msn.com/en-us/news","title":"MSN News"},
     {"href":"https://www.reuters.com/","title":"Reuters"},
     {"href":"https://www.afp.com/en","title":"AFP"},
