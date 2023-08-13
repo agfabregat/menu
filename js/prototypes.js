@@ -11,7 +11,7 @@
 {"href":"https://binance.us/en/trade/pro/BNB_USD","title":"BNB USD"},
 
 {"href":"https://archive.is/","title":"Archive is"},
-{"href":"http://uunet-io.win.stackstaging.com/","title":"uunet.io"},
+{"href":"http://machine.uunet.io","title":"machine.uunet.io"},
 {"href":"https://agfservicecorsproxy20220326232156.azurewebsites.net/htmlget.html","title":"HtmlGet"},
 
 {"href":"https://www.livesporttv.com/","title":"SportsOnTv"},
