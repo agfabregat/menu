@@ -36,7 +36,9 @@
 {"href":"https://m.facebook.com/graciela.duce","title":"Graciela"},
 {"href":"https://m.facebook.com/estela.dagatiduce","title":"Estela"},
 {"href":"https://www.facebook.com/doug.szper/","title":"Szper"},
-{"href":"https://www.facebook.com/graciela.martirena.10/friends","title":"GracielaM"}
+{"href":"https://www.facebook.com/graciela.martirena.10/friends","title":"GracielaM"},
+{"href":"https://www.facebook.com/fernandogaribaldi.garibaldi.3","title":"Fernandito"},
+{"href":"https://www.facebook.com/gustavodaniel.garibaldi","title":"Gustavo"}
 
 
 
