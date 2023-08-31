@@ -182,7 +182,7 @@ function LoadContent(){
    
     let cipher = localStorage.getItem(file);
     if (!cipher){
-        jsStr = [{site:'', 'uid':'', 'key':''}];
+        jsStr = '{"site":"", "uid":"", "key":""}';
 
     } 
     else{
@@ -205,7 +205,7 @@ function SaveContent(){
     let jsonStr = document.getElementById('myTextArea').value;
     let cipher = Encrypt(jsonStr, key);
     localStorage.setItem(file, cipher);
-    alert("SAVED!");
+    alert(file + " SAVED!");
 }
 
 function Encrypt(message, key){
