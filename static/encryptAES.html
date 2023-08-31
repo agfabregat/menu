@@ -81,11 +81,9 @@
 
 </head>
 <body>
-   
+   <div>V2</div>
     <div>
         FILE:<input type="text" id="file" name="file" cols="30" onblur="UpdateFile(this.value)">
-    </div>
-    <div>
         KEY:<input type="password" id="key" name="key" cols="30" onblur="UpdateKey(this.value)">
     </div>
     <div>
@@ -177,17 +175,21 @@ function Validate(){
 
 function LoadContent(){
 
+    let jsStr = "";
     if (!Validate()){
         return;
     }
    
     let cipher = localStorage.getItem(file);
     if (!cipher){
-        jsObj = [{site:'', 'uid':'', 'key':''}];
-        return jsObj;
+        jsStr = [{site:'', 'uid':'', 'key':''}];
+
     } 
+    else{
+        jsStr = DecryptB64(cipher, key)
+    }
      
-    let jsStr = DecryptB64(cipher, key)
+
     let pretty = prettyPrintStr(jsStr);
     document.getElementById('myTextArea').value = pretty;
     document.getElementById('button-sav').disabled = false;
