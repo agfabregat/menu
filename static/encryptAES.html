@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<title>AES</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">      
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<style>
+	*{font-family: Verdana, Arial, Tahoma, Serif;
+	font-size: clamp(0.8rem, 0.8rem + 1vw, 2.2rem);
+	}
+
+/* CSS */
+.button-load {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  /*width: 100%;*/
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.button-load:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+/* CSS */
+.button-sav {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+   /*width: 100%;*/
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-sav:not(:disabled):hover,
+.button-sav:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-sav:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+	
+</style>
+
+</head>
+<body>
+   
+    <div>
+        FILE:<input type="text" id="file" name="file" cols="30" onblur="UpdateFile(this.value)">
+    </div>
+    <div>
+        KEY:<input type="password" id="key" name="key" cols="30" onblur="UpdateKey(this.value)">
+    </div>
+    <div>
+        <button class="button-load" id="button-load" role="button" onclick="LoadContent()">Load Content</button>
+        <button class="button-load" id="button-export" role="button" onclick="ExportB64()">ExportB64</button>
+        <button class="button-load" id="button-import" role="button" onclick="ImportB64()">ImportB64</button>
+
+    </div>
+    <div>
+        <textarea id="myTextArea" type="text" contenteditable="true" cols=50 rows=25></textarea>
+    </div>
+        <!-- HTML !-->
+    <div>
+    <button class="button-sav" id="button-sav" role="button" onclick="SaveContent()" disabled>Save Content</button>
+    </div>
+
+<script>
+let file = '';
+let key = '';
+window.addEventListener('load', function () {
+
+
+/* let secretKey = 'secret key 123';
+let clearText = 'my message';
+
+let ciphertext = Encrypt(clearText, secretKey);
+let cipherB64 = ciphertext.toString();
+ // Decrypt
+let plaintext = DecryptB64(cipherB64, secretKey)
+  
+ console.log(plaintext===clearText);
+ alert("It'finished!") */
+})
+function UpdateFile(val){
+    file = val;
+}
+function UpdateKey(val){
+    key = val;
+}
+function ExportB64(){
+    if (!Validate()){
+        return;
+    }
+    if (!navigator.clipboard) {
+      // Clipboard API not available
+      alert("Clipboard not available.")
+      return;
+    }
+    let cipher = localStorage.getItem(file);
+    if (!cipher){
+        alert("nothing to export from: " + file);
+    } 
+
+    var decrypt = DecryptB64(cipher, key);
+
+    navigator.clipboard
+      .writeText(cipher)
+      .then(() => {
+        alert("successfully copied");
+      })
+      .catch(() => {
+        alert("something went wrong");
+      });
+}
+async function ImportB64(){
+    var cipher = await navigator.clipboard.readText();
+    let jsStr = DecryptB64(cipher, key)
+    let pretty = prettyPrintStr(jsStr);
+    document.getElementById('myTextArea').value = pretty;
+    document.getElementById('button-sav').disabled = false;
+}
+
+function Validate(){
+    file = document.getElementById('file').value;
+    if (!file) {
+    // strValue was empty string, false, 0, null, undefined, ...
+    alert("File cannot be empty");
+    return false;
+    }
+
+    key = document.getElementById('key').value;
+    if (!key) {
+    // strValue was empty string, false, 0, null, undefined, ...
+    alert("Key cannot be empty");
+    return false;
+    }
+    return true;
+}
+
+function LoadContent(){
+
+    if (!Validate()){
+        return;
+    }
+   
+    let cipher = localStorage.getItem(file);
+    if (!cipher){
+        jsObj = [{site:'', 'uid':'', 'key':''}];
+        return jsObj;
+    } 
+     
+    let jsStr = DecryptB64(cipher, key)
+    let pretty = prettyPrintStr(jsStr);
+    document.getElementById('myTextArea').value = pretty;
+    document.getElementById('button-sav').disabled = false;
+}
+
+function SaveContent(){
+    
+    if (!Validate()){
+        return;
+    }   
+
+
+    let jsonStr = document.getElementById('myTextArea').value;
+    let cipher = Encrypt(jsonStr, key);
+    localStorage.setItem(file, cipher);
+    alert("SAVED!");
+}
+
+function Encrypt(message, key){
+    return CryptoJS.AES.encrypt(message, key);
+
+}
+
+function DecryptB64(cipherB64, key){
+    let bytes  = CryptoJS.AES.decrypt(cipherB64, key);
+    let plaintext = bytes.toString(CryptoJS.enc.Utf8);
+    return plaintext;
+}
+function DecryptString(cipherText, key){
+    let bytes  = CryptoJS.AES.decrypt(cipherText.toString(), key);
+    let plaintext = bytes.toString(CryptoJS.enc.Utf8);
+    return plaintext;
+}
+
+function prettyPrintObj(jsObj) {
+
+    let pretty = JSON.stringify(jsObj, undefined, 4);
+    return pretty;
+}
+
+function prettyPrintStr(jsonStr ){
+    let jsObj = JSON.parse(jsonStr);
+    let pretty = JSON.stringify(jsObj, undefined, 4);
+    return pretty;
+}
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+</html>
