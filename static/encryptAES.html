@@ -124,8 +124,9 @@ function UpdateFile(val){
 function UpdateKey(val){
     key = val;
 }
-function CleanLocalStor(){
+function CleanLocalStorage(){
     localStorage.clear();
+    alert("local storage cleaned.");
 }
 function ExportB64(){
     if (!Validate()){
@@ -155,8 +156,8 @@ function ExportB64(){
 async function ImportB64(){
     var cipher = await navigator.clipboard.readText();
     let jsStr = DecryptB64(cipher, key)
-    let pretty = prettyPrintStr(jsStr);
-    document.getElementById('myTextArea').value = pretty;
+    //let pretty = prettyPrintStr(jsStr);
+    document.getElementById('myTextArea').value = jsStr;
     document.getElementById('button-sav').disabled = false;
 }
 
@@ -191,11 +192,10 @@ function LoadContent(){
     } 
     else{
         jsStr = DecryptB64(cipher, key)
-    }
-     
+    }     
 
-    let pretty = prettyPrintStr(jsStr);
-    document.getElementById('myTextArea').value = pretty;
+    //let pretty = prettyPrintStr(jsStr);
+    document.getElementById('myTextArea').value = jsStr;
     document.getElementById('button-sav').disabled = false;
 }
 
@@ -204,7 +204,6 @@ function SaveContent(){
     if (!Validate()){
         return;
     }   
-
 
     let jsonStr = document.getElementById('myTextArea').value;
     let cipher = Encrypt(jsonStr, key);
