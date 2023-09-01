@@ -89,7 +89,8 @@
     <div>
         <button class="button-load" id="button-load" role="button" onclick="LoadContent()">Load Content</button>
         <button class="button-load" id="button-export" role="button" onclick="ExportB64()">ExportB64</button>
-        <button class="button-load" id="button-import" role="button" onclick="ImportB64()">ImportB64</button>
+     <button class="button-load" id="button-import" role="button" onclick="ImportB64()">ImportB64</button>   
+     <button class="button-load" id="button-import" role="button" onclick="CleanLocalStorage()">CleanLocalStor</button>
 
     </div>
     <div>
@@ -122,6 +123,9 @@ function UpdateFile(val){
 }
 function UpdateKey(val){
     key = val;
+}
+function CleanLocalStor(){
+    localStorage.clear();
 }
 function ExportB64(){
     if (!Validate()){
