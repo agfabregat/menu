@@ -1,5 +1,10 @@
 [
 {"href":"https://www.livenewsworld.com/fox-news-live-stream/","title":"FoxNews TV"},
+{"href":"https://www.newslive.com/featured/fox-news.html","title":"FoxNews TV"},
+{"href":"https://streamfare.com/fox-weather-live-stream","title":"FoxNews TV Streamfare"},
+{"href":"https://www.freetubetv.net/news/","title":"FoxNews TV freetube"},
+{"href":"https://livenewstime.com/category/watch/","title":"FoxNews TV livenewstime"},
+{"href":"https://usnewson.com/watch/","title":"FoxNews TV usnewson"},
 {"href":"http://tunein.com/","title":"Radio TuneIn"},
 {"href":"http://tunein.com/radio/Conservative-c57917/","title":"Conservative Talk"},
 {"href":"https://americasvoice.news/","title":"Real America's Voice"},

@@ -77,34 +77,36 @@
   cursor: not-allowed;
 }
 
-#title {
+.center {
   width:100%;
   display: flex;
   justify-content: center;
+  margin-bottom:5px;
 }
 	
 </style>
 
 </head>
 <body>
-    <div id="title">V3</div>
-    <div>
-        FILE:<input type="text" id="file" name="file" cols="30" onblur="UpdateFile(this.value)">
-        KEY:<input type="password" id="key" name="key" cols="30" onblur="UpdateKey(this.value)">
+    <div class="center" id="title">V3</div>
+    <div class="center">
+        FILE:<input type="text" id="file" name="file" cols="25" onblur="UpdateFile(this.value)">
+        KEY:<input type="password" id="key" name="key" cols="25" onblur="UpdateKey(this.value)">
     </div>
-    <div>
+    <div class="center">
         <button class="button-load" id="button-load" role="button" onclick="LoadContent()">Load Content</button>
         <button class="button-load" id="button-export" role="button" onclick="ExportB64()">ExportB64</button>
         <button class="button-load" id="button-import" role="button" onclick="ImportB64()">ImportB64</button>   
-        <button class="button-load" id="button-import" role="button" onclick="CleanLocalStorage()">CleanLocalStor</button>
-
+     
     </div>
-    <div>
+    <div class="center">
         <textarea id="myTextArea" type="text" contenteditable="true" cols=50 rows=25></textarea>
     </div>
         <!-- HTML !-->
-    <div>
-    <button class="button-sav" id="button-sav" role="button" onclick="SaveContent()" disabled>Save Content</button>
+    <div class="center">
+        <button class="button-sav" id="button-sav" role="button" onclick="SaveContent()" disabled>Save Content</button>
+        <button class="button-load" id="button-import" role="button" onclick="CleanLocalStorage()">CleanLocalStor</button>
+    
     </div>
 
 <script>
