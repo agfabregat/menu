@@ -7,6 +7,7 @@
 {"href":"./static/EncryptStellar/nacl-messageEncyption.html","title":"NaclMssgEncrypt"},
 {"href":"./static/EncryptStellar/nacl-pkMsgEncryption.html","title":"pkNaclMssgEncrypt"},
 {"href":"./static/EncryptStellar/stellar.html","title":"Stellar"},
+{"href":"./static/ai.html","title":"AI"},
 {"href":"./static/encryptAES.html","title":"EncryptAES"},
 {"href":"./static/fonts.html","title":"Fonts"},
 {"href":"./static/sticky.html","title":"Sticky"},
