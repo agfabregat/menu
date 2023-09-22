@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Hangyaku';
+            src: url('/fonts/Hangyaku/Hangyaku.ttf.woff') format('woff'), url('/fonts/Hangyaku/Hangyaku.ttf.svg#Hangyaku') format('svg'), url('/fonts/Hangyaku/Hangyaku.ttf.eot'), url('/fonts/Hangyaku/Hangyaku.ttf.eot?#iefix') format('embedded-opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        :root {
+            --blue: #1e90ff;
+            --white: #ffffff;
+            --britishRacingGreen: #004225;
+            --amber: #ffbf00;
+            --margin5:3px;
+            --int: 1.2;
+            --scale0: 1rem;
+            --scale_1: calc(var(--scale0) / var(--int));
+            --scale_2: calc(var(--scale_1) / var(--int));
+            --scale1: calc(var(--scale0) * var(--int));
+            --scale2: calc(var(--scale1) * var(--int));
+            --scale3: calc(var(--scale2) * var(--int));
+        }
+        @media (min-width: 10em) {
+            :root {
+                --int: 0.95
+            }
+        }
+        @media (min-width: 20em) {
+            :root {
+                --int: 1.0
+            }
+        }
+        @media (min-width: 30em) {
+            :root {
+                --int: 1.1
+            }
+        }
+        @media (min-width: 40em) {
+            :root {
+                --int: 1.2
+            }
+        }
+
+        @media (min-width: 50em) {
+            :root {
+                --int: 1.3
+            }
+        }
+
+        @media (min-width: 60em) {
+            :root {
+                --int: 1.4
+            }
+        }
+
+        
+        
+        * {
+            /*background: var(--britishRacingGreen)*/ /*!important;*/
+        }
+            
+        html {
+            font-family: 'Hangyaku';
+            font-size: var(--scale2);
+            color: var(--amber);
+            min-width:320px;
+            max-width:960px;
+        }
+        body {
+            margin-top: 0px;
+           margin-bottom:0px;
+           margin-left:0px;
+           margin-right:0px;
+        }
+        #head {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background-color: var(--britishRacingGreen);
+            padding-right:3px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="head">
+            <div>
+                <a href="https://chat.openai.com/">ChatGPT (Microsoft)</a>
+            </div>
+            <div>
+                <a href="https://bard.google.com/">Bard (Google)</a>
+            </div>
+            <div>
+                <a href="https://poe.com/">Poe (Apple)</a>
+            </div>
+
+
+        </div>
+
+    </div>
+           
+
+
+</body>
+</html>

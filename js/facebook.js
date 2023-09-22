@@ -21,6 +21,7 @@
 {"href":"https://www.facebook.com/legaulois.lausi/","title":"Lausi"},
 {"href":"https://m.facebook.com/joline.harlow","title":"Joline"},
 {"href":"https://m.facebook.com/barbara.s.brown.16","title":"Barbara"},
+{"href":"https://www.facebook.com/linda.kubilis","title":"Rushford"},
 {"href":"https://m.facebook.com/robertwdorsey","title":"Dorsey"},
 {"href":"https://m.facebook.com/kara.wattsharlow","title":"Kara"},
 {"href":"https://m.facebook.com/laurie.narboni","title":"Lauire"},
