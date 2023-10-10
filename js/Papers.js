@@ -1,6 +1,6 @@
 [
 {"href":"http://www.thelocalpapers.com/by_country.html","title":"Diarios del mundo"},
-{"href":"{"href":"../static/FrontPages.html","title":"ArbT"},","title":"FrontPages"},
+{"href":"../static/FrontPages.html","title":"FrontPages"},
 
 {"href":"http://www.clarin.com/","title":"ARG Clarin"},
 {"href":"https://www.larazon.es/tags/argentina/","title":"ARG LaRazon"},
