@@ -1,6 +1,8 @@
 
 [
 {"href":"http://www.mediaresearch.org/","title":"MRC CyberAlert"},
+{"href":"http://www.drudgereport.com/","title":"Drudge"},
+
 {"href":"http://www.lucianne.com/","title":"Lucianne"},
 
 {"href":"http://freebeacon.com/","title":"Free Beacon"},
@@ -22,10 +24,10 @@
 
 {"href":"http://www.noticierodigital.com/","title":"NoticieroDigital"},
 
-{"href":"http://www.bloomberg.com/","title":"Bloomberg"},
-{"href":"http://money.cnn.com/data/commodities/","title":"Commodities"},
+{"href":"http://www.bloomberg.com/","title":"Bloomberg Commodities"},
+{"href":"http://money.cnn.com/data/commodities/","title":"CNN Commodities"},
 
-{"href":"http://www.cnn.com","title":"CNN"},
+{"href":"http://www.cnn.com","title":"CNN frontpage"},
 {"href":"http://news.ft.com/home/us/","title":"Fin.Times"},
 {"href":"http://www.investors.com/","title":"Inv.Bus.Daily"},
 {"href":"http://www.upi.com/","title":"UPI"},
