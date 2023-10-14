@@ -1,7 +1,7 @@
 
 [
 {"href":"http://www.mediaresearch.org/","title":"MRC CyberAlert"},
-{"href":"https://aeswebapi.uunet.io/drudge/get","title":"Drudge"},
+{"href":"https://aes.uunet.io/drudge/get","title":"Drudge"},
 
 {"href":"http://www.lucianne.com/","title":"Lucianne"},
 
