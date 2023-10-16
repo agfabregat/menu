@@ -3,7 +3,7 @@
 {"href":"https://playarea.azurewebsites.net/papers.html","title":"Morning Papers"},
 {"href":"https://www.the-sun.com/entertainment/","title":"The Sun Entertainment"},
 {"href":"https://www.investopedia.com/what-to-expect-for-the-markets-next-week-4584772","title":"Investopedia This Week"},
-{"href":"http://playarea.azurewebsites.net/brinkster/test.aspx","title":"Test Aspx"},
+{"href":"https://aes.uunet.io/","title":"Test AES"},
 
 {"href":"https://binance.us/en/trade/pro/XNO_USD","title":"XNO USD"},
 {"href":"https://binance.us/en/trade/pro/ATOM_USD","title":"ATOM USD"},
