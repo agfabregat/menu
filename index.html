@@ -4,7 +4,6 @@
   
 <title>OTP</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">      
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
@@ -13,13 +12,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 <link rel="manifest" href="/images/site.webmanifest">
-<script>
-	const closeTab = () => {
-  history.back();
-  window.close();
-};
 
-</script>
 <style>
 	*{font-family: Verdana, Arial, Tahoma, Serif;
 	font-size: clamp(0.8rem, 0.8rem + 1vw, 2.2rem);
@@ -96,6 +89,14 @@ div > .column.irow:hover{background-color:#edecec; cursor:pointer;}
 <div class="column" style="flex:4;" id="content"></div>
 
 </div>
+
+<script>
+	const closeTab = () => {
+  history.back();
+  window.close();
+};
+</script>
+
 <script>
 function StringBuilder(value) {
 		this.strings = new Array();
