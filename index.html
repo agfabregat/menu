@@ -90,12 +90,6 @@ div > .column.irow:hover{background-color:#edecec; cursor:pointer;}
 
 </div>
 
-<script>
-	const closeTab = () => {
-  history.back();
-  window.close();
-};
-</script>
 
 <script>
 function StringBuilder(value) {
@@ -177,6 +171,16 @@ async function updateScreen(jsonData){
 	content.innerHTML=sb.toString(); 
 	sb.clear();
 }
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+  	console.log("Hello World!");
+	  const closeTab = () => {
+  		history.back();
+  		window.close();
+		};
+	}
+);
 </script>
 </body>
 </html>
