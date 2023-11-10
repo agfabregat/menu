@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<a href="" id="fooLinkID" target="otp"></a>
+	<a href="" id="fooLinkID" target="_blank"></a>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", () => {
@@ -17,7 +17,7 @@
 			let url = 'https://' + window.location.host + '/index2.html';
 			var d = document.getElementById('fooLinkID');
 			d.href = url;
-			d.click();
+			d.click().;
 		
 			history.back();
 			window.close();
