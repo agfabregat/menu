@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-<title>OTP</title>
+<title>OTP1</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
@@ -13,7 +13,8 @@
 <script>
 	document.addEventListener("DOMContentLoaded", () => {
   	console.log("Hello World!");
-    let url = window.location.href+ 'index2.html';
+    let url = 'https://' + window.location.host + '/index2.html';
+    alert(url);
     window.open(url, 'otp').focus();
 
   	history.back();
