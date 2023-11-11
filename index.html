@@ -71,10 +71,10 @@ div > .column.irow:hover{background-color:#edecec; cursor:pointer;}
 		bc.onmessage = (event) => {
 		if (event.data === `Am I the first?`) {
 			bc.postMessage(`No you're not.`);
-			Console.log(`Another tab of this site just got opened`);
+			console.log(`Another tab of this site just got opened`);
 		}
 		if (event.data === `No you're not.`) {
-			Console.log(`An instance of this site is already running`);
+			console.log(`An instance of this site is already running`);
 			history.back();
 			window.close();
 
