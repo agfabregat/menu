@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+<title>OTP1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+	<a href="" id="fooLinkID" target="_top"></a>
+<script>
+	const bc = new BroadcastChannel("uniqueID");
+
+	bc.onmessage = (event) => {
+	if (event.data === `Am I the first?`) {
+		bc.postMessage(`No you're not.`);
+		alert(`Another tab of this site just got opened`);
+	}
+	if (event.data === `No you're not.`) {
+		alert(`An instance of this site is already running`);
+	}
+};
+
+bc.postMessage(`Am I the first?`);
+</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			console.log("Hello World!");
+			let url =  '/index2.html';
+			var d = document.getElementById('fooLinkID');
+			d.href = url;
+			d.click();
+		
+			//history.back();
+			//window.close();
+	
+		}
+	);
+	</script>
+</body>
+</html>
