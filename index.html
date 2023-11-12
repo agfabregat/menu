@@ -72,12 +72,13 @@ div > .column.irow:hover{background-color:#edecec; cursor:pointer;}
 		if (event.data === `Am I the first?`) {
 			bc.postMessage(`No you're not.`);
 			console.log(`Another tab of this site just got opened`);
+			history.back();
+			window.close();
 		}
 		if (event.data === `No you're not.`) {
 			console.log(`An instance of this site is already running`);
-			alert('ANOTHER INSTANCE OF THIS SITE IS ALREADY RUNNING');
-			history.back();
-			window.close();
+			//alert('ANOTHER INSTANCE OF THIS SITE IS ALREADY RUNNING');
+
 
 		}
 	};
