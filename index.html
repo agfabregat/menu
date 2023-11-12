@@ -69,21 +69,19 @@ div > .column.irow:hover{background-color:#edecec; cursor:pointer;}
 		const bc = new BroadcastChannel("uniqueID");
 	
 		bc.onmessage = (event) => {
-		if (event.data === `Am I the first?`) {
-			bc.postMessage(`No you're not.`);
-			console.log(`Another tab of this site just got opened`);
-			history.back();
-			window.close();
-		}
-		if (event.data === `No you're not.`) {
-			console.log(`An instance of this site is already running`);
-			//alert('ANOTHER INSTANCE OF THIS SITE IS ALREADY RUNNING');
-
-
-		}
-	};
+			if (event.data === `Am I the first?`) {
+				bc.postMessage(`No you're not.`);
+				console.log(`Another tab of this site just got opened`);
+				history.back();
+				window.close();
+			}
+			if (event.data === `No you're not.`) {
+				console.log(`An instance of this site is already running`);
+				//alert('ANOTHER INSTANCE OF THIS SITE IS ALREADY RUNNING');
+			}
+		};
 	
-	bc.postMessage(`Am I the first?`);
+		bc.postMessage(`Am I the first?`);
 	</script>
 
 
