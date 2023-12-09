@@ -31,6 +31,10 @@
 {"href":"https://twitter.com/KashsCorner","title":"Kash Patel"},
 {"href":"https://twitter.com/RepBoebert","title":"Lauren Boebert"},
 {"href":"https://twitter.com/naomirwolf","title":"Neomi Wolf"},
+{"href":"https://twitter.com/RWMaloneMD","title":"Dr Robert Malone"},
+{"href":"https://twitter.com/DowdEdward","title":"Ed Dowd"},
+{"href":"https://twitter.com/stkirsch","title":"Steve Kirsch"},
+{"href":"https://twitter.com/MdBreathe","title":"Mary Taley Bowden MD"},
 {"href":"https://twitter.com/mtaibbi","title":"Matt Taibbi"},
 {"href":"https://twitter.com/shellenberger","title":"Michael Shellenberger"},
 {"href":"https://twitter.com/MZHemingway","title":"Mollie Hemingway"},
@@ -42,6 +46,12 @@
 {"href":"https://twitter.com/chiproytx","title":"Rep Chip Roy TX"},
 {"href":"https://twitter.com/EvaVlaar","title":"Eva Vlaardingerbroek"},
 {"href":"https://twitter.com/TuckerCarlson","title":"Tucker Carlson"},
+{"href":"https://twitter.com/LauraLoomer","title":"Laura Loomer"},
+{"href":"https://twitter.com/LoomerReport","title":"Loomer Report"},
+{"href":"https://twitter.com/CarolineWren","title":"Caroline Wren"},
+{"href":"https://twitter.com/pnjaban","title":"Harmeet Dhillon"},
+{"href":"https://twitter.com/ScottPresler","title":"Scott Pressler (The Persistance)"},
+{"href":"https://twitter.com/Rach_IC","title":"Rachel Alexander"},
 {"href":"","title":""},
 {"href":"","title":""},
 {"href":"","title":""},
@@ -53,6 +63,8 @@
 {"href":"","title":""},
 {"href":"","title":""},
 {"href":"","title":""},
+{"href":"","title":""},
+
 {"href":"","title":""}
 
 
