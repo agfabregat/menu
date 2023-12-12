@@ -11,6 +11,9 @@
 {"href":"https://twitter.com/ChanelRion","title":"Chanel Rion"},
 {"href":"https://twitter.com/julie_kelly2","title":"Julie Kelly"},
 {"href":"https://twitter.com/LauraLoomer","title":"Laura Loomer"},
+{"href":"https://twitter.com/laralogan","title":"Lara Logan"},
+{"href":"https://twitter.com/TalkMullins","title":"Heather Mullins"},
+{"href":"https://twitter.com/annvandersteel","title":"Ann Vandersteel"},
 {"href":"https://twitter.com/LoomerReport","title":"Loomer Report"},
 {"href":"https://twitter.com/mirandadevine","title":"Miranda Devine"},
 {"href":"https://twitter.com/MZHemingway","title":"Mollie Hemingway"},
@@ -71,17 +74,17 @@
 {"href":"https://twitter.com/realannapaulina","title":"Rep Anna Paulina FL"},
 {"href":"https://twitter.com/RepMTG","title":"Rep MTG GA"},
 {"href":"https://twitter.com/RepMattGaetz","title":"Rep Matt Gaetz FL"},
+{"href":"https://twitter.com/RepRosendale","title":"Rep Matt Rosendale MT"},
+
+
 
 
 {"href":"https://twitter.com/bariweiss","title":"Bari Weiss"},
 {"href":"https://twitter.com/mtaibbi","title":"Matt Taibbi"},
 {"href":"https://twitter.com/shellenberger","title":"Michael Shellenberger"},
 {"href":"https://twitter.com/EricRWeinstein","title":"Eric Weinstein"},
-{"href":"","title":""},
-{"href":"","title":""},
-{"href":"","title":""},
-{"href":"","title":""},
-{"href":"","title":""},
+{"href":"https://twitter.com/RealJamesWoods","title":"James Woods"},
+
 {"href":"","title":""},
 {"href":"","title":""},
 {"href":"","title":""},
