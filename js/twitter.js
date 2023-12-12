@@ -23,11 +23,6 @@
 {"href":"https://twitter.com/pnjaban","title":"Harmeet Dhillon"},
 {"href":"https://twitter.com/bungarsargon/","title":"Batya Ungar-Sargon (Newsweek)"},
 
-{"href":"https://twitter.com/MarcoPolo501c3","title":"Marco Polo"},
-{"href":"https://twitter.com/SchmittNYC","title":"Rob Schmitt Newsmax"},
-{"href":"https://twitter.com/wajacobson","title":"Wm Jacobson (LI)"},
-{"href":"https://twitter.com/DouglasKMurray","title":"Douglas Murray"},
-{"href":"https://twitter.com/VDHanson","title":"Victor D Hanson"},
 
 {"href":"https://twitter.com/HansMahncke","title":"Hans Mahncke"},
 {"href":"https://twitter.com/paulsperry_","title":"Paul Sperry (Real Clear)"},
@@ -43,7 +38,6 @@
 {"href":"https://twitter.com/NewYorker","title":"The New Yorker"},
 {"href":"https://twitter.com/RebelNewsOnline","title":"Rebel News"},
 {"href":"https://twitter.com/RevolverNewsUSA","title":"Revolver News"},
-{"href":"https://twitter.com/KashsCorner","title":"Kash Patel"},
 
 {"href":"https://twitter.com/naomirwolf","title":"Neomi Wolf"},
 {"href":"https://twitter.com/RWMaloneMD","title":"Robert Malone MD"},
@@ -61,6 +55,15 @@
 {"href":"https://twitter.com/JonathanTurley","title":"Jonathan Turley"},
 {"href":"https://twitter.com/shipwreckedcrew","title":"Shipwreckedcrew"},
 {"href":"https://twitter.com/Techno_Fog","title":"TechnoFog"},
+{"href":"https://twitter.com/mrddmia","title":"Mike Davis"},
+{"href":"https://twitter.com/KashsCorner","title":"Kash Patel"},
+{"href":"https://twitter.com/AndrewCMcCarthy","title":"Andy McCrthy"},
+{"href":"https://twitter.com/MarcoPolo501c3","title":"Marco Polo"},
+{"href":"https://twitter.com/SchmittNYC","title":"Rob Schmitt Newsmax"},
+{"href":"https://twitter.com/wajacobson","title":"Wm Jacobson (LI)"},
+{"href":"https://twitter.com/DouglasKMurray","title":"Douglas Murray"},
+{"href":"https://twitter.com/VDHanson","title":"Victor D Hanson"},
+
 
 {"href":"https://twitter.com/JDVance1","title":"SEN J.D. Vance OH"},
 {"href":"https://twitter.com/RepHageman","title":"Rep Harriet Hageman WY"},
@@ -77,16 +80,12 @@
 {"href":"https://twitter.com/RepRosendale","title":"Rep Matt Rosendale MT"},
 
 
-
-
 {"href":"https://twitter.com/bariweiss","title":"Bari Weiss"},
 {"href":"https://twitter.com/mtaibbi","title":"Matt Taibbi"},
 {"href":"https://twitter.com/shellenberger","title":"Michael Shellenberger"},
 {"href":"https://twitter.com/EricRWeinstein","title":"Eric Weinstein"},
 {"href":"https://twitter.com/RealJamesWoods","title":"James Woods"},
 
-{"href":"","title":""},
-{"href":"","title":""},
 {"href":"","title":""},
 {"href":"","title":""}
 
