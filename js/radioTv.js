@@ -9,16 +9,14 @@
 {"href":"http://tunein.com/radio/Conservative-c57917/","title":"Conservative Talk"},
 {"href":"https://americasvoice.news/","title":"Real America's Voice"},
 {"href":"https://www.rsbnetwork.com/","title":"RSBN"},
-{"href":"https://frankspeech.com/","title":"Real America's Voice(FrankSpeech)"},
+{"href":"https://warroom.org/","title":"WarRoom Org"},
 
 {"href":"http://www.talkstreamlive.com","title":"TalkStream live"},
 {"href":"https://www.rsbnetwork.com/category/video/","title":"RSBN"},
 {"href":"https://gettr.com/","title":"GTTR gb PE#5"},
 
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
-{"href":"http://livetv.sx/es/allupcoming/","title":"LiveTv Sx"},
 {"href":"https://sport2.live/","title":"Sport2"},
-
 {"href":"https://hesgoal.jokerlivestream.vip/homePage","title":"JokerLiveStream"},
 
 {"href":"https://esradio.libertaddigital.com/es-la-manana-de-federico/","title":"Es la Mañana de Federico"},
