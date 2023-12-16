@@ -1,5 +1,7 @@
 [
     {"href":"https://www.chess.com/daily-chess-puzzle","title":"Daily Chess"},
+	{"href":"https://www.365chess.com/analysis_board.php","title":"Analize Chessboard"},
+	
     {"href":"https://www.proprofsgames.com/sliding-block-puzzle/","title":"Sliding Blocks"},
     {"href":"https://zone.msn.com/gameplayer/gameplayerHTML.aspx?game=2048","title":"Game 2048 match tiles"},
     {"href":"https://absolutist.com/online/fifteen/","title":"Arrange tiles to match picture"},

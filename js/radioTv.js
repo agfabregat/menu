@@ -18,6 +18,7 @@
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
 {"href":"https://sport2.live/","title":"Sport2"},
 {"href":"https://hesgoal.jokerlivestream.vip/homePage","title":"JokerLiveStream"},
+{"href":"https://www.tvonline123.com/tvlive/","title":"EUROSPORT++"},
 
 {"href":"https://esradio.libertaddigital.com/es-la-manana-de-federico/","title":"Es la Mañana de Federico"},
 {"href":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLm5hc2hvd25vdGVzLmNvbS9yc3MueG1s","title":"No Agenda"},
