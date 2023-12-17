@@ -20,6 +20,7 @@
 {"href":"https://hesgoal.jokerlivestream.vip/homePage","title":"JokerLiveStream"},
 {"href":"https://www.tvonline123.com/tvlive/","title":"EUROSPORT++"},
 {"href":"https://livesport24.net/","title":"LiveSport24"},
+{"href":"https://www.seirsanduk.us/index.php","title":"seirsanduk bulgarian"},
 
 {"href":"https://www.fis-ski.com/DB/alpine-skiing/","title":"Skiing Results"},
 
