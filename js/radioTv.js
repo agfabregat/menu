@@ -15,7 +15,9 @@
 {"href":"https://www.rsbnetwork.com/category/video/","title":"RSBN"},
 {"href":"https://gettr.com/","title":"GTTR gb PE#5"},
 
+{"href":"https://live.sport365.stream/tennis","title":"Sport365 Tennis"},
 {"href":"http://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
+{"href":"https://zultv.com/tenislive","title":"TENNIS UTAKMICE on ZULTV"},
 {"href":"https://sport2.live/","title":"Sport2"},
 {"href":"https://hesgoal.jokerlivestream.vip/homePage","title":"JokerLiveStream"},
 {"href":"https://www.tvonline123.com/tvlive/","title":"EUROSPORT++"},
