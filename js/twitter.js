@@ -1,6 +1,6 @@
 [
 
-
+{"href":"https://twitter.com/ChuckCallesto","title":"Chuck Callesto"},
 {"href":"https://twitter.com/RobertKennedyJr","title":"RFK Jr"},
 {"href":"https://twitter.com/TheBabylonBee","title":"The BabylonBee"},
 {"href":"https://twitter.com/jsolomonReports","title":"John Solomon"},
@@ -8,7 +8,7 @@
 {"href":"https://twitter.com/SpaceX","title":"SpaceX"},
 {"href":"","title":""},
 {"href":"#","title":"---------CONSERVATIVE WOMEN------------"},
-{"href":"https://twitter.com/ChanelRion","title":"Chanel Rion"},
+{"href":"https://twitter.com/chanelrion/","title":"Chanel Rion"},
 {"href":"https://twitter.com/julie_kelly2","title":"Julie Kelly"},
 {"href":"https://twitter.com/LauraLoomer","title":"Laura Loomer"},
 {"href":"https://twitter.com/laralogan","title":"Lara Logan"},
