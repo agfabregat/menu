@@ -17,8 +17,6 @@
 
 {"href":"https://live.sport365.stream/tennis","title":"Sport365 Tennis"},
 
-https://uzivo.utakmica.rs/prenos-tenis
-
 {"href":"https://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
 {"href":"https://zultv.com/tenislive","title":"TENNIS UTAKMICE on ZULTV"},
 {"href":"https://uzivo.utakmica.rs/prenos-tenis","title":"TENNIS UTAKMICE on UZIVO"},
