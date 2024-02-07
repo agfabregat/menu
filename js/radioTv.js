@@ -21,9 +21,13 @@ https://uzivo.utakmica.rs/prenos-tenis
 
 {"href":"https://utakmice.net/tenis/","title":"TENNIS UTAKMICE"},
 {"href":"https://zultv.com/tenislive","title":"TENNIS UTAKMICE on ZULTV"},
+{"href":"https://uzivo.utakmica.rs/prenos-tenis","title":"TENNIS UTAKMICE on UZIVO"},
+
 {"href":"https://sport2.live/","title":"Sport2"},
 {"href":"https://hesgoal.jokerlivestream.vip/homePage","title":"JokerLiveStream"},
 {"href":"https://www.tvonline123.com/tvlive/","title":"EUROSPORT++"},
+{"href":"https://www.crichd.live/home34","title":"CRIChd"},
+
 {"href":"https://livesport24.net/","title":"LiveSport24"},
 {"href":"https://www.seirsanduk.us/index.php","title":"seirsanduk bulgarian"},
 
