@@ -1,10 +1,5 @@
 [
 
-{"href":"https://twitter.com/michaelpleahy","title":"Michael Patrick Leahy"},
-{"href":"https://twitter.com/RobertKennedyJr","title":"RFK Jr"},
-
-
-{"href":"https://twitter.com/TheBabylonBee","title":"The BabylonBee"},
 {"href":"https://twitter.com/jsolomonReports","title":"John Solomon"},
 {"href":"https://twitter.com/elonmusk","title":"Elon Musk"},
 {"href":"https://twitter.com/SpaceX","title":"SpaceX"},
