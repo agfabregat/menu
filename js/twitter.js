@@ -1,6 +1,5 @@
 [
 
-{"href":"https://twitter.com/ChuckCallesto","title":"Chuck Callesto"},
 {"href":"https://twitter.com/michaelpleahy","title":"Michael Patrick Leahy"},
 {"href":"https://twitter.com/RobertKennedyJr","title":"RFK Jr"},
 
@@ -57,6 +56,8 @@
 
 {"href":"","title":""},
 {"href":"#","title":"---------CONSERVATIVE MEN------------"},
+{"href":"https://twitter.com/michaelpleahy","title":"Michael Patrick Leahy"},
+{"href":"https://twitter.com/ChuckCallesto","title":"Chuck Callesto"},
 {"href":"https://twitter.com/TomFitton","title":"Tom Fitton"},
 {"href":"https://twitter.com/Barnes_Law","title":"Robert Barnes"},
 {"href":"https://twitter.com/JonathanTurley","title":"Jonathan Turley"},
