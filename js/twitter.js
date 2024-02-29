@@ -56,6 +56,7 @@
 
 {"href":"","title":""},
 {"href":"#","title":"---------CONSERVATIVE MEN------------"},
+{"href":"https://twitter.com/RealEJAntoni","title":"AJ Antoni"},
 {"href":"https://twitter.com/michaelpleahy","title":"Michael Patrick Leahy"},
 {"href":"https://twitter.com/ChuckCallesto","title":"Chuck Callesto"},
 {"href":"https://twitter.com/TomFitton","title":"Tom Fitton"},
