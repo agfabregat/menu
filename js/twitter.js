@@ -61,7 +61,7 @@
 {"href":"https://twitter.com/unhealthytruth","title":"Erin Elizabeth Health Nut News"},
 
 {"href":"","title":""},
-{"href":"#","title":"---------CONSERVATIVE MEN------------"},
+{"href":"#","title":"---------CONSERVATIVE------------"},
 {"href":"https://twitter.com/RealEJAntoni","title":"AJ Antoni"},
 {"href":"https://twitter.com/michaelpleahy","title":"Michael Patrick Leahy"},
 {"href":"https://twitter.com/ChuckCallesto","title":"Chuck Callesto"},
@@ -101,46 +101,44 @@
 {"href":"https://twitter.com/shellenberger","title":"Michael Shellenberger"},
 {"href":"https://twitter.com/EricRWeinstein","title":"Eric Weinstein"},
 {"href":"https://twitter.com/RealJamesWoods","title":"James Woods"},
+{"href":"#","title":"---------ANTI AMERICAN------------"},
 
 {"href":"https://twitter.com/Alyssa_Milano","title":"Alyssa Milano"},
-{"href":"https://twitter.com/StevenBrill","title":"Steven Brill"}
-{"href":"https://twitter.com/tomfriedman","title":"Thomas Friedman"}
-{"href":"https://twitter.com/FareedZakaria","title":"Fareed Zakaria"}
-{"href":"https://twitter.com/amanpour","title":"Christiane Amanpour"}
-{"href":"","title":""}
-{"href":"https://twitter.com/krystalball","title":"Krystal Ball"}
-{"href":"https://twitter.com/cenkuygur","title":"Cenk Uygur"}
-{"href":"https://twitter.com/AnaKasparian","title":"Ana Kasparian"}
-{"href":"https://twitter.com/AriMelber","title":"Ari Melber"}
-{"href":"https://twitter.com/NicolleDWallace","title":"Nicolle Wallace"}
-{"href":"https://twitter.com/AliVelshi","title":"Ali Velshi"}
-{"href":"https://twitter.com/davidfrum","title":"David Frum"}
-{"href":"https://twitter.com/monacharen","title":"Mona Charen"}
-{"href":"https://twitter.com/jonahdispatch","title":"Jonah Goldberg"}
-{"href":"https://twitter.com/stephenfhayes","title":"Stephen Hayes"}
-{"href":"https://twitter.com/NateSilver538","title":"Nate Silver"}
-{"href":"https://twitter.com/chucktodd","title":"Chuck Todd"}
-{"href":"https://twitter.com/morningmika","title":"Mika Brzezinski"}
-{"href":"https://twitter.com/Morning_Joe","title":"Morning Joe"}
-{"href":"https://twitter.com/joenbc","title":"Joe Scarborough"}
-{"href":"https://twitter.com/maddow","title":"Rachel Maddow"}
-{"href":"https://twitter.com/GeorgeWill","title":"George Will"}
-{"href":"https://twitter.com/SteveSchmidtSES","title":"Steve Schmidt"}
-{"href":"https://twitter.com/AVindman","title":"Alexander Vindman"}
-{"href":"https://twitter.com/davidaxelrod","title":"David Axerlrod"}
-{"href":"https://twitter.com/jaketapper","title":"Jake Tapper"}
-{"href":"https://twitter.com/alfranken","title":"Al Franken"}
-{"href":"https://twitter.com/Yamiche","title":"Yamiche Alcindor"}
-{"href":"https://twitter.com/mikebarnicle","title":"Mike Barnicle"}
-{"href":"https://twitter.com/jheil","title":"John Heilemann"}
-{"href":"https://twitter.com/JeffreyGoldberg","title":"Jeffrey Goldberg"}
-{"href":"https://twitter.com/theabstoddard","title":"AB Stoddard"}
-{"href":"https://twitter.com/harrylitman","title":"Harry Litman"}
-{"href":"https://twitter.com/AdamKinzinger","title":"Adam Kinzinger"}
-{"href":"https://twitter.com/liz_cheney","title":"Liz Cheney"}
-{"href":"https://twitter.com/SamSeder/","title":"Sam Seder"}
+{"href":"https://twitter.com/StevenBrill","title":"Steven Brill"},
+{"href":"https://twitter.com/tomfriedman","title":"Thomas Friedman"},
+{"href":"https://twitter.com/FareedZakaria","title":"Fareed Zakaria"},
+{"href":"https://twitter.com/amanpour","title":"Christiane Amanpour"},
+{"href":"","title":""},
+{"href":"https://twitter.com/krystalball","title":"Krystal Ball"},
+{"href":"https://twitter.com/cenkuygur","title":"Cenk Uygur"},
+{"href":"https://twitter.com/AnaKasparian","title":"Ana Kasparian"},
+{"href":"https://twitter.com/AriMelber","title":"Ari Melber"},
+{"href":"https://twitter.com/NicolleDWallace","title":"Nicolle Wallace"},
+{"href":"https://twitter.com/AliVelshi","title":"Ali Velshi"},
+{"href":"https://twitter.com/davidfrum","title":"David Frum"},
+{"href":"https://twitter.com/monacharen","title":"Mona Charen"},
+{"href":"https://twitter.com/jonahdispatch","title":"Jonah Goldberg"},
+{"href":"https://twitter.com/stephenfhayes","title":"Stephen Hayes"},
+{"href":"https://twitter.com/NateSilver538","title":"Nate Silver"},
+{"href":"https://twitter.com/chucktodd","title":"Chuck Todd"},
+{"href":"https://twitter.com/morningmika","title":"Mika Brzezinski"},
+{"href":"https://twitter.com/Morning_Joe","title":"Morning Joe"},
+{"href":"https://twitter.com/joenbc","title":"Joe Scarborough"},
+{"href":"https://twitter.com/maddow","title":"Rachel Maddow"},
+{"href":"https://twitter.com/GeorgeWill","title":"George Will"},
+{"href":"https://twitter.com/SteveSchmidtSES","title":"Steve Schmidt"},
+{"href":"https://twitter.com/AVindman","title":"Alexander Vindman"},
+{"href":"https://twitter.com/davidaxelrod","title":"David Axerlrod"},
+{"href":"https://twitter.com/jaketapper","title":"Jake Tapper"},
+{"href":"https://twitter.com/alfranken","title":"Al Franken"},
+{"href":"https://twitter.com/Yamiche","title":"Yamiche Alcindor"},
+{"href":"https://twitter.com/mikebarnicle","title":"Mike Barnicle"},
+{"href":"https://twitter.com/jheil","title":"John Heilemann"},
+{"href":"https://twitter.com/JeffreyGoldberg","title":"Jeffrey Goldberg"},
+{"href":"https://twitter.com/theabstoddard","title":"AB Stoddard"},
+{"href":"https://twitter.com/harrylitman","title":"Harry Litman"},
+{"href":"https://twitter.com/AdamKinzinger","title":"Adam Kinzinger"},
+{"href":"https://twitter.com/liz_cheney","title":"Liz Cheney"},
+{"href":"https://twitter.com/SamSeder/","title":"Sam Seder"},
 {"href":"https://twitter.com/EmmaVigeland","title":"Emma Vigeland"}
-
-
-
 ]
