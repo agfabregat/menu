@@ -5,6 +5,19 @@
 {"href":"https://www.investopedia.com/what-to-expect-for-the-markets-next-week-4584772","title":"Investopedia This Week"},
 {"href":"https://aes.uunet.io/","title":"Test AES"},
 {"href":"https://machine.uunet.io","title":"machine.uunet.io"},
+
+{"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m45","title":"GURUS MINI"},
+{"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m3","title":"GURUS BMW"},
+{"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m35","title":"GURUS LAND ROVER"},
+{"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m43","title":"GURUS MERCEDES"},
+{"href":"","title":""},
+{"href":"","title":""},
+{"href":"","title":""},
+{"href":"","title":""},
+{"href":"","title":""},
+
+
+
 {"href":"https://property.spatialest.com/sc/richland/#/property/R17805-01-02", "title":"RimerPond Title"},
 {"href":"https://www.richlandmaps.com/apps/geoinfo/?lat=34.19901&lon=-80.95641&zoom=17&taxid=R17805-01-02", "title":"RimerPond Title2"},
 {"href":"https://binance.us/en/trade/pro/XNO_USD","title":"XNO USD"},
