@@ -6,11 +6,12 @@
 {"href":"https://aes.uunet.io/","title":"Test AES"},
 {"href":"https://machine.uunet.io","title":"machine.uunet.io"},
 
-{"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&maxPrice=17000&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m45","title":"GURUS MINI"},
+{"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&maxPrice=17000&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=d2222","title":"MINI PACE (GURUS)"},
+{"href":"https://www.cars.com/shopping/mini-paceman-2014-cooper_s_all4/?utm_source=bing&utm_medium=cpc&utm_campaign_id=376544604&utm_trusted=TRUE&network=o&ag_id=1202866315253468&loc_physical_ms=80127&loc_interest_ms=&aff=acqgeosem46&KNC=acqgeosem46&msclkid=c3053d103f9210ed784c5b8d80b2bb99&utm_campaign=DSA%20-%20US%2Fen%20-%20NB%20-%20Make%3AAll&utm_term=%2Fmini-%20%2Fshopping%2F&utm_content=URL%20contains%20other%20makes%20%7C%20Make%3AOTHER%20MAKES","title":"MINI PACE (CARS)"},
+
 {"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&maxPrice=17000&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m3","title":"GURUS BMW"},
 {"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&maxPrice=17000&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m35","title":"GURUS LAND ROVER"},
 {"href":"https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=29016&maxPrice=17000&inventorySearchWidgetType=AUTO&sortDir=ASC&sourceContext=rtb_house&distance=50&sortType=BEST_MATCH&entitySelectingHelper.selectedEntity=m43","title":"GURUS MERCEDES"},
-{"href":"","title":""},
 {"href":"","title":""},
 {"href":"","title":""},
 {"href":"","title":""},
