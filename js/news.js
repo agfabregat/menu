@@ -1,7 +1,7 @@
 
 [
 {"href":"http://www.mediaresearch.org/","title":"MRC CyberAlert"},
-{"href":"http://uunet.io/api/anysite","title":"Drudge"},
+{"href":"https://adolfofabregat-001-site1.htempurl.com/api/anysite","title":"Drudge"},
 
 {"href":"http://www.lucianne.com/","title":"Lucianne"},
 
