@@ -1,7 +1,7 @@
 
 [
 {"href":"http://www.mediaresearch.org/","title":"MRC CyberAlert"},
-{"href":"https://www.uunet.io/magazines.html","title":"LEFT SITES"},
+{"href":"https://adolfofabregat-001-site1.htempurl.com/magazines.html","title":"LEFT SITES"},
 
 {"href":"http://www.lucianne.com/","title":"Lucianne"},
 
