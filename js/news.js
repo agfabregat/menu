@@ -1,7 +1,7 @@
 
 [
 {"href":"http://www.mediaresearch.org/","title":"MRC CyberAlert"},
-{"href":"http//uunet.io/magazines.html","title":"LEFT SITES"},
+{"href":"http://uunet.io/magazines.html","title":"LEFT SITES"},
 
 {"href":"http://www.lucianne.com/","title":"Lucianne"},
 
