@@ -9,7 +9,7 @@
 {"href":"https://americasvoice.news/","title":"Real America's Voice"},
 {"href":"https://www.rsbnetwork.com/","title":"RSBN"},
 {"href":"https://warroom.org/","title":"WarRoom Org"},
-{"href":"https://choiceclips.whatfinger.com/2023/02/06/war-room-live-5/","title":"WarRoom Whatfinger"},
+{"href":"https://wrko.iheart.com/","title":"WRKO"},
 {"href":"https://www.talkstreamlive.com/program/war_room_with_steve_bannon","title":"War Room TalkStreamlive"},
 {"href":"https://www.rsbnetwork.com/category/video/","title":"RSBN"},
 {"href":"https://gettr.com/","title":"GTTR gb PE#5"},
@@ -69,48 +69,23 @@
 {"href":"https://www.aljazeera.com/live/","title":"AlJazeera"},
 {"href":"http://www.epctv.com/","title":"Epctv"},
 {"href":"https://video.sky.it/news/diretta","title":"SkyNews (all in italian)"},
-{"href":"http://123tv.live/category/united-states-usa/","title":"123tv"},
-{"href":"https://livestream.com/watch/browse/sports","title":"LiveStream"},
-{"href":"https://www.olweb.tv/sitemap.xml","title":"Olweb"},
+
 {"href":"https://ssl.ustreamix.com/","title":"UstreamMix"},
 {"href":"https://tvplayer.com/watch","title":"TV Player (uk ip hotmail PE#5)"},
 
-{"href":"https://www.reddit.com/r/LiveTvLinks/comments/asojj8/sports_channels/","title":"Reddit tv list"},
-{"href":"https://www.strikeout.nu/lookup/espn","title":"StrikeOut"},
-{"href":"https://www.streamlive.to/","title":"Streamlive"},
-{"href":"http://www.streamendous.com/sportsch.php?bt1","title":"Streamendous"},
-{"href":"http://www.fromhot.com/","title":"Fromhot.com"},
 {"href":"http://music-tv.in/?tab=usa%20tv&live=espn%202%20usa%20live","title":"Music Tv USA Ch"},
 {"href":"http://atdhes.eu/","title":"Atdhes"},
-{"href":"https://motorsports-stream.com/next-live-races/","title":"Motorspots and other"},
-{"href":"https://tennis-stream.net/watch-live-stream-6/","title":"Tennis stream and other"},
-{"href":"https://sportlemon24.com/","title":"Sportlemmon Tennis stream and other"},
 {"href":"http://livetv.sx/enx/","title":"LiveTv (all live sports)"},
-{"href":"http://mygoodstream.pw/","title":"MyGoodStream (sports)"},
-{"href":"https://www.vipleague.lc/","title":"VIP League (sports)"},
-{"href":"https://www.viprow.net/","title":"VIP Row"},
-{"href":"https://firstsrowsports.tv/","title":"FirstRow"},
-{"href":"http://www.streamgaroo.com/television/united-states/","title":"Streamgaroo"},
 
-{"href":"https://watchsports.to/","title":"WatchSports"},
-{"href":"http://nflstream.io/espn-live-stream-online-live/stream-1","title":"NflStream"},
-{"href":"http://chanfeed.com/","title":"Chanfeed.com"},
-{"href":"http://www.720pstream.me/","title":"720pstream (all live sports)"},
-{"href":"https://www.stream2watch.org/","title":"Stream2watch (sports)"},
-{"href":"https://www.mamahd.org/","title":"MamaHd"},
 
-{"href":"http://www.livehere.one/canale-5-italia-1-rete-4-rai-1-dmax-realtime-diretta-streaming-estero/","title":"LiveHere ita"},
-{"href":"http://okteve.com/categories/","title":"OkTeve"},
-{"href":"https://wwitv.com/portal.htm","title":"WWitv"},
-{"href":"http://oklivetv.com/","title":"OkLiveTv"},
 
-{"href":"http://www.freeintertv.com/view/id-2566","title":"Free internet TV"},
+{"href":"http://www.freeintertv.com/view/id-3324/USA-1-0-1ertv.com/view/id-2566","title":"Free internet TV"},
 {"href":"http://ufreetv.com/","title":"UFreeTV"},
-{"href":"http://ustv247.com/","title":"UStv 247"},
-{"href":"http://watchnewslive.tv/","title":"WatchNewsLive"},
-{"href":"https://wwitv.com/portal.htm","title":"WWItv"},
 
-{"href":"http://livetvmania.net/","title":"Live TV Mania"},
+
+
+
+
 {"href":"http://www.livenewsmag.com/","title":"Livenews Channel(s)"},
 {"href":"https://www.livenewson.com/united-kingdom/sky-news-hd.html","title":"LivenewsOn"},
  
