@@ -11,7 +11,7 @@
 {"href":"https://www.rsbnetwork.com/","title":"RSBN"},
 {"href":"https://warroom.org/","title":"WarRoom Org"},
 {"href":"https://choiceclips.whatfinger.com/2023/02/06/war-room-live-5/","title":"WarRoom Whatfinger"},
-{"href":"http://www.talkstreamlive.com","title":"TalkStream live"},
+{"href":"https://www.talkstreamlive.com/program/war_room_with_steve_bannon","title":"War Room TalkStreamlive"},
 {"href":"https://www.rsbnetwork.com/category/video/","title":"RSBN"},
 {"href":"https://gettr.com/","title":"GTTR gb PE#5"},
 
