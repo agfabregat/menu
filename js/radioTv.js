@@ -1,8 +1,9 @@
 [
-{"href":"https://www.newslive.com/featured/fox-news.html","title":"FoxNews TV"},
+{"href":"https://www.newslive.com/","title":"NewsLive"},
+{"href":"https://usnewson.com/watch/","title":"NewsOn"},
 {"href":"https://streamfare.com/fox-weather-live-stream","title":"FoxNews TV Streamfare"},
 {"href":"https://www.freetubetv.net/watch/","title":"LiveNow"},
-{"href":"https://www.freetubetv.net/watch/fox-livenow/","title":"LiveNow"},
+{"href":"https://www.livehdtv.com/","title":"LiveHDTV"},
 {"href":"https://usnewson.com/watch/","title":"FoxNews TV usnewson"},
 {"href":"http://tunein.com/","title":"Radio TuneIn"},
 {"href":"http://tunein.com/radio/Conservative-c57917/","title":"Conservative Talk"},
