@@ -2,7 +2,7 @@
 {"href":"https://www.flashscore.com/tennis/wta-singles/","title":"WTA Schedule"},
 {"href":"https://playarea.azurewebsites.net/papers.html","title":"Morning Papers"},
 {"href":"https://www.the-sun.com/entertainment/","title":"The Sun Entertainment"},
-{"href":"https://www.investopedia.com/what-to-expect-for-the-markets-next-week-4584772","title":"Investopedia This Week
+{"href":"https://www.investopedia.com/what-to-expect-for-the-markets-next-week-4584772","title":"Investopedia This Week"},
 
 {"href":"http://adolfofabregat-001-site2.htempurl.com/tennisOdds.html","title":"TennisOdds"},
 {"href":"https://aes.uunet.io/","title":"Test AES"},
