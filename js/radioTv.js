@@ -1,4 +1,6 @@
 [
+
+{"href":"https://ufreetv.com/","title":"UFreeTV"},
 {"href":"https://www.newslive.com/","title":"NewsLive"},
 {"href":"https://usnewson.com/watch/","title":"NewsOn"},
 {"href":"https://streamfare.com/fox-weather-live-stream","title":"FoxNews TV Streamfare"},
@@ -14,6 +16,24 @@
 {"href":"https://www.talkstreamlive.com/program/war_room_with_steve_bannon","title":"War Room TalkStreamlive"},
 {"href":"https://www.rsbnetwork.com/category/video/","title":"RSBN"},
 {"href":"https://gettr.com/","title":"GTTR gb PE#5"},
+{"href":"https://www.cxradious.com/#bloomberg-radio","title":"Bloomberg Radio"},
+{"href":"https://www.cxradious.com/#cnbc-radio","title":"CNBC Radio"},
+{"href":"https://www.cxradious.com/#fox-news-talk","title":"FoxNews Radio"},
+{"href":"https://www.cxradious.com/#cnn-radio-news","title":"CNN Radio"},
+{"href":"https://www.cxradious.com/bloomberg","title":"Radio Bloomberg 1130AM"},
+{"href":"https://www.cxtvlive.com/live-tv/bloomberg-tv","title":"BloombergTV"},
+
+{"href":"https://www.cxtvlive.com/live-tv/cnbc","title":"CNBC USA TV"},
+{"href":"https://www.cxtvlive.com/live-tv/cnbc-europe","title":"CNBC EUROPE TV"},
+{"href":"https://www.cxtvlive.com/live-tv/msnbc","title":"MSNBC"},
+{"href":"https://www.livenewsmag.com/msnbc-news-live-stream/","title":"MSNBC"},
+{"href":"https://www.cxtvlive.com/live-tv/c-span","title":"CSPAN1"},
+{"href":"https://www.cxtvlive.com/live-tv/associated-press","title":"AP Live"},
+
+{"href":"https://www.livenewsmag.com/fox-news-live-stream/","title":"FOXNEWS"},
+
+{"href":"https://www.livenewsmag.com/livecnn/","title":"CNN"},
+
 
 
 {"href":"http://atdhes.eu/","title":"Atdhes sports"},
@@ -67,10 +87,6 @@
 
 
 {"href":"http://www.freeintertv.com/view/id-3324/USA-1-0-1ertv.com/view/id-2566","title":"Free internet TV"},
-{"href":"http://ufreetv.com/","title":"UFreeTV"},
-
-
-
 
 
 {"href":"http://www.livenewsmag.com/","title":"Livenews Channel(s)"},
@@ -78,4 +94,5 @@
  
 {"href":"http://freshair.npr.org/","title":"FreshAir"},
 {"href":"http://www.thislife.org/","title":"ThisAmerLife"}
+
 ]
