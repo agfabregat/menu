@@ -38,6 +38,8 @@
 {"href":"http://sailingworld.com/","title":"SailingWorld"},
 {"href":"http://www.rollingstone.com/","title":"Rolling Stone"},
 {"href":"http://motherjones.com/","title":"Mother Jones"},
+{"href":"https://www.harpersbazaar.com/","title":"Harpers Bazaar"},
+
 {"href":"http://www.humaneventsonline.com/","title":"Human Events"},
 {"href":"http://www.commentarymagazine.com/","title":"Commentary"}
 
