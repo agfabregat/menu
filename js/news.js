@@ -8,6 +8,10 @@
 {"href":"http://freebeacon.com/","title":"Free Beacon"},
 {"href":"http://pajamasmedia.com/?src=network","title":"PajamasMedia"},
 {"href":"http://www.breitbart.com/","title":"Breibart"},
+{"href":"https://www.tvinsider.com/","title":"TVInsider"},
+{"href":"https://www.tvfanatic.com/","title":"TVFanatic"},
+{"href":"https://www.spoilertv.com/","title":"SpoilerAlert TV"},
+
 {"href":"https://www.whatfinger.com/home2/","title":"Whatfinger"},
 
 {"href":"http://www.freerepublic.com/tag/news-forum/index","title":"Free Republic"},
