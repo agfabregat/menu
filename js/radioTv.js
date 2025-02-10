@@ -1,6 +1,7 @@
 [
 
 {"href":"https://195.128.248.251/","title":"TheTVApp"},
+{"href":"https://tvpass.org/channels","title":"TvPass"},
 {"href":"https://www.livehdtv.com/","title":"LiveHDTV"},
 
 {"href":"https://livestreamlinks.net/en/onlinetv/united-states","title":"Livestream links"},
