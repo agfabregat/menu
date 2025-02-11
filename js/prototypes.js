@@ -12,6 +12,23 @@
     "href": "https://playarea.azurewebsites.net/papers.html",
     "title": "Morning Papers"
   },
+
+  {
+    "href": "https://rollcall.com/factbase/trump/topic/calendar/",
+    "title": "Trump Schedule"
+  },
+  {
+    "href": "https://www.house.gov/legislative-activity",
+    "title": "House Schedule"
+  },
+    {
+    "href": "https://www.senate.gov/committees/hearings_meetings.htm",
+    "title": "Senate Schedule"
+  },
+    {
+    "href": "https://unusualwhales.com/flow/overview",
+    "title": "Unusual Whales"
+  },
   {
     "href": "https://www.the-sun.com/entertainment/",
     "title": "The Sun Entertainment"
