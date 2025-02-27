@@ -1,220 +1,207 @@
 <!doctype html>
 <html lang="en">
 <head>
-  
-<title>OTP</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-control" content="no-cache"> 
-<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <title>OTP</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-control" content="no-cache"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-<link rel="manifest" href="/images/site.webmanifest">
+  <style>
+    :root {
+      --font-family: Arial, sans-serif;
+      --font-size: 16px;
+      --active-background: #d3d3d3;
+      --hover-background: #edecec;
+      --r0-background: #e7e3e3;
+      --r1-background: #f9f8f8;
+      --line-height: 1.5;
+      --padding: 10px;
+    }
 
-<style>
-	*{font-family: Arial, sans-serif;
-	font-size: 1.15em;
-	}
-	
-	
-.active{
-background-color:#d3d3d3;
-}
+    * {
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      box-sizing: border-box;
+    }
 
-	
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-  align-items: stretch; /* will apply equal heights to flex items */
-  height: 100%;
-}
+    .active {
+      background-color: var(--active-background);
+    }
 
-.mrow{
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  /* flex-basis: 100%;  flex-basis overrides the equal heights*/
-  line-height:2.0;
-  
-}
-.irow{
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  /* flex-basis: 100%;  flex-basis overrides the equal heights*/
-  line-height:1.75;
-}
+    .column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
 
-.r0 {
-            background-color: #e7e3e3;
-        }
-.r1 {
-            background-color: #f9f8f8;
-        }
+    .mrow, .irow {
+      display: flex;
+      flex: 1;
+      line-height: var(--line-height);
+      padding: var(--padding);
+    }
 
+    .r0 { background-color: var(--r0-background); }
+    .r1 { background-color: var(--r1-background); }
 
-#menu > .mrow:hover{background-color:#edecec; cursor:pointer;}
-div > .column.irow:hover{background-color:#edecec; cursor:pointer;}
+    #menu > .mrow:hover, div > .column.irow:hover {
+      background-color: var(--hover-background);
+      cursor: pointer;
+    }
 
-        @media (max-width: 600px) {
-            * {
-                font-size: 0.9em;
-            }
-        }
+    .main-container {
+      display: flex;
+      flex-direction: row;
+    }
 
-</style>
+    #menu {
+      flex: 1;
+      margin-right: 3px;
+    }
+
+    #content {
+      flex: 4;
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --padding: 8px;
+      }
+
+      .main-container {
+        flex-direction: column;
+      }
+      
+      #menu, #content {
+        flex: auto;
+      }
+      
+      #menu {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      :root {
+        --font-size: 14px;
+        --padding: 6px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <script>
+    function BC(uniqueID){
+      const bc = new BroadcastChannel(uniqueID);
+    
+      bc.onmessage = (event) => {
+        if (event.data === `Am I the first?`) {
+          bc.postMessage(`No you're not.`);
+          console.log(`Another tab of this site just got opened`);
+          history.back();
+          window.close();
+        }
+        if (event.data === `No you're not.`) {
+          console.log(`An instance of this site is already running`);
+        }
+      };
+    
+      bc.postMessage(`Am I the first?`);
+    }
+    BC("mainmenu")
+  </script>
 
-	<script>
-		function BC(uniqueID){
-			const bc = new BroadcastChannel(uniqueID);
-		
-			bc.onmessage = (event) => {
-				if (event.data === `Am I the first?`) {
-					bc.postMessage(`No you're not.`);
-					console.log(`Another tab of this site just got opened`);
-					history.back();
-					window.close();
-				}
-				if (event.data === `No you're not.`) {
-					console.log(`An instance of this site is already running`);
-					//alert('ANOTHER INSTANCE OF THIS SITE IS ALREADY RUNNING');
-				}
-			};
-		
-			bc.postMessage(`Am I the first?`);
-		}
-		BC("mainmenu")
-	</script>
+  <div class="main-container">
+    <div id="menu" class="column">
+      <div class="mrow" onclick="RowClick(this, 'js/latest.js')">Latest</div>
+      <div class="mrow" onclick="RowClick(this, 'js/news.js')">News</div>
+      <div class="mrow" onclick="RowClick(this, 'js/blogs.js')">Blogs</div>
+      <div class="mrow" onclick="RowClick(this, 'js/magazines.js')">Magazines</div>
+      <div class="mrow" onclick="RowClick(this, 'js/prototypes.js')">Prototypes</div>
+      <div class="mrow" onclick="RowClick(this, 'js/Papers.js')">Papers</div>
+      <div class="mrow" onclick="RowClick(this, 'js/PCMags.js')">PCMags</div>
+      <div class="mrow" onclick="RowClick(this, 'js/radioTv.js')">RadioTv</div>
+      <div class="mrow" onclick="RowClick(this, 'js/tools.js')">Tools</div>
+      <div class="mrow" onclick="RowClick(this, 'js/static.js')">Static</div>
+      <div class="mrow" onclick="RowClick(this, 'js/facebook.js')">Facebook</div>
+      <div class="mrow" onclick="RowClick(this, 'js/twitter.js')">Twitter</div>
+      <div class="mrow" onclick="RowClick(this, 'js/brain.js')">BrainGames</div>
+      <div class="mrow" onclick="RowClick(this, 'js/Stores.js')">Stores</div>
+      <div class="mrow" onclick="RowClick(this, 'js/Space.js')">Space</div>
+      <div class="mrow" onclick="RowClick(this, 'js/BettingSites.js')">Betting</div>
+      <div class="mrow" onclick="RowClick(this, 'js/network.js')">Network</div>
+      <div class="mrow" onclick="RowClick(this, 'js/uruguayLinks.js')">UruguayTv</div>
+    </div>
 
+    <div class="column" id="content"></div>
+  </div>
 
+  <script>
+    function StringBuilder(value) {
+        this.strings = new Array();
+        this.append(value);
+    }
 
-<div class="mrow">
-<div id="menu" class="column" style="flex:1;margin-right:3px; ">
-<div class="mrow" onclick="RowClick(this, 'js/latest.js')">Latest</div>
-<div class="mrow" onclick="RowClick(this, 'js/news.js')">News</div>
-<div class="mrow" onclick="RowClick(this, 'js/blogs.js')">Blogs</div>
-<div class="mrow" onclick="RowClick(this, 'js/magazines.js')">Magazines</div>
-<div class="mrow" onclick="RowClick(this, 'js/prototypes.js')">Prototypes</div>
-<div class="mrow" onclick="RowClick(this, 'js/Papers.js')">Papers</div>
-<div class="mrow" onclick="RowClick(this, 'js/PCMags.js')">PCMags</div>
-<div class="mrow" onclick="RowClick(this, 'js/radioTv.js')">RadioTv</div>
-<div class="mrow" onclick="RowClick(this, 'js/tools.js')">Tools</div>
-<div class="mrow" onclick="RowClick(this, 'js/static.js')">Static</div>
-<div class="mrow" onclick="RowClick(this, 'js/facebook.js')">Facebook</div>
-<div class="mrow" onclick="RowClick(this, 'js/twitter.js')">Twitter</div>
-<div class="mrow" onclick="RowClick(this, 'js/brain.js')">BrainGames</div>
-<div class="mrow" onclick="RowClick(this, 'js/Stores.js')">Stores</div>
-<div class="mrow" onclick="RowClick(this, 'js/Space.js')">Space</div>
+    StringBuilder.prototype.append = function (value) {
+        if (value) {
+            this.strings.push(value);
+        }
+    }
 
-<div class="mrow" onclick="RowClick(this, 'js/BettingSites.js')">Betting</div>
-<div class="mrow" onclick="RowClick(this, 'js/network.js')">Network</div>
-<div class="mrow" onclick="RowClick(this, 'js/uruguayLinks.js')">UruguayTv</div>
-</div>
+    StringBuilder.prototype.clear = function () {
+        this.strings.length = 0;
+    }
 
-<div class="column" style="flex:4;" id="content"></div>
+    StringBuilder.prototype.toString = function () {
+        return this.strings.join("");
+    }
 
-</div>
+    let selectedElem = {};
+    
+    async function RowClick(el, url){
+        if (el.classList.contains('active')) return;
 
+        if (selectedElem.classList) selectedElem.classList.remove('active');
 
-<script>
-function StringBuilder(value) {
-		this.strings = new Array();
-		this.append(value);
-	}
-
-	StringBuilder.prototype.append = function (value) {
-		if (value) {
-			this.strings.push(value);
-		}
-	}
-
-	StringBuilder.prototype.clear = function () {
-		this.strings.length = 0;
-	}
-
-	StringBuilder.prototype.toString = function () {
-		return this.strings.join("");
-	}
-
-</script>
-
-
-<script>
-let selectedElem = {};
-async function RowClick(el, url){
-if (el.classList.contains('active')) {
-return;
-}
-if (typeof(selectedElem.classList) != 'undefined' && selectedElem.classList != null)
-{
-	selectedElem.classList.remove('active');
-}
-selectedElem = el;
-selectedElem.classList.add('active');
-const jsonData = await fetch(url, {
-  headers: {
-    'Accept': 'application/json',
-'Cache-Control': 'no-cache',
-	'User-Agent'   : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246'
-  }
-});
-updateScreen(jsonData);
-}
-</script>
-<script>
-async function getJson(url){
-	await fetch(url, { headers: { 'Cache-Control': 'no-cache' } })
-    .then(data => {
-     return data.json();
-   })
-    .then((output) => {
-        console.log('Output: ', output);
+        selectedElem = el;
+        selectedElem.classList.add('active');
         
-	}).catch(err => console.error(err));
-}
-</script>
+        const jsonData = await fetch(url, { headers: { 'Accept': 'application/json', 'Cache-Control': 'no-cache' } });
+        
+        updateScreen(jsonData);
+    }
 
-<script>
-let r=0;
-let r0="r0";
-let r1="r1";
+    async function updateScreen(jsonData){
+        let sb = new StringBuilder();
+        let rx = r;
 
-async function updateScreen(jsonData){
-	let sb = new StringBuilder();
-	let rx =r;
-	for (let i of await jsonData.json()) 
-	{ 
-		let t = i.title;
-		let h = i.href;
-		let color = rx % 2 == 0 ? r0 : r1;
-		sb.append(`<div class="irow ${color}"><a target="_blank" href="${i.href}">${i.title}</a></div>`);
-		rx++;
-		//sb.append('<hr>');
-		//sb.append(`<div><div>${i.title}</div><div>${i.href}</div></div>`);
-	}
-	r = !r;
-	let content = document.getElementById("content");
-	content.innerHTML=sb.toString(); 
-	sb.clear();
-}
-</script>
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-  	console.log("Hello World!");
+        for (let i of await jsonData.json()) { 
+            let color = rx % 2 === 0 ? "r0" : "r1";
+            sb.append(`<div class='irow ${color}'><a target='_blank' href='${i.href}'>${i.title}</a></div>`);
+            rx++;
+        }
 
-  		//history.back();
-  		//window.close();
+        r = !r;
 
-	}
-);
-</script>
+        document.getElementById("content").innerHTML = sb.toString();
+        
+        sb.clear();
+    }
+    
+    document.addEventListener("DOMContentLoaded", () => console.log("Page Loaded"));
+    
+  </script>
+
 </body>
 </html>
