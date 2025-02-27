@@ -184,7 +184,7 @@
 
     async function updateScreen(jsonData){
         let sb = new StringBuilder();
-        let rx = r;
+        let rx = 0;
 
         for (let i of await jsonData.json()) { 
             let color = rx % 2 === 0 ? "r0" : "r1";
