@@ -31,6 +31,7 @@
     body {
       margin: 0;
       padding: 0;
+      min-height: 100vh;
     }
 
     .active {
@@ -41,7 +42,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 100%;
     }
 
     .mrow, .irow {
@@ -49,6 +49,8 @@
       flex: 1;
       line-height: var(--line-height);
       padding: var(--padding);
+      min-height: 40px; /* Ensure tappable area */
+      align-items: center;
     }
 
     .r0 { background-color: var(--r0-background); }
@@ -62,19 +64,30 @@
     .main-container {
       display: flex;
       flex-direction: row;
+      min-height: 100vh;
     }
 
     #menu {
       flex: 1;
       margin-right: 3px;
+      min-width: 150px; /* Prevent menu from becoming too narrow */
     }
 
     #content {
       flex: 4;
+      min-width: 0; /* Prevents overflow */
     }
 
+    a {
+      text-decoration: none;
+      color: #000;
+      word-wrap: break-word;
+    }
+
+    /* Tablet and below */
     @media (max-width: 768px) {
       :root {
+        --font-size: 15px;
         --padding: 8px;
       }
 
@@ -84,6 +97,7 @@
       
       #menu, #content {
         flex: auto;
+        width: 100%;
       }
       
       #menu {
@@ -92,10 +106,19 @@
       }
     }
 
+    /* Mobile */
     @media (max-width: 480px) {
       :root {
         --font-size: 14px;
-        --padding: 6px;
+        --padding: 8px;
+      }
+
+      .mrow, .irow {
+        min-height: 48px; /* Better touch target size */
+      }
+
+      #menu {
+        min-width: 100%;
       }
     }
   </style>
@@ -192,16 +215,12 @@
             rx++;
         }
 
-        //r = !r;
-
         document.getElementById("content").innerHTML = sb.toString();
         
         sb.clear();
     }
     
     document.addEventListener("DOMContentLoaded", () => console.log("Page Loaded"));
-    
   </script>
-
 </body>
 </html>
