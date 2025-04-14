@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "icons": [
     {
-      "src": "Micon.svg",
+      "src": "/Micon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
