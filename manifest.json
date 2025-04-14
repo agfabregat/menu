@@ -1,0 +1,17 @@
+{
+  "name": "Menu",
+  "short_name": "Menu",
+  "description": "My menu.",
+  "version": "1.0.0",
+  "icons": [
+    {
+      "src": "Micon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#000000"
+}
